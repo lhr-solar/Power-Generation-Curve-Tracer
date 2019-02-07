@@ -1,2 +1,6 @@
-BPS/BeVolt/BPS-master.uvguix.*
-BPS/BeVolt/Objects
+*.000
+*.bak
+*-bak
+*.bck
+*.swp
+*-save.*
