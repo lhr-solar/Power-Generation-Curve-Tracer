@@ -526,4 +526,24 @@ X GND2 9 500 -800 200 L 50 50 1 0 W
 ENDDRAW
 ENDDEF
 #
+# SRF0905-100Y
+#
+DEF SRF0905-100Y L 0 30 Y Y 1 F N
+F0 "L" 650 300 50 H V L CNN
+F1 "SRF0905-100Y" 650 200 50 H V L CNN
+F2 "SRF0905A" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SRF0905-100Y.pdf" 650 0 50 H I L CNN
+F4 "Bourns SRF0905 Series Type 0905 Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-30% Dual 1.6A Idc" 650 -100 50 H I L CNN "Description"
+F5 "652-SRF0905-100Y" 650 -300 50 H I L CNN "Mouser Part Number"
+F6 "Bourns" 650 -400 50 H I L CNN "Manufacturer_Name"
+F7 "SRF0905-100Y" 650 -500 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 f
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2 2 0 -100 200 R 50 50 0 0 B
+X 3 3 800 0 200 L 50 50 0 0 B
+X 4 4 800 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
 #End Library

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BPSVoltage-rescue:LTC6811-1-utsvt-bps U1
+L BPSVoltage-rescue:LTC6811-1-utsvt-bps-BPSVoltage-rescue U1
 U 1 1 5C356477
 P 6400 2650
 F 0 "U1" H 6400 2978 50  0000 C CNN
@@ -1199,7 +1199,7 @@ IPA
 Text Label 7200 4450 0    50   ~ 0
 IMA
 $Comp
-L BPSVoltage-rescue:HX1188FNL-utsvt-bps U2
+L BPSVoltage-rescue:HX1188FNL-utsvt-bps-BPSVoltage-rescue U2
 U 1 1 5CAB08B5
 P 9700 5250
 F 0 "U2" H 9700 5415 50  0000 C CNN
@@ -1210,7 +1210,7 @@ F 3 "" H 9700 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSVoltage-rescue:CarPowerConnector-utsvt-connectors J1
+L BPSVoltage-rescue:CarPowerConnector-utsvt-connectors-BPSVoltage-rescue J1
 U 1 1 5CAB16B3
 P 10750 5450
 F 0 "J1" H 10573 5508 60  0000 R CNN
@@ -1221,7 +1221,7 @@ F 3 "" H 10750 5450 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L BPSVoltage-rescue:CarPowerConnector-utsvt-connectors J2
+L BPSVoltage-rescue:CarPowerConnector-utsvt-connectors-BPSVoltage-rescue J2
 U 1 1 5CADF981
 P 10750 5850
 F 0 "J2" H 10573 5908 60  0000 R CNN
