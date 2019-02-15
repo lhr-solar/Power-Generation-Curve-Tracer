@@ -1215,7 +1215,7 @@ U 1 1 5CAB16B3
 P 10750 5450
 F 0 "J1" H 10573 5508 60  0000 R CNN
 F 1 "Conn1" H 10573 5402 60  0000 R CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 10750 5450 60  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical_SMD_Pin1Right" H 10750 5450 60  0001 C CNN
 F 3 "" H 10750 5450 60  0001 C CNN
 	1    10750 5450
 	-1   0    0    -1  
@@ -1226,7 +1226,7 @@ U 1 1 5CADF981
 P 10750 5850
 F 0 "J2" H 10573 5908 60  0000 R CNN
 F 1 "Conn2" H 10573 5802 60  0000 R CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 10750 5850 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right" H 10750 5850 60  0001 C CNN
 F 3 "" H 10750 5850 60  0001 C CNN
 	1    10750 5850
 	-1   0    0    -1  
