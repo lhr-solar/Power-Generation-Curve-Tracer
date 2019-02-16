@@ -1,0 +1,570 @@
+EESchema Schematic File Version 4
+LIBS:Debugger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR019
+U 1 1 5C5F800A
+P 2450 2800
+F 0 "#PWR019" H 2450 2650 50  0001 C CNN
+F 1 "+3.3V" H 2465 2973 50  0000 C CNN
+F 2 "" H 2450 2800 50  0001 C CNN
+F 3 "" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5C5F8049
+P 2050 2800
+F 0 "#PWR018" H 2050 2650 50  0001 C CNN
+F 1 "+5V" H 2065 2973 50  0000 C CNN
+F 2 "" H 2050 2800 50  0001 C CNN
+F 3 "" H 2050 2800 50  0001 C CNN
+	1    2050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L utsvt-chips:ADM3055E U3
+U 1 1 5C5F8645
+P 4050 3400
+F 0 "U3" H 3850 3300 60  0000 C CNN
+F 1 "ADM3055E" H 4200 3300 60  0000 C CNN
+F 2 "" H 4050 3500 60  0001 C CNN
+F 3 "" H 4050 3500 60  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3500 2950 3500
+Wire Wire Line
+	3350 3600 2950 3600
+NoConn ~ 3350 3700
+NoConn ~ 3350 3800
+NoConn ~ 3350 3900
+NoConn ~ 4750 3850
+Text HLabel 1950 2900 0    50   Input ~ 0
++5V
+Text HLabel 1500 3300 0    50   Input ~ 0
+GND
+Text HLabel 2950 3500 0    50   Input ~ 0
+CAN_TX
+Text HLabel 2950 3600 0    50   Input ~ 0
+CAN_RX
+Text HLabel 2350 3000 0    50   Input ~ 0
++3.3V
+Wire Wire Line
+	3350 3100 3200 3100
+Wire Wire Line
+	3200 3100 3200 3200
+Connection ~ 3200 3300
+Wire Wire Line
+	3200 3300 3350 3300
+Wire Wire Line
+	3200 3200 3350 3200
+Connection ~ 3200 3200
+Wire Wire Line
+	3200 3200 3200 3300
+Wire Wire Line
+	4750 3050 4950 3050
+Wire Wire Line
+	4950 3050 4950 3150
+Wire Wire Line
+	4950 3150 4750 3150
+Connection ~ 4950 3150
+Wire Wire Line
+	4750 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 3350
+Wire Wire Line
+	4950 3350 4750 3350
+Connection ~ 4950 3350
+Wire Wire Line
+	4750 2950 5150 2950
+Wire Wire Line
+	5150 2950 5150 2850
+Wire Wire Line
+	5150 2500 4800 2500
+Wire Wire Line
+	4750 2850 5000 2850
+Wire Wire Line
+	5000 2850 5000 2650
+Wire Wire Line
+	5000 2650 4800 2650
+Text Label 4800 3650 0    50   ~ 0
+CAN_H
+Text Label 4800 3750 0    50   ~ 0
+CAN_L
+Text Label 4800 3950 0    50   ~ 0
+RSlope
+$Comp
+L Device:R R1
+U 1 1 5C617D76
+P 5200 3950
+F 0 "R1" V 5100 3900 50  0000 C CNN
+F 1 "0" V 5100 4000 50  0000 C CNN
+F 2 "" V 5130 3950 50  0001 C CNN
+F 3 "~" H 5200 3950 50  0001 C CNN
+	1    5200 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3950 5050 3950
+$Comp
+L Device:C_Small C18
+U 1 1 5C61A8D4
+P 5300 3050
+F 0 "C18" H 5392 3096 50  0000 L CNN
+F 1 "10uf" H 5392 3005 50  0000 L CNN
+F 2 "" H 5300 3050 50  0001 C CNN
+F 3 "~" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5C61A94A
+P 5800 3050
+F 0 "C19" H 5892 3096 50  0000 L CNN
+F 1 "0.22uF" H 5892 3005 50  0000 L CNN
+F 2 "" H 5800 3050 50  0001 C CNN
+F 3 "~" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 2950
+Wire Wire Line
+	5150 2850 5150 2500
+Wire Wire Line
+	4950 3150 5300 3150
+Wire Wire Line
+	4950 3350 5800 3350
+Wire Wire Line
+	5300 3150 5300 3500
+Wire Wire Line
+	5350 3950 5800 3950
+$Comp
+L Device:C_Small C20
+U 1 1 5C6250CB
+P 6250 3050
+F 0 "C20" H 6342 3096 50  0000 L CNN
+F 1 "0.1uF" H 6342 3005 50  0000 L CNN
+F 2 "" H 6250 3050 50  0001 C CNN
+F 3 "~" H 6250 3050 50  0001 C CNN
+	1    6250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5C625122
+P 6650 3050
+F 0 "C21" H 6742 3096 50  0000 L CNN
+F 1 "0.01uF" H 6742 3005 50  0000 L CNN
+F 2 "" H 6650 3050 50  0001 C CNN
+F 3 "~" H 6650 3050 50  0001 C CNN
+	1    6650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Debugger-rescue:PWR_FLAG-power #FLG02
+U 1 1 5C629307
+P 7150 2950
+F 0 "#FLG02" H 7150 3025 50  0001 C CNN
+F 1 "PWR_FLAG-power" H 7000 3100 50  0000 C CNN
+F 2 "" H 7150 2950 50  0001 C CNN
+F 3 "" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Debugger-rescue:PWR_FLAG-power #FLG03
+U 1 1 5C629344
+P 7150 3050
+F 0 "#FLG03" H 7150 3125 50  0001 C CNN
+F 1 "PWR_FLAG-power" H 7300 3200 50  0000 C CNN
+F 2 "" H 7150 3050 50  0001 C CNN
+F 3 "" H 7150 3050 50  0001 C CNN
+	1    7150 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 3650 6550 3650
+Wire Wire Line
+	4750 3750 6550 3750
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C62B95C
+P 4800 2500
+F 0 "TP1" V 4800 2800 50  0000 C CNN
+F 1 "CAN_ISO_Vout" V 4900 2600 50  0000 C CNN
+F 2 "" H 5000 2500 50  0001 C CNN
+F 3 "~" H 5000 2500 50  0001 C CNN
+	1    4800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C62B9CD
+P 4800 2650
+F 0 "TP2" V 4800 2950 50  0000 C CNN
+F 1 "CAN_ISO_Vin" V 4700 2800 50  0000 C CNN
+F 2 "" H 5000 2650 50  0001 C CNN
+F 3 "~" H 5000 2650 50  0001 C CNN
+	1    4800 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C62F4D0
+P 6100 3350
+F 0 "TP3" V 6054 3538 50  0000 L CNN
+F 1 "CAN_ISO_GndIn" V 5950 3200 50  0000 L CNN
+F 2 "" H 6300 3350 50  0001 C CNN
+F 3 "~" H 6300 3350 50  0001 C CNN
+	1    6100 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C62F589
+P 6100 3500
+F 0 "TP4" V 6100 3700 50  0000 L CNN
+F 1 "CAN_ISO_GndOut" V 6200 3250 50  0000 L CNN
+F 2 "" H 6300 3500 50  0001 C CNN
+F 3 "~" H 6300 3500 50  0001 C CNN
+	1    6100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5C630A18
+P 6550 3650
+F 0 "TP5" H 6608 3770 50  0000 L CNN
+F 1 "CAN_ISO_GndIn" H 6600 3700 50  0000 L CNN
+F 2 "" H 6750 3650 50  0001 C CNN
+F 3 "~" H 6750 3650 50  0001 C CNN
+	1    6550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5C630A6E
+P 6550 3750
+F 0 "TP6" H 6500 3800 50  0000 R CNN
+F 1 "CAN_ISO_GndOut" H 6500 3900 50  0000 R CNN
+F 2 "" H 6750 3750 50  0001 C CNN
+F 3 "~" H 6750 3750 50  0001 C CNN
+	1    6550 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 3750 7500 3650
+Wire Wire Line
+	7500 2800 7650 2800
+Wire Wire Line
+	7350 3650 7350 2700
+Wire Wire Line
+	7350 2700 7650 2700
+$Comp
+L utsvt-chips:CDSOT23-T24CAN U4
+U 1 1 5C63851C
+P 8000 2750
+F 0 "U4" H 8000 3047 60  0000 C CNN
+F 1 "CDSOT23-T24CAN" H 8000 2941 60  0000 C CNN
+F 2 "" H 8000 2750 60  0001 C CNN
+F 3 "" H 8000 2750 60  0001 C CNN
+	1    8000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2750 8500 2750
+Wire Wire Line
+	8500 2750 8500 3050
+$Comp
+L Device:R R2
+U 1 1 5C643D33
+P 7850 3400
+F 0 "R2" H 7700 3450 50  0000 L CNN
+F 1 "60" H 7700 3350 50  0000 L CNN
+F 2 "" V 7780 3400 50  0001 C CNN
+F 3 "~" H 7850 3400 50  0001 C CNN
+	1    7850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C643E2F
+P 8050 3400
+F 0 "R3" H 7900 3450 50  0000 L CNN
+F 1 "60" H 7900 3350 50  0000 L CNN
+F 2 "" V 7980 3400 50  0001 C CNN
+F 3 "~" H 8050 3400 50  0001 C CNN
+	1    8050 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L utsvt-connectors:CANConnector J2
+U 1 1 5C648177
+P 9050 3600
+F 0 "J2" H 8872 3658 60  0000 R CNN
+F 1 "CAN_Out" H 8872 3552 60  0000 R CNN
+F 2 "" H 9200 3900 60  0001 C CNN
+F 3 "" H 9200 3900 60  0001 C CNN
+	1    9050 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5C64B9DC
+P 7950 3150
+F 0 "JP1" H 7950 3250 50  0000 C CNN
+F 1 "Termination Resistors" H 7900 3100 50  0000 C CNN
+F 2 "" H 7950 3150 50  0001 C CNN
+F 3 "~" H 7950 3150 50  0001 C CNN
+	1    7950 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 3550 7850 3650
+Wire Wire Line
+	8050 3550 8050 3750
+Wire Wire Line
+	8050 3150 8050 3250
+Wire Wire Line
+	7850 3150 7850 3250
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5C65E113
+P 5600 2950
+F 0 "FB1" V 5837 2950 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 5746 2950 50  0000 C CNN
+F 2 "" V 5530 2950 50  0001 C CNN
+F 3 "~" H 5600 2950 50  0001 C CNN
+	1    5600 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5C65E44D
+P 5600 3150
+F 0 "FB2" V 5650 2950 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 5750 3250 50  0000 C CNN
+F 2 "" V 5530 3150 50  0001 C CNN
+F 3 "~" H 5600 3150 50  0001 C CNN
+	1    5600 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5C664147
+P 2850 3150
+F 0 "C17" H 2942 3196 50  0000 L CNN
+F 1 "0.1uF" H 2942 3105 50  0000 L CNN
+F 2 "" H 2850 3150 50  0001 C CNN
+F 3 "~" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5C664236
+P 2450 3150
+F 0 "C16" H 2542 3196 50  0000 L CNN
+F 1 "0.1uF" H 2542 3105 50  0000 L CNN
+F 2 "" H 2450 3150 50  0001 C CNN
+F 3 "~" H 2450 3150 50  0001 C CNN
+	1    2450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5C66429D
+P 2050 3150
+F 0 "C15" H 2142 3196 50  0000 L CNN
+F 1 "0.1uF" H 2142 3105 50  0000 L CNN
+F 2 "" H 2050 3150 50  0001 C CNN
+F 3 "~" H 2050 3150 50  0001 C CNN
+	1    2050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5C664303
+P 1650 3150
+F 0 "C14" H 1742 3196 50  0000 L CNN
+F 1 "0.1uF" H 1742 3105 50  0000 L CNN
+F 2 "" H 1650 3150 50  0001 C CNN
+F 3 "~" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3000 1650 3050
+Wire Wire Line
+	2050 3050 2050 3000
+Connection ~ 2050 3000
+Wire Wire Line
+	2050 3000 1650 3000
+Wire Wire Line
+	2450 3050 2450 3000
+Connection ~ 2450 3000
+Wire Wire Line
+	2850 3050 2850 3000
+Connection ~ 2850 3000
+Wire Wire Line
+	2850 3000 2450 3000
+Wire Wire Line
+	2850 3250 2850 3300
+Connection ~ 2850 3300
+Wire Wire Line
+	2850 3300 3200 3300
+Wire Wire Line
+	2450 3250 2450 3300
+Connection ~ 2450 3300
+Wire Wire Line
+	2450 3300 2850 3300
+Wire Wire Line
+	2050 3250 2050 3300
+Connection ~ 2050 3300
+Wire Wire Line
+	2050 3300 2450 3300
+$Comp
+L power:GND #PWR017
+U 1 1 5C5F7D03
+P 1650 3400
+F 0 "#PWR017" H 1650 3150 50  0001 C CNN
+F 1 "GND" H 1655 3227 50  0000 C CNN
+F 2 "" H 1650 3400 50  0001 C CNN
+F 3 "" H 1650 3400 50  0001 C CNN
+	1    1650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3400 1650 3300
+Connection ~ 1650 3300
+Wire Wire Line
+	1650 3300 2050 3300
+Wire Wire Line
+	1650 3250 1650 3300
+Wire Wire Line
+	1500 3300 1650 3300
+Wire Wire Line
+	2850 3000 3350 3000
+Wire Wire Line
+	3350 2900 2050 2900
+Wire Wire Line
+	2050 2900 2050 3000
+Connection ~ 2050 2900
+Wire Wire Line
+	1950 2900 2050 2900
+Wire Wire Line
+	2050 2800 2050 2900
+Wire Wire Line
+	2450 2800 2450 3000
+Wire Wire Line
+	2350 3000 2450 3000
+Text Label 7850 3200 2    50   ~ 0
+TERM_H
+Text Label 8050 3200 0    50   ~ 0
+TERM_L
+Wire Wire Line
+	5300 2950 5150 2950
+Connection ~ 5300 3150
+Wire Wire Line
+	5300 2950 5500 2950
+Connection ~ 5300 2950
+Wire Wire Line
+	5700 2950 5800 2950
+Wire Wire Line
+	5500 3150 5300 3150
+Connection ~ 5000 2850
+Wire Wire Line
+	5000 2850 5800 2850
+Wire Wire Line
+	5700 3150 5800 3150
+Connection ~ 5800 2950
+Connection ~ 5800 3150
+Wire Wire Line
+	5800 2950 6250 2950
+Wire Wire Line
+	5800 2950 5800 2850
+Wire Wire Line
+	5800 3350 5800 3950
+Connection ~ 5800 3350
+Wire Wire Line
+	5300 3500 6100 3500
+Wire Wire Line
+	5800 3150 6250 3150
+Wire Wire Line
+	5800 3350 6100 3350
+Wire Wire Line
+	5800 3150 5800 3350
+Connection ~ 6250 2950
+Connection ~ 6250 3150
+Wire Wire Line
+	6250 2950 6650 2950
+Wire Wire Line
+	6250 3150 6650 3150
+Wire Wire Line
+	6650 2950 7150 2950
+Connection ~ 6650 2950
+Wire Wire Line
+	6650 3150 7050 3150
+Wire Wire Line
+	7050 3150 7050 3050
+Wire Wire Line
+	7050 3050 7150 3050
+Connection ~ 6650 3150
+Connection ~ 7150 3050
+Wire Wire Line
+	7150 3050 8500 3050
+Wire Wire Line
+	7150 2950 8600 2950
+Connection ~ 7150 2950
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3650 7350 3650
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3750 7500 3750
+Connection ~ 7500 3650
+Wire Wire Line
+	7500 3650 7850 3650
+Connection ~ 7350 3650
+Wire Wire Line
+	7350 3650 7500 3650
+Connection ~ 7500 3750
+Wire Wire Line
+	7500 3650 7500 2800
+Wire Wire Line
+	7500 3750 8050 3750
+Connection ~ 8500 3050
+Wire Wire Line
+	8500 3050 8550 3050
+Wire Wire Line
+	8600 2950 8600 3450
+Wire Wire Line
+	8600 3450 8700 3450
+Wire Wire Line
+	8550 3050 8550 3550
+Wire Wire Line
+	8550 3550 8700 3550
+Wire Wire Line
+	7850 3650 8700 3650
+Connection ~ 7850 3650
+Wire Wire Line
+	8050 3750 8700 3750
+Connection ~ 8050 3750
+$EndSCHEMATC
