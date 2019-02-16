@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Debugger-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BPSMaster-cache:+3.3V #PWR04
+L Debugger-rescue:+3.3V-BPSMaster-cache #PWR04
 U 1 1 5C5F34E7
 P 5050 2300
 F 0 "#PWR04" H 5050 2150 50  0001 C CNN
@@ -105,7 +106,7 @@ Wire Wire Line
 	4100 3000 4250 3000
 Connection ~ 4250 3000
 $Comp
-L BPSMaster-cache:STM32F413RHTx U1
+L Debugger-rescue:STM32F413RHTx-BPSMaster-cache U1
 U 1 1 5C5F31C3
 P 5250 4100
 F 0 "U1" H 5200 3650 50  0000 C CNN
@@ -306,7 +307,7 @@ F 3 "~" H 8850 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSMaster-cache:+3.3V #PWR06
+L Debugger-rescue:+3.3V-BPSMaster-cache #PWR06
 U 1 1 5C5FD9D5
 P 6150 1150
 F 0 "#PWR06" H 6150 1000 50  0001 C CNN
@@ -396,7 +397,7 @@ F 3 "" H 6650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSMaster-cache:+3.3V #PWR08
+L Debugger-rescue:+3.3V-BPSMaster-cache #PWR08
 U 1 1 5C60EE5B
 P 6650 2500
 F 0 "#PWR08" H 6650 2350 50  0001 C CNN
@@ -425,7 +426,7 @@ Connection ~ 6650 2550
 Wire Wire Line
 	6650 2550 6650 2600
 $Comp
-L BPSMaster-cache:Switch:SW_Push SW1
+L Debugger-rescue:Switch_SW_Push-BPSMaster-cache SW1
 U 1 1 5C616023
 P 8300 2750
 F 0 "SW1" V 8254 2898 50  0000 L CNN
@@ -553,10 +554,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 3800 4550 3800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 5C62A6C5
 P 3550 1750
-F 0 "#PWR?" H 3550 1500 50  0001 C CNN
+F 0 "#PWR016" H 3550 1500 50  0001 C CNN
 F 1 "GND" H 3555 1577 50  0000 C CNN
 F 2 "" H 3550 1750 50  0001 C CNN
 F 3 "" H 3550 1750 50  0001 C CNN
@@ -564,10 +565,10 @@ F 3 "" H 3550 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR015
 U 1 1 5C62A736
 P 3150 1200
-F 0 "#PWR?" H 3150 1050 50  0001 C CNN
+F 0 "#PWR015" H 3150 1050 50  0001 C CNN
 F 1 "+12V" H 3165 1373 50  0000 C CNN
 F 2 "" H 3150 1200 50  0001 C CNN
 F 3 "" H 3150 1200 50  0001 C CNN
@@ -629,10 +630,10 @@ Connection ~ 6150 1800
 Wire Wire Line
 	6150 1800 6150 1900
 $Comp
-L BPSMaster-cache:NCP1117-3.3_SOT223 U?
+L Debugger-rescue:NCP1117-3.3_SOT223-BPSMaster-cache U2
 U 1 1 5C65BF96
 P 3550 1350
-F 0 "U?" H 3550 1592 50  0000 C CNN
+F 0 "U2" H 3550 1592 50  0000 C CNN
 F 1 "NCP1117-3.3_SOT223" H 3550 1501 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3550 1550 50  0001 C CNN
 F 3 "" H 3650 1100 50  0001 C CNN
@@ -649,4 +650,68 @@ Wire Wire Line
 	5950 5200 6350 5200
 Text Label 6350 5200 2    50   ~ 0
 CAN1_TX
+$Sheet
+S 1050 1650 1750 1000
+U 5C5F7A4D
+F0 "Sheet5C5F7A4C" 50
+F1 "file5C5F7A4C.sch" 50
+F2 "+5V" I R 2800 1850 50 
+F3 "GND" I R 2800 2450 50 
+F4 "CAN_TX" I R 2800 2150 50 
+F5 "CAN_RX" I R 2800 2300 50 
+F6 "+3.3V" I R 2800 2000 50 
+$EndSheet
+Wire Wire Line
+	2800 1850 2950 1850
+Wire Wire Line
+	2950 1850 2950 1750
+Wire Wire Line
+	3100 2000 3100 1900
+Wire Wire Line
+	2800 2000 3100 2000
+Wire Wire Line
+	2800 2150 3200 2150
+Wire Wire Line
+	2800 2300 3200 2300
+Wire Wire Line
+	2800 2450 3000 2450
+Wire Wire Line
+	3000 2450 3000 2550
+$Comp
+L power:GND #PWR013
+U 1 1 5C62A244
+P 3000 2550
+F 0 "#PWR013" H 3000 2300 50  0001 C CNN
+F 1 "GND" H 3005 2377 50  0000 C CNN
+F 2 "" H 3000 2550 50  0001 C CNN
+F 3 "" H 3000 2550 50  0001 C CNN
+	1    3000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5C62A371
+P 2950 1750
+F 0 "#PWR012" H 2950 1600 50  0001 C CNN
+F 1 "+5V" H 2965 1923 50  0000 C CNN
+F 2 "" H 2950 1750 50  0001 C CNN
+F 3 "" H 2950 1750 50  0001 C CNN
+	1    2950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR014
+U 1 1 5C62A3DB
+P 3100 1900
+F 0 "#PWR014" H 3100 1750 50  0001 C CNN
+F 1 "+3.3V" H 3115 2073 50  0000 C CNN
+F 2 "" H 3100 1900 50  0001 C CNN
+F 3 "" H 3100 1900 50  0001 C CNN
+	1    3100 1900
+	1    0    0    -1  
+$EndComp
+Text Label 2950 2150 0    50   ~ 0
+CAN1_TX
+Text Label 2950 2300 0    50   ~ 0
+CAN1_RX
 $EndSCHEMATC
