@@ -1622,7 +1622,7 @@ U 1 1 5C56383E
 P 9100 1100
 F 0 "J5" H 9180 1142 50  0000 L CNN
 F 1 "Conn_01x03" H 9180 1051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 9100 1100 50  0001 C CNN
 F 3 "~" H 9100 1100 50  0001 C CNN
 	1    9100 1100
 	1    0    0    -1  
