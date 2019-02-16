@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:BPSTemperature2-cache
+LIBS:BPSTemperature-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1113,12 +1113,12 @@ CH19_LPF
 Text Label 10400 4650 0    50   ~ 0
 CH20_LPF
 $Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J3
+L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 5C4FF29C
 P 10050 3750
 F 0 "J3" H 10100 4167 50  0000 C CNN
 F 1 "Conn_02x06_Counter_Clockwise" H 10100 4076 50  0000 C CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x6xP3.00mm_PolarizingPeg_Vertical" H 10050 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10050 3750 50  0001 C CNN
 F 3 "~" H 10050 3750 50  0001 C CNN
 	1    10050 3750
 	1    0    0    -1  
@@ -1530,88 +1530,6 @@ F 3 "~" H 9050 3800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 9450 3550
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J4
-U 1 1 5C8651CF
-P 10100 1750
-F 0 "J4" H 10150 2167 50  0000 C CNN
-F 1 "Conn_02x06_Counter_Clockwise" H 10150 2076 50  0000 C CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x6xP3.00mm_PolarizingPeg_Vertical" H 10100 1750 50  0001 C CNN
-F 3 "~" H 10100 1750 50  0001 C CNN
-	1    10100 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 1400 9500 1550
-Wire Wire Line
-	9500 1550 9900 1550
-Wire Wire Line
-	9900 1650 9750 1650
-Wire Wire Line
-	9900 1750 9750 1750
-Wire Wire Line
-	9900 1850 9750 1850
-Wire Wire Line
-	9900 1950 9750 1950
-Wire Wire Line
-	9900 2050 9750 2050
-Wire Wire Line
-	9750 2050 9750 1950
-Wire Wire Line
-	9750 2050 9750 2100
-Connection ~ 9750 2050
-$Comp
-L power:GND #PWR033
-U 1 1 5C8651E0
-P 9750 2100
-F 0 "#PWR033" H 9750 1850 50  0001 C CNN
-F 1 "GND" H 9755 1927 50  0000 C CNN
-F 2 "" H 9750 2100 50  0001 C CNN
-F 3 "" H 9750 2100 50  0001 C CNN
-	1    9750 2100
-	1    0    0    -1  
-$EndComp
-Text Label 9750 1650 2    50   ~ 0
-SCK
-Text Label 9750 1750 2    50   ~ 0
-MOSI
-Text Label 9750 1850 2    50   ~ 0
-MISO
-Text Label 10500 1550 0    50   ~ 0
-CS1
-Text Label 10500 1650 0    50   ~ 0
-CS2
-Wire Wire Line
-	10400 1850 10500 1850
-Wire Wire Line
-	10400 1750 10500 1750
-Wire Wire Line
-	10400 1650 10500 1650
-Wire Wire Line
-	10400 1550 10500 1550
-Text Label 10500 1750 0    50   ~ 0
-CS3
-Text Label 10500 1850 0    50   ~ 0
-CS4
-Text Label 10500 1950 0    50   ~ 0
-CS5
-Text Label 10500 2050 0    50   ~ 0
-CS6
-Wire Wire Line
-	10400 1950 10500 1950
-Wire Wire Line
-	10400 2050 10500 2050
-$Comp
-L power:+5V #PWR032
-U 1 1 5C8651F5
-P 9500 1400
-F 0 "#PWR032" H 9500 1250 50  0001 C CNN
-F 1 "+5V" H 9515 1573 50  0000 C CNN
-F 2 "" H 9500 1400 50  0001 C CNN
-F 3 "" H 9500 1400 50  0001 C CNN
-	1    9500 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1150 1950 1150 2000
 Wire Wire Line
