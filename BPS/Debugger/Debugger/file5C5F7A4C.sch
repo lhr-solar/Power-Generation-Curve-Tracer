@@ -37,7 +37,7 @@ F 3 "" H 2050 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L utsvt-chips:ADM3055E U3
+L Debugger-rescue:ADM3055E-utsvt-chips U3
 U 1 1 5C5F8645
 P 4050 3400
 F 0 "U3" H 3850 3300 60  0000 C CNN
@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 2700 7650 2700
 $Comp
-L utsvt-chips:CDSOT23-T24CAN U4
+L Debugger-rescue:CDSOT23-T24CAN-utsvt-chips U4
 U 1 1 5C63851C
 P 8000 2750
 F 0 "U4" H 8000 3047 60  0000 C CNN
@@ -315,7 +315,7 @@ F 3 "~" H 8050 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L utsvt-connectors:CANConnector J2
+L Debugger-rescue:CANConnector-utsvt-connectors J2
 U 1 1 5C648177
 P 9050 3600
 F 0 "J2" H 8872 3658 60  0000 R CNN

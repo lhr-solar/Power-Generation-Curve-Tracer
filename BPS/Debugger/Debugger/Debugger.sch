@@ -116,7 +116,7 @@ F 3 "" H 5250 4100 50  0001 C CNN
 	1    5250 4100
 	1    0    0    -1  
 $EndComp
-Text Label 4050 3650 0    50   ~ 0
+Text Label 4000 3700 0    50   ~ 0
 OSC_IN
 Text Label 4000 3800 0    50   ~ 0
 OSC_OUT
@@ -461,9 +461,9 @@ F 3 "" H 7800 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 3050 7800 3100
-Text Label 6200 3900 0    50   ~ 0
+Text Label 6200 3900 2    50   ~ 0
 SWDIO
-Text Label 6200 4000 0    50   ~ 0
+Text Label 6200 4000 2    50   ~ 0
 SWCLK
 Wire Wire Line
 	5950 3900 6200 3900
@@ -548,10 +548,6 @@ Wire Wire Line
 Wire Wire Line
 	9550 2850 9700 2850
 Wire Wire Line
-	4050 3700 4050 3650
-Wire Wire Line
-	4050 3700 4550 3700
-Wire Wire Line
 	4000 3800 4550 3800
 $Comp
 L power:GND #PWR016
@@ -575,14 +571,10 @@ F 3 "" H 3150 1200 50  0001 C CNN
 	1    3150 1200
 	1    0    0    -1  
 $EndComp
-Text Label 4050 1350 0    50   ~ 0
-3.3V
 Wire Wire Line
 	3150 1200 3150 1350
 Wire Wire Line
 	3150 1350 3250 1350
-Wire Wire Line
-	3850 1350 4050 1350
 Wire Wire Line
 	3550 1650 3550 1750
 Wire Wire Line
@@ -710,8 +702,67 @@ F 3 "" H 3100 1900 50  0001 C CNN
 	1    3100 1900
 	1    0    0    -1  
 $EndComp
-Text Label 2950 2150 0    50   ~ 0
+Text Label 3200 2150 2    50   ~ 0
 CAN1_TX
-Text Label 2950 2300 0    50   ~ 0
+Text Label 3200 2300 2    50   ~ 0
 CAN1_RX
+$Comp
+L Debugger-rescue:+3.3V-BPSMaster-cache #PWR020
+U 1 1 5C68CA74
+P 4050 1350
+F 0 "#PWR020" H 4050 1200 50  0001 C CNN
+F 1 "+3.3V" H 4065 1523 50  0000 C CNN
+F 2 "" H 4050 1350 50  0001 C CNN
+F 3 "" H 4050 1350 50  0001 C CNN
+	1    4050 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 1350 4050 1350
+Wire Wire Line
+	4000 3700 4550 3700
+NoConn ~ 5950 2600
+NoConn ~ 5950 2700
+NoConn ~ 5950 2800
+NoConn ~ 5950 2900
+NoConn ~ 5950 3000
+NoConn ~ 5950 3100
+NoConn ~ 5950 3200
+NoConn ~ 5950 3300
+NoConn ~ 5950 3400
+NoConn ~ 5950 3500
+NoConn ~ 5950 3600
+NoConn ~ 5950 3700
+NoConn ~ 5950 3800
+NoConn ~ 5950 4100
+NoConn ~ 5950 4300
+NoConn ~ 5950 4400
+NoConn ~ 5950 4500
+NoConn ~ 5950 4600
+NoConn ~ 5950 4700
+NoConn ~ 5950 4800
+NoConn ~ 5950 4900
+NoConn ~ 5950 5000
+NoConn ~ 5950 5300
+NoConn ~ 5950 5400
+NoConn ~ 5950 5500
+NoConn ~ 5950 5600
+NoConn ~ 5950 5700
+NoConn ~ 4550 5700
+NoConn ~ 4550 5600
+NoConn ~ 4550 5500
+NoConn ~ 4550 5400
+NoConn ~ 4550 5300
+NoConn ~ 4550 5200
+NoConn ~ 4550 5100
+NoConn ~ 4550 5000
+NoConn ~ 4550 4900
+NoConn ~ 4550 4800
+NoConn ~ 4550 4700
+NoConn ~ 4550 4600
+NoConn ~ 4550 4500
+NoConn ~ 4550 4400
+NoConn ~ 4550 4300
+NoConn ~ 4550 4200
+NoConn ~ 4550 2600
 $EndSCHEMATC
