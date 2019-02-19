@@ -250,7 +250,7 @@ F 3 "~" H 3800 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 3300 3350 3250
-Text Notes 3900 5100 0    50   ~ 0
+Text Notes 2700 4900 0    50   ~ 0
 Since +12V is used to drive the contactor, use GNDPWR to keep 12V line\nisolated from the main electronics of the BPS.
 Wire Wire Line
 	3350 3250 3800 3250
