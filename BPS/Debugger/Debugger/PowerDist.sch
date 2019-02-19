@@ -1,0 +1,435 @@
+EESchema Schematic File Version 4
+LIBS:Debugger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR0101
+U 1 1 5C687564
+P 2450 3300
+F 0 "#PWR0101" H 2450 3150 50  0001 C CNN
+F 1 "+12V" H 2465 3473 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3450 2450 3450
+Wire Wire Line
+	2350 3650 2450 3650
+$Comp
+L power:GNDPWR #PWR0102
+U 1 1 5C68764E
+P 2450 3800
+F 0 "#PWR0102" H 2450 3600 50  0001 C CNN
+F 1 "GNDPWR" H 2454 3646 50  0000 C CNN
+F 2 "" H 2450 3750 50  0001 C CNN
+F 3 "" H 2450 3750 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5C6876EF
+P 2600 3550
+F 0 "C25" H 2692 3596 50  0000 L CNN
+F 1 "4.7uF" H 2692 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2600 3550 50  0001 C CNN
+F 3 "~" H 2600 3550 50  0001 C CNN
+	1    2600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3450 2450 3400
+Wire Wire Line
+	2450 3400 2600 3400
+Wire Wire Line
+	2600 3400 2600 3450
+Connection ~ 2450 3400
+Wire Wire Line
+	2450 3400 2450 3300
+Wire Wire Line
+	2450 3650 2450 3750
+Wire Wire Line
+	2450 3750 2600 3750
+Wire Wire Line
+	2600 3750 2600 3650
+Connection ~ 2450 3750
+Wire Wire Line
+	2450 3750 2450 3800
+Wire Wire Line
+	2600 3400 2600 3300
+Connection ~ 2600 3400
+Wire Wire Line
+	2600 3750 2600 3800
+Connection ~ 2600 3750
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5C687BC6
+P 2600 3300
+F 0 "TP7" H 2658 3420 50  0000 L CNN
+F 1 "+12V_TP" H 2658 3329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2800 3300 50  0001 C CNN
+F 3 "~" H 2800 3300 50  0001 C CNN
+	1    2600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5C687C10
+P 2600 3800
+F 0 "TP8" H 2542 3827 50  0000 R CNN
+F 1 "GNDPWR_TP" H 2542 3918 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2800 3800 50  0001 C CNN
+F 3 "~" H 2800 3800 50  0001 C CNN
+	1    2600 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3400 3100 3400
+Wire Wire Line
+	3100 3400 3100 3450
+Wire Wire Line
+	3100 3450 3250 3450
+$Comp
+L utsvt-bps:SRF0905-100Y L1
+U 1 1 5C688056
+P 3250 3350
+F 0 "L1" H 3650 3615 50  0000 C CNN
+F 1 "10uH" H 3650 3524 50  0000 C CNN
+F 2 "UTSVT_BPS:SRF0905A" H 3900 3450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SRF0905-100Y.pdf" H 3900 3350 50  0001 L CNN
+F 4 "Bourns SRF0905 Series Type 0905 Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-30% Dual 1.6A Idc" H 3900 3250 50  0001 L CNN "Description"
+F 5 "652-SRF0905-100Y" H 3900 3050 50  0001 L CNN "Mouser Part Number"
+F 6 "Bourns" H 3900 2950 50  0001 L CNN "Manufacturer_Name"
+F 7 "SRF0905-100Y" H 3900 2850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3400 3100 3350
+Wire Wire Line
+	3100 3350 3250 3350
+Connection ~ 3100 3400
+Wire Wire Line
+	4050 3350 4050 3400
+Wire Wire Line
+	4050 3400 4200 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	4050 3400 4050 3450
+$Comp
+L Debugger-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5C688EED
+P 4200 3200
+F 0 "#FLG0101" H 4200 3275 50  0001 C CNN
+F 1 "PWR_FLAG-power" H 4200 3374 50  0000 C CNN
+F 2 "" H 4200 3200 50  0001 C CNN
+F 3 "" H 4200 3200 50  0001 C CNN
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3400 4200 3300
+Wire Wire Line
+	4200 3300 4500 3300
+Connection ~ 4200 3300
+Wire Wire Line
+	4200 3300 4200 3200
+$Comp
+L Device:C C23
+U 1 1 5C68920E
+P 4650 3300
+F 0 "C23" V 4398 3300 50  0000 C CNN
+F 1 "470pF" V 4489 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 4688 3150 50  0001 C CNN
+F 3 "~" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3400 4200 3650
+Wire Wire Line
+	4200 3650 4400 3650
+Connection ~ 4200 3400
+$Comp
+L utsvt-power-regulators:RI3-1205S U6
+U 1 1 5C689575
+P 4850 3550
+F 0 "U6" H 4850 3715 50  0000 C CNN
+F 1 "RI3-1205S" H 4850 3624 50  0000 C CNN
+F 2 "UTSVT_ICs:RI3_DC_Converter" H 4850 3550 50  0001 C CNN
+F 3 "" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3750 4400 3850
+Wire Wire Line
+	2600 3750 4400 3750
+Wire Wire Line
+	5300 3650 5450 3650
+Wire Wire Line
+	5450 3650 5450 3600
+Wire Wire Line
+	5450 3300 4800 3300
+Connection ~ 5450 3600
+Wire Wire Line
+	5450 3600 5450 3300
+$Comp
+L power:+5V #PWR0106
+U 1 1 5C689EB6
+P 5650 3500
+F 0 "#PWR0106" H 5650 3350 50  0001 C CNN
+F 1 "+5V" H 5665 3673 50  0000 C CNN
+F 2 "" H 5650 3500 50  0001 C CNN
+F 3 "" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5C689F40
+P 5650 3950
+F 0 "#PWR0107" H 5650 3700 50  0001 C CNN
+F 1 "GND" H 5655 3777 50  0000 C CNN
+F 2 "" H 5650 3950 50  0001 C CNN
+F 3 "" H 5650 3950 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5C689F9A
+P 5850 3500
+F 0 "TP10" H 5908 3620 50  0000 L CNN
+F 1 "+5V_TP" H 5908 3529 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 6050 3500 50  0001 C CNN
+F 3 "~" H 6050 3500 50  0001 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5C68A099
+P 5850 3950
+F 0 "TP11" H 5792 3977 50  0000 R CNN
+F 1 "GND_TP" H 5792 4068 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 6050 3950 50  0001 C CNN
+F 3 "~" H 6050 3950 50  0001 C CNN
+	1    5850 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 3600 5650 3500
+Wire Wire Line
+	5450 3600 5650 3600
+Wire Wire Line
+	5850 3500 5850 3600
+Wire Wire Line
+	5850 3600 5650 3600
+Connection ~ 5650 3600
+Wire Wire Line
+	5850 3600 5950 3600
+Connection ~ 5850 3600
+Wire Wire Line
+	5300 3850 5650 3850
+Wire Wire Line
+	5650 3850 5650 3950
+Wire Wire Line
+	5650 3850 5850 3850
+Wire Wire Line
+	5850 3850 5850 3950
+Connection ~ 5650 3850
+Wire Wire Line
+	5850 3850 5950 3850
+Connection ~ 5850 3850
+Text HLabel 5950 3600 2    50   Input ~ 0
++5V
+Text HLabel 5950 3850 2    50   Input ~ 0
+GND
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U5
+U 1 1 5C68BC6F
+P 4300 4500
+F 0 "U5" H 4300 4742 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 4300 4651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 4700 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4400 4250 50  0001 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5C68BCE4
+P 3800 4450
+F 0 "#PWR0108" H 3800 4300 50  0001 C CNN
+F 1 "+5V" H 3815 4623 50  0000 C CNN
+F 2 "" H 3800 4450 50  0001 C CNN
+F 3 "" H 3800 4450 50  0001 C CNN
+	1    3800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5C68BD6F
+P 3800 4700
+F 0 "C22" H 3892 4746 50  0000 L CNN
+F 1 "0.1uF" H 3892 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3800 4700 50  0001 C CNN
+F 3 "~" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5C68BDEE
+P 4700 4750
+F 0 "C24" H 4792 4796 50  0000 L CNN
+F 1 "10uF" H 4792 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4700 4750 50  0001 C CNN
+F 3 "~" H 4700 4750 50  0001 C CNN
+	1    4700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5C68BE55
+P 4300 5000
+F 0 "#PWR0109" H 4300 4750 50  0001 C CNN
+F 1 "GND" H 4305 4827 50  0000 C CNN
+F 2 "" H 4300 5000 50  0001 C CNN
+F 3 "" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4450 3800 4500
+Wire Wire Line
+	3800 4500 4000 4500
+Connection ~ 3800 4500
+Wire Wire Line
+	3800 4500 3800 4600
+Wire Wire Line
+	3800 4800 3800 5000
+Wire Wire Line
+	3800 5000 4300 5000
+Wire Wire Line
+	4300 5000 4700 5000
+Wire Wire Line
+	4700 5000 4700 4850
+Connection ~ 4300 5000
+Wire Wire Line
+	4300 4800 4300 5000
+Wire Wire Line
+	4600 4500 4700 4500
+Wire Wire Line
+	4700 4500 4700 4650
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5C68E83E
+P 4700 4400
+F 0 "#PWR0110" H 4700 4250 50  0001 C CNN
+F 1 "+3.3V" H 4715 4573 50  0000 C CNN
+F 2 "" H 4700 4400 50  0001 C CNN
+F 3 "" H 4700 4400 50  0001 C CNN
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 4500
+Wire Wire Line
+	4700 4500 4900 4500
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5C68FB44
+P 4900 4450
+F 0 "TP9" H 4958 4570 50  0000 L CNN
+F 1 "+3.3V_TP" H 4958 4479 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 5100 4450 50  0001 C CNN
+F 3 "~" H 5100 4450 50  0001 C CNN
+	1    4900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4400 4700 4500
+Wire Wire Line
+	4900 4450 4900 4500
+Connection ~ 4900 4500
+Wire Wire Line
+	4900 4500 5050 4500
+Text HLabel 5050 4500 2    50   Input ~ 0
++3.3V
+$Comp
+L Connector:Barrel_Jack J3
+U 1 1 5C6ABCDC
+P 2050 3550
+F 0 "J3" H 2105 3875 50  0000 C CNN
+F 1 "Barrel_Jack" H 2105 3784 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2100 3510 50  0001 C CNN
+F 3 "~" H 2100 3510 50  0001 C CNN
+	1    2050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR021
+U 1 1 5C6ABEA5
+P 7450 3200
+F 0 "#PWR021" H 7450 3050 50  0001 C CNN
+F 1 "+5V" H 7465 3373 50  0000 C CNN
+F 2 "" H 7450 3200 50  0001 C CNN
+F 3 "" H 7450 3200 50  0001 C CNN
+	1    7450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3200 7450 3300
+$Comp
+L Device:R R4
+U 1 1 5C6AC969
+P 7450 3450
+F 0 "R4" H 7520 3496 50  0000 L CNN
+F 1 "1.5k" H 7520 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7380 3450 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3600 7450 3750
+$Comp
+L Device:LED D1
+U 1 1 5C6AD4E2
+P 7450 3900
+F 0 "D1" V 7488 3783 50  0000 R CNN
+F 1 "LED" V 7397 3783 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7450 3900 50  0001 C CNN
+F 3 "~" H 7450 3900 50  0001 C CNN
+	1    7450 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 4050 7450 4100
+$Comp
+L power:GND #PWR022
+U 1 1 5C6AE0CE
+P 7450 4100
+F 0 "#PWR022" H 7450 3850 50  0001 C CNN
+F 1 "GND" H 7455 3927 50  0000 C CNN
+F 2 "" H 7450 4100 50  0001 C CNN
+F 3 "" H 7450 4100 50  0001 C CNN
+	1    7450 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

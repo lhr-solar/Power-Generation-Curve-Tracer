@@ -1,28 +1,34 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:TestPoint
+# Connector_Barrel_Jack
 #
-DEF Connector:TestPoint TP 0 30 N N 1 F N
-F0 "TP" 0 270 50 H V C CNN
-F1 "Connector:TestPoint" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
+DEF Connector_Barrel_Jack J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector_Barrel_Jack" 0 -200 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+ALIAS Jack-DC
 $FPLIST
- Pin*
- Test*
+ BarrelJack*
 $ENDFPLIST
 DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 200 100 150 100 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x03
+# Connector_Generic_Conn_01x03
 #
-DEF Connector_Generic:Conn_01x03 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x03" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -39,11 +45,28 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:+3.3V-BPSMaster-cache
+# Connector_TestPoint
 #
-DEF Debugger-rescue:+3.3V-BPSMaster-cache #PWR 0 0 Y Y 1 F P
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Debugger-rescue_+3.3V-BPSMaster-cache
+#
+DEF Debugger-rescue_+3.3V-BPSMaster-cache #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Debugger-rescue:+3.3V-BPSMaster-cache" 0 140 50 H V C CNN
+F1 "Debugger-rescue_+3.3V-BPSMaster-cache" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -54,11 +77,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:ADM3055E-utsvt-chips
+# Debugger-rescue_ADM3055E-utsvt-chips
 #
-DEF Debugger-rescue:ADM3055E-utsvt-chips U 0 40 Y Y 1 F N
+DEF Debugger-rescue_ADM3055E-utsvt-chips U 0 40 Y Y 1 F N
 F0 "U" 0 650 60 H V C CNN
-F1 "Debugger-rescue:ADM3055E-utsvt-chips" 200 -100 60 H V C CNN
+F1 "Debugger-rescue_ADM3055E-utsvt-chips" 200 -100 60 H V C CNN
 F2 "" 0 100 60 H I C CNN
 F3 "" 0 100 60 H I C CNN
 DRAW
@@ -87,11 +110,11 @@ X AUX_In 9 -700 -300 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:CANConnector-utsvt-connectors
+# Debugger-rescue_CANConnector-utsvt-connectors
 #
-DEF Debugger-rescue:CANConnector-utsvt-connectors J 0 40 Y Y 1 F N
+DEF Debugger-rescue_CANConnector-utsvt-connectors J 0 40 Y Y 1 F N
 F0 "J" 0 -250 60 H V C CNN
-F1 "Debugger-rescue:CANConnector-utsvt-connectors" 0 250 60 H V C CNN
+F1 "Debugger-rescue_CANConnector-utsvt-connectors" 0 250 60 H V C CNN
 F2 "" 150 300 60 H I C CNN
 F3 "" 150 300 60 H I C CNN
 DRAW
@@ -103,11 +126,11 @@ X CAN_L 4 350 -150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:CDSOT23-T24CAN-utsvt-chips
+# Debugger-rescue_CDSOT23-T24CAN-utsvt-chips
 #
-DEF Debugger-rescue:CDSOT23-T24CAN-utsvt-chips U 0 20 Y Y 1 F N
+DEF Debugger-rescue_CDSOT23-T24CAN-utsvt-chips U 0 20 Y Y 1 F N
 F0 "U" 0 -150 60 H V C CNN
-F1 "Debugger-rescue:CDSOT23-T24CAN-utsvt-chips" 0 150 60 H V C CNN
+F1 "Debugger-rescue_CDSOT23-T24CAN-utsvt-chips" 0 150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -118,11 +141,11 @@ X GND 3 350 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:NCP1117-3.3_SOT223-BPSMaster-cache
+# Debugger-rescue_NCP1117-3.3_SOT223-BPSMaster-cache
 #
-DEF Debugger-rescue:NCP1117-3.3_SOT223-BPSMaster-cache U 0 10 Y Y 1 F N
+DEF Debugger-rescue_NCP1117-3.3_SOT223-BPSMaster-cache U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "Debugger-rescue:NCP1117-3.3_SOT223-BPSMaster-cache" 0 125 50 H V L CNN
+F1 "Debugger-rescue_NCP1117-3.3_SOT223-BPSMaster-cache" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 200 50 H I C CNN
 F3 "" 100 -250 50 H I C CNN
 $FPLIST
@@ -136,11 +159,11 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:PWR_FLAG-power
+# Debugger-rescue_PWR_FLAG-power
 #
-DEF Debugger-rescue:PWR_FLAG-power #FLG 0 0 N N 1 F P
+DEF Debugger-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "Debugger-rescue:PWR_FLAG-power" 0 150 50 H V C CNN
+F1 "Debugger-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -149,11 +172,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:STM32F413RHTx-BPSMaster-cache
+# Debugger-rescue_STM32F413RHTx-BPSMaster-cache
 #
-DEF Debugger-rescue:STM32F413RHTx-BPSMaster-cache U 0 20 Y Y 1 F N
+DEF Debugger-rescue_STM32F413RHTx-BPSMaster-cache U 0 20 Y Y 1 F N
 F0 "U" -600 1650 50 H V L CNN
-F1 "Debugger-rescue:STM32F413RHTx-BPSMaster-cache" 400 1650 50 H V L CNN
+F1 "Debugger-rescue_STM32F413RHTx-BPSMaster-cache" 400 1650 50 H V L CNN
 F2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" -600 -1700 50 H I R CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -228,11 +251,11 @@ X PC1 9 -700 -200 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Debugger-rescue:Switch_SW_Push-BPSMaster-cache
+# Debugger-rescue_Switch_SW_Push-BPSMaster-cache
 #
-DEF Debugger-rescue:Switch_SW_Push-BPSMaster-cache SW 0 40 N N 1 F N
+DEF Debugger-rescue_Switch_SW_Push-BPSMaster-cache SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Debugger-rescue:Switch_SW_Push-BPSMaster-cache" 0 -60 50 H V C CNN
+F1 "Debugger-rescue_Switch_SW_Push-BPSMaster-cache" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -245,11 +268,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -263,11 +286,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C_Small
+# Device_C_Small
 #
-DEF Device:C_Small C 0 10 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:C_Small" 10 -80 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -281,11 +304,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Crystal
+# Device_Crystal
 #
-DEF Device:Crystal Y 0 40 N N 1 F N
+DEF Device_Crystal Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "Device:Crystal" 0 -150 50 H V C CNN
+F1 "Device_Crystal" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -302,11 +325,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Ferrite_Bead_Small
+# Device_Ferrite_Bead_Small
 #
-DEF Device:Ferrite_Bead_Small L 0 0 N Y 1 F N
-F0 "L" 75 50 50 H V L CNN
-F1 "Device:Ferrite_Bead_Small" 75 -50 50 H V L CNN
+DEF Device_Ferrite_Bead_Small FB 0 0 N Y 1 F N
+F0 "FB" 75 50 50 H V L CNN
+F1 "Device_Ferrite_Bead_Small" 75 -50 50 H V L CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -323,11 +346,11 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Jumper_NC_Small
+# Device_Jumper_NC_Small
 #
-DEF Device:Jumper_NC_Small JP 0 30 N N 1 F N
+DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Device:Jumper_NC_Small" 10 -60 50 H V C CNN
+F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -339,11 +362,34 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_LED
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -356,11 +402,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mechanical:MountingHole
+# Mechanical_MountingHole
 #
-DEF Mechanical:MountingHole MH 0 40 Y Y 1 F N
-F0 "MH" 0 200 50 H V C CNN
-F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -371,11 +417,30 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# power:+12V
+# Regulator_Linear_LD1117S33TR_SOT223
 #
-DEF power:+12V #PWR 0 0 Y Y 1 F P
+DEF Regulator_Linear_LD1117S33TR_SOT223 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Linear_LD1117S33TR_SOT223" 0 125 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 200 50 H I C CNN
+F3 "" 100 -250 50 H I C CNN
+ALIAS AP1117-18 AP1117-25 AP1117-33 AP1117-50 LD1117S33TR_SOT223 LD1117S12TR_SOT223 LD1117S18TR_SOT223 LD1117S25TR_SOT223 LD1117S50TR_SOT223 NCP1117-12_SOT223 NCP1117-1.5_SOT223 NCP1117-1.8_SOT223 NCP1117-2.0_SOT223 NCP1117-2.5_SOT223 NCP1117-2.85_SOT223 NCP1117-3.3_SOT223 NCP1117-5.0_SOT223 AMS1117-1.5 AMS1117-1.8 AMS1117-2.5 AMS1117-2.85 AMS1117-3.3 AMS1117-5.0
+$FPLIST
+ SOT?223*TabPin2*
+$ENDFPLIST
+DRAW
+S -200 -200 200 75 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+12V" 0 140 50 H V C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -386,11 +451,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# power_+3.3V
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -402,11 +467,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -417,11 +482,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -430,16 +495,71 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:PWR_FLAG
+# power_GNDPWR
 #
-DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
+DEF power_GNDPWR #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -200 50 H I C CNN
+F1 "power_GNDPWR" 0 -130 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+P 2 0 1 0 0 -50 0 0 N
+P 3 0 1 8 -40 -50 -50 -80 -50 -80 N
+P 3 0 1 8 -20 -50 -30 -80 -30 -80 N
+P 3 0 1 8 0 -50 -10 -80 -10 -80 N
+P 3 0 1 8 20 -50 10 -80 10 -80 N
+P 3 0 1 8 40 -50 -40 -50 -40 -50 N
+P 4 0 1 8 40 -50 30 -80 30 -80 30 -80 N
+X GNDPWR 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "power:PWR_FLAG" 0 150 50 H V C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
 X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# utsvt-bps_SRF0905-100Y
+#
+DEF utsvt-bps_SRF0905-100Y L 0 30 Y Y 1 F N
+F0 "L" 650 300 50 H V L CNN
+F1 "utsvt-bps_SRF0905-100Y" 650 200 50 H V L CNN
+F2 "SRF0905A" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SRF0905-100Y.pdf" 650 0 50 H I L CNN
+F4 "Bourns SRF0905 Series Type 0905 Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-30% Dual 1.6A Idc" 650 -100 50 H I L CNN "Description"
+F5 "652-SRF0905-100Y" 650 -300 50 H I L CNN "Mouser Part Number"
+F6 "Bourns" 650 -400 50 H I L CNN "Manufacturer_Name"
+F7 "SRF0905-100Y" 650 -500 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 f
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2 2 0 -100 200 R 50 50 0 0 B
+X 3 3 800 0 200 L 50 50 0 0 B
+X 4 4 800 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# utsvt-power-regulators_RI3-1205S
+#
+DEF utsvt-power-regulators_RI3-1205S U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "utsvt-power-regulators_RI3-1205S" 0 50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 0 300 -400 0 1 0 f
+X -Vin 1 -450 -300 150 R 50 50 1 1 I
+X +Vin 2 -450 -100 150 R 50 50 1 1 W
+X -Vout 3 450 -300 150 L 50 50 1 1 w
+X +Vout 4 450 -100 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
