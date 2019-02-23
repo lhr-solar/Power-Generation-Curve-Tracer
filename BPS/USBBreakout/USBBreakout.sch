@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USBBreakout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:CP2102N-A01-GQFN24 U17
+L Interface_USB:CP2102N-A01-GQFN24 U2
 U 1 1 5C4963B2
 P 5500 3800
-F 0 "U17" H 5500 5200 50  0000 C CNN
+F 0 "U2" H 5500 5200 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 5500 5100 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5950 3000 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 5550 2750 50  0001 C CNN
@@ -25,10 +26,10 @@ F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.p
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J21
+L Connector:USB_B_Micro J1
 U 1 1 5C4964BB
 P 3000 4300
-F 0 "J21" H 3000 4750 50  0000 C CNN
+F 0 "J1" H 3000 4750 50  0000 C CNN
 F 1 "USB_B_Micro" H 3000 4650 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3150 4250 50  0001 C CNN
 F 3 "~" H 3150 4250 50  0001 C CNN
@@ -89,10 +90,10 @@ Connection ~ 5500 4750
 Wire Wire Line
 	5500 4750 5500 4800
 $Comp
-L Power_Protection:SP0503BAHT D14
+L Power_Protection:SP0503BAHT D2
 U 1 1 5C496C9B
 P 3950 4800
-F 0 "D14" H 4155 4846 50  0000 L CNN
+F 0 "D2" H 4155 4846 50  0000 L CNN
 F 1 "SP0503BAHT" H 4000 4650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 4175 4750 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 4075 4925 50  0001 C CNN
@@ -118,10 +119,10 @@ Wire Wire Line
 	3950 4600 3950 4200
 Connection ~ 3950 4200
 $Comp
-L Device:R R56
+L Device:R R2
 U 1 1 5C497DB9
 P 4700 4500
-F 0 "R56" H 4770 4546 50  0000 L CNN
+F 0 "R2" H 4770 4546 50  0000 L CNN
 F 1 "47.5k" H 4770 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 4500 50  0001 C CNN
 F 3 "~" H 4700 4500 50  0001 C CNN
@@ -129,10 +130,10 @@ F 3 "~" H 4700 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R55
+L Device:R R1
 U 1 1 5C497DDB
 P 4350 4100
-F 0 "R55" V 4143 4100 50  0000 C CNN
+F 0 "R1" V 4143 4100 50  0000 C CNN
 F 1 "22.1k" V 4234 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4280 4100 50  0001 C CNN
 F 3 "~" H 4350 4100 50  0001 C CNN
@@ -180,10 +181,10 @@ Wire Wire Line
 	5400 2800 5500 2800
 Connection ~ 5400 2800
 $Comp
-L Device:R R59
+L Device:R R3
 U 1 1 5C49B01B
 P 4800 3000
-F 0 "R59" H 4870 3046 50  0000 L CNN
+F 0 "R3" H 4870 3046 50  0000 L CNN
 F 1 "1k" H 4870 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 3000 50  0001 C CNN
 F 3 "~" H 4800 3000 50  0001 C CNN
@@ -203,10 +204,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 2800 5400 2800
 $Comp
-L Device:C C51
+L Device:C C1
 U 1 1 5C49CC52
 P 5900 2800
-F 0 "C51" H 6015 2846 50  0000 L CNN
+F 0 "C1" H 6015 2846 50  0000 L CNN
 F 1 "4.7uF" H 6015 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 2650 50  0001 C CNN
 F 3 "~" H 5900 2800 50  0001 C CNN
@@ -247,10 +248,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 3800 4900 3800
 $Comp
-L Device:C C52
+L Device:C C2
 U 1 1 5C4A4791
 P 6400 2800
-F 0 "C52" H 6515 2846 50  0000 L CNN
+F 0 "C2" H 6515 2846 50  0000 L CNN
 F 1 "0.1uF" H 6515 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6438 2650 50  0001 C CNN
 F 3 "~" H 6400 2800 50  0001 C CNN
@@ -292,10 +293,10 @@ Connection ~ 5900 2600
 Wire Wire Line
 	5900 2600 5600 2600
 $Comp
-L Connector_Generic:Conn_01x04 J20
+L Connector_Generic:Conn_01x04 J2
 U 1 1 5C4A7247
 P 3050 3550
-F 0 "J20" H 2970 3125 50  0000 C CNN
+F 0 "J2" H 2970 3125 50  0000 C CNN
 F 1 "USBConnector" H 2970 3216 50  0000 C CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 3050 3550 50  0001 C CNN
 F 3 "~" H 3050 3550 50  0001 C CNN
@@ -354,10 +355,10 @@ Connection ~ 3700 4300
 Wire Wire Line
 	3700 4300 4050 4300
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
+L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5C687984
 P 7950 4450
-F 0 "J1" H 8000 4867 50  0000 C CNN
+F 0 "J3" H 8000 4867 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 8000 4776 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 7950 4450 50  0001 C CNN
 F 3 "~" H 7950 4450 50  0001 C CNN
@@ -451,10 +452,10 @@ Wire Wire Line
 Wire Wire Line
 	8600 5450 8300 5450
 $Comp
-L Device:C C2
+L Device:C C3
 U 1 1 5C692DC3
 P 7400 5600
-F 0 "C2" H 7515 5646 50  0000 L CNN
+F 0 "C3" H 7515 5646 50  0000 L CNN
 F 1 "0.1uF" H 7515 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7438 5450 50  0001 C CNN
 F 3 "~" H 7400 5600 50  0001 C CNN
@@ -463,10 +464,10 @@ F 3 "~" H 7400 5600 50  0001 C CNN
 $EndComp
 Connection ~ 7400 5450
 $Comp
-L Device:C C1
+L Device:C C4
 U 1 1 5C692E0B
 P 8600 5600
-F 0 "C1" H 8715 5646 50  0000 L CNN
+F 0 "C4" H 8715 5646 50  0000 L CNN
 F 1 "10uF" H 8715 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8638 5450 50  0001 C CNN
 F 3 "~" H 8600 5600 50  0001 C CNN
@@ -499,10 +500,10 @@ Wire Wire Line
 Wire Wire Line
 	8600 5900 8600 5750
 $Comp
-L Device:R R1
+L Device:R R4
 U 1 1 5C697957
 P 5700 6050
-F 0 "R1" H 5770 6096 50  0000 L CNN
+F 0 "R4" H 5770 6096 50  0000 L CNN
 F 1 "1.5k" H 5770 6005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5630 6050 50  0001 C CNN
 F 3 "~" H 5700 6050 50  0001 C CNN
