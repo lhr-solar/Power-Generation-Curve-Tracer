@@ -1,4 +1,4 @@
-update=2/2/2019 1:51:53 PM
+update=2/23/2019 2:19:50 PM
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=BPSTemperature5.net
+LastNetListRead=BPSTemperatureNew.net
 PadDrill=0.6
 PadDrillOvalY=0.6
 PadSizeH=1.5
