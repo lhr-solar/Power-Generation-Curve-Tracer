@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -104,7 +104,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3450 3250 3450
 $Comp
-L utsvt-bps:SRF0905-100Y L1
+L Debugger-rescue:SRF0905-100Y-utsvt-bps L1
 U 1 1 5C688056
 P 3250 3350
 F 0 "L1" H 3650 3615 50  0000 C CNN
@@ -130,24 +130,10 @@ Wire Wire Line
 Connection ~ 4050 3400
 Wire Wire Line
 	4050 3400 4050 3450
-$Comp
-L Debugger-rescue:PWR_FLAG-power #FLG0101
-U 1 1 5C688EED
-P 4200 3200
-F 0 "#FLG0101" H 4200 3275 50  0001 C CNN
-F 1 "PWR_FLAG-power" H 4200 3374 50  0000 C CNN
-F 2 "" H 4200 3200 50  0001 C CNN
-F 3 "" H 4200 3200 50  0001 C CNN
-	1    4200 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 3400 4200 3300
 Wire Wire Line
 	4200 3300 4500 3300
-Connection ~ 4200 3300
-Wire Wire Line
-	4200 3300 4200 3200
 $Comp
 L Device:C C23
 U 1 1 5C68920E
@@ -165,7 +151,7 @@ Wire Wire Line
 	4200 3650 4400 3650
 Connection ~ 4200 3400
 $Comp
-L utsvt-power-regulators:RI3-1205S U6
+L Debugger-rescue:RI3-1205S-utsvt-power-regulators U6
 U 1 1 5C689575
 P 4850 3550
 F 0 "U6" H 4850 3715 50  0000 C CNN
@@ -260,17 +246,6 @@ Text HLabel 5950 3600 2    50   Input ~ 0
 +5V
 Text HLabel 5950 3850 2    50   Input ~ 0
 GND
-$Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U5
-U 1 1 5C68BC6F
-P 4300 4500
-F 0 "U5" H 4300 4742 50  0000 C CNN
-F 1 "LD1117S33TR_SOT223" H 4300 4651 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 4700 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4400 4250 50  0001 C CNN
-	1    4300 4500
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0108
 U 1 1 5C68BCE4
@@ -430,6 +405,31 @@ F 1 "GND" H 7455 3927 50  0000 C CNN
 F 2 "" H 7450 4100 50  0001 C CNN
 F 3 "" H 7450 4100 50  0001 C CNN
 	1    7450 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 3300
+Wire Wire Line
+	4200 3300 4200 3200
+$Comp
+L Debugger-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5C688EED
+P 4200 3200
+F 0 "#FLG0101" H 4200 3275 50  0001 C CNN
+F 1 "PWR_FLAG-power" H 4200 3374 50  0000 C CNN
+F 2 "" H 4200 3200 50  0001 C CNN
+F 3 "" H 4200 3200 50  0001 C CNN
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:NCP1117-3.3_SOT223 U2
+U 1 1 5C7364B6
+P 4300 4500
+F 0 "U2" H 4300 4742 50  0000 C CNN
+F 1 "NCP1117-3.3_SOT223" H 4300 4651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 4700 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 4400 4250 50  0001 C CNN
+	1    4300 4500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

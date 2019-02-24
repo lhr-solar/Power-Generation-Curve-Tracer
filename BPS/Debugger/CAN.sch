@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -269,8 +269,6 @@ F 3 "~" H 6750 3750 50  0001 C CNN
 	1    6550 3750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7500 3750 7500 3650
 Wire Wire Line
 	7500 2800 7650 2800
 Wire Wire Line
@@ -537,19 +535,7 @@ Connection ~ 6550 3650
 Wire Wire Line
 	6550 3650 7350 3650
 Connection ~ 6550 3750
-Wire Wire Line
-	6550 3750 7500 3750
-Connection ~ 7500 3650
-Wire Wire Line
-	7500 3650 7850 3650
 Connection ~ 7350 3650
-Wire Wire Line
-	7350 3650 7500 3650
-Connection ~ 7500 3750
-Wire Wire Line
-	7500 3650 7500 2800
-Wire Wire Line
-	7500 3750 8050 3750
 Connection ~ 8500 3050
 Wire Wire Line
 	8500 3050 8550 3050
@@ -567,4 +553,13 @@ Connection ~ 7850 3650
 Wire Wire Line
 	8050 3750 8700 3750
 Connection ~ 8050 3750
+Wire Wire Line
+	6550 3750 7500 3750
+Wire Wire Line
+	7350 3650 7850 3650
+Wire Wire Line
+	7500 2800 7500 3750
+Connection ~ 7500 3750
+Wire Wire Line
+	7500 3750 8050 3750
 $EndSCHEMATC
