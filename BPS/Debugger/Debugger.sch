@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -450,14 +450,10 @@ F 3 "" H 7800 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 3050 7800 3100
-Text Label 6200 3900 2    50   ~ 0
+Text Label 6350 3900 2    50   ~ 0
 SWDIO
-Text Label 6200 4000 2    50   ~ 0
+Text Label 6350 4000 2    50   ~ 0
 SWCLK
-Wire Wire Line
-	5950 3900 6200 3900
-Wire Wire Line
-	6200 4000 5950 4000
 $Comp
 L Mechanical:MountingHole MH1
 U 1 1 5C61E35E
@@ -508,7 +504,7 @@ U 1 1 5C61E70F
 P 9900 2750
 F 0 "J1" H 9980 2792 50  0000 L CNN
 F 1 "Conn_01x03" H 9980 2701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9900 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2750 50  0001 C CNN
 F 3 "~" H 9900 2750 50  0001 C CNN
 	1    9900 2750
 	1    0    0    -1  
@@ -538,34 +534,6 @@ Wire Wire Line
 	9550 2850 9700 2850
 Wire Wire Line
 	4000 3800 4550 3800
-$Comp
-L power:GND #PWR016
-U 1 1 5C62A6C5
-P 3550 1750
-F 0 "#PWR016" H 3550 1500 50  0001 C CNN
-F 1 "GND" H 3555 1577 50  0000 C CNN
-F 2 "" H 3550 1750 50  0001 C CNN
-F 3 "" H 3550 1750 50  0001 C CNN
-	1    3550 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR015
-U 1 1 5C62A736
-P 3150 1200
-F 0 "#PWR015" H 3150 1050 50  0001 C CNN
-F 1 "+12V" H 3165 1373 50  0000 C CNN
-F 2 "" H 3150 1200 50  0001 C CNN
-F 3 "" H 3150 1200 50  0001 C CNN
-	1    3150 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1200 3150 1350
-Wire Wire Line
-	3150 1350 3250 1350
-Wire Wire Line
-	3550 1650 3550 1750
 Wire Wire Line
 	6150 1750 6150 1800
 Wire Wire Line
@@ -610,17 +578,6 @@ Wire Wire Line
 Connection ~ 6150 1800
 Wire Wire Line
 	6150 1800 6150 1900
-$Comp
-L Debugger-rescue:NCP1117-3.3_SOT223-BPSMaster-cache U2
-U 1 1 5C65BF96
-P 3550 1350
-F 0 "U2" H 3550 1592 50  0000 C CNN
-F 1 "NCP1117-3.3_SOT223" H 3550 1501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3550 1550 50  0001 C CNN
-F 3 "" H 3650 1100 50  0001 C CNN
-	1    3550 1350
-	1    0    0    -1  
-$EndComp
 Text Notes 1750 800  0    50   ~ 0
 Female Barrell Jack Connector for power input
 Text Label 6350 5100 2    50   ~ 0
@@ -695,19 +652,6 @@ Text Label 3200 2150 2    50   ~ 0
 CAN1_TX
 Text Label 3200 2300 2    50   ~ 0
 CAN1_RX
-$Comp
-L Debugger-rescue:+3.3V-BPSMaster-cache #PWR020
-U 1 1 5C68CA74
-P 4050 1350
-F 0 "#PWR020" H 4050 1200 50  0001 C CNN
-F 1 "+3.3V" H 4065 1523 50  0000 C CNN
-F 2 "" H 4050 1350 50  0001 C CNN
-F 3 "" H 4050 1350 50  0001 C CNN
-	1    4050 1350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 1350 4050 1350
 Wire Wire Line
 	4000 3700 4550 3700
 NoConn ~ 5950 2600
@@ -721,8 +665,6 @@ NoConn ~ 5950 3300
 NoConn ~ 5950 3400
 NoConn ~ 5950 3500
 NoConn ~ 5950 3600
-NoConn ~ 5950 3700
-NoConn ~ 5950 3800
 NoConn ~ 5950 4100
 NoConn ~ 5950 4300
 NoConn ~ 5950 4400
@@ -970,6 +912,80 @@ Text Label 8650 4750 3    50   ~ 0
 PC10
 Text Label 7400 4650 0    50   ~ 0
 PC[8...10]
+$Sheet
+S 1050 3900 1750 950 
+U 5C72CE9B
+F0 "USB" 50
+F1 "USB.sch" 50
+F2 "USB_TX" I R 2800 4350 50 
+F3 "USB_RX" I R 2800 4500 50 
+F4 "+5V" I R 2800 4050 50 
+F5 "GND" I R 2800 4650 50 
+F6 "+3.3V" I R 2800 4200 50 
+$EndSheet
+$Comp
+L power:+5V #PWR0112
+U 1 1 5C72CFD6
+P 2950 3950
+F 0 "#PWR0112" H 2950 3800 50  0001 C CNN
+F 1 "+5V" H 2965 4123 50  0000 C CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "" H 2950 3950 50  0001 C CNN
+	1    2950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4050 2950 4050
+Wire Wire Line
+	2950 4050 2950 3950
+$Comp
+L power:GND #PWR0113
+U 1 1 5C731088
+P 2950 4800
+F 0 "#PWR0113" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2955 4627 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4650 2950 4650
+Wire Wire Line
+	2950 4650 2950 4800
+Text Label 6350 3800 2    50   ~ 0
+USB_TX
+Text Label 6350 3700 2    50   ~ 0
+USB_RX
+Wire Wire Line
+	5950 4000 6350 4000
+Wire Wire Line
+	5950 3900 6350 3900
+Wire Wire Line
+	5950 3800 6350 3800
+Wire Wire Line
+	5950 3700 6350 3700
+Wire Wire Line
+	2800 4350 3150 4350
+Wire Wire Line
+	2800 4500 3150 4500
+Text Label 3150 4500 2    50   ~ 0
+USB_RX
+Text Label 3150 4350 2    50   ~ 0
+USB_TX
+Wire Wire Line
+	2800 4200 3100 4200
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 5C77A083
+P 3100 4200
+F 0 "#PWR0114" H 3100 4050 50  0001 C CNN
+F 1 "+3.3V" V 3115 4328 50  0000 L CNN
+F 2 "" H 3100 4200 50  0001 C CNN
+F 3 "" H 3100 4200 50  0001 C CNN
+	1    3100 4200
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	4050 4800 4050 5100
 Wire Bus Line
