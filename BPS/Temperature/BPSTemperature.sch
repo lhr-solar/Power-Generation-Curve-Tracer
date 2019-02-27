@@ -2148,4 +2148,86 @@ Text Label 9900 6000 2    50   ~ 0
 +5V
 Text Label 9900 6100 2    50   ~ 0
 GND
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J4
+U 1 1 5C742D55
+P 10050 1850
+F 0 "J4" H 10100 2267 50  0000 C CNN
+F 1 "Conn_02x06_Counter_Clockwise" H 10100 2176 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x6xP3.00mm_PolarizingPeg_Vertical" H 10050 1850 50  0001 C CNN
+F 3 "~" H 10050 1850 50  0001 C CNN
+	1    10050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1500 9450 1650
+Wire Wire Line
+	9450 1650 9850 1650
+Wire Wire Line
+	9850 1750 9700 1750
+Wire Wire Line
+	9850 1850 9700 1850
+Wire Wire Line
+	9850 1950 9700 1950
+Wire Wire Line
+	9850 2050 9700 2050
+Wire Wire Line
+	9850 2150 9700 2150
+Wire Wire Line
+	9700 2150 9700 2050
+Wire Wire Line
+	9700 2150 9700 2200
+Connection ~ 9700 2150
+$Comp
+L power:GND #PWR033
+U 1 1 5C742D66
+P 9700 2200
+F 0 "#PWR033" H 9700 1950 50  0001 C CNN
+F 1 "GND" H 9705 2027 50  0000 C CNN
+F 2 "" H 9700 2200 50  0001 C CNN
+F 3 "" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+Text Label 9700 1750 2    50   ~ 0
+SCK
+Text Label 9700 1850 2    50   ~ 0
+MOSI
+Text Label 9700 1950 2    50   ~ 0
+MISO
+Text Label 10450 1650 0    50   ~ 0
+CS1
+Text Label 10450 1750 0    50   ~ 0
+CS2
+Wire Wire Line
+	10350 1950 10450 1950
+Wire Wire Line
+	10350 1850 10450 1850
+Wire Wire Line
+	10350 1750 10450 1750
+Wire Wire Line
+	10350 1650 10450 1650
+Text Label 10450 1850 0    50   ~ 0
+CS3
+Text Label 10450 1950 0    50   ~ 0
+CS4
+Text Label 10450 2050 0    50   ~ 0
+CS5
+Text Label 10450 2150 0    50   ~ 0
+CS6
+Wire Wire Line
+	10350 2050 10450 2050
+Wire Wire Line
+	10350 2150 10450 2150
+$Comp
+L power:+5V #PWR032
+U 1 1 5C742D7B
+P 9450 1500
+F 0 "#PWR032" H 9450 1350 50  0001 C CNN
+F 1 "+5V" H 9465 1673 50  0000 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
+F 3 "" H 9450 1500 50  0001 C CNN
+	1    9450 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
