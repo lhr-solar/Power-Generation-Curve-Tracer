@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:\\Personal Files\\Documents\\SVT\\Electronics\\BPS\\Voltage\\BPSVoltage.sch")
-    (date "2/15/2019 4:08:26 PM")
+    (date "2/26/2019 6:17:21 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value LTC6811-1)
-      (footprint Package_SO:SSOP-48_7.5x15.9mm_P0.635mm)
+      (footprint UTSVT_ICs:SOIC-48)
       (libsource (lib BPSVoltage-rescue) (part LTC6811-1-utsvt-bps-BPSVoltage-rescue) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C356477))
@@ -558,7 +558,7 @@
       (tstamp 5C534348))
     (comp (ref J5)
       (value Conn_01x03)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_01x03) (description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
