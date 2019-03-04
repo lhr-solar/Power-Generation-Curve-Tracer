@@ -1232,9 +1232,9 @@ F 3 "" H 10750 5850 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 5350 10300 5350
+	10450 5350 10350 5350
 Wire Wire Line
-	10300 5550 10450 5550
+	10300 5550 10400 5550
 Wire Wire Line
 	10450 5750 10300 5750
 Wire Wire Line
@@ -2474,4 +2474,29 @@ Wire Notes Line
 	6800 7550 5850 7550
 Wire Notes Line
 	5850 7550 5850 6600
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5C7F2BB2
+P 10700 4950
+F 0 "J8" H 10780 4942 50  0000 L CNN
+F 1 "Conn_01x02" H 10780 4851 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 10700 4950 50  0001 C CNN
+F 3 "~" H 10700 4950 50  0001 C CNN
+	1    10700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5550 10400 5050
+Wire Wire Line
+	10400 5050 10500 5050
+Connection ~ 10400 5550
+Wire Wire Line
+	10400 5550 10450 5550
+Wire Wire Line
+	10350 5350 10350 4950
+Wire Wire Line
+	10350 4950 10500 4950
+Connection ~ 10350 5350
+Wire Wire Line
+	10350 5350 10300 5350
 $EndSCHEMATC
