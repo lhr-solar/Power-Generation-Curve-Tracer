@@ -436,7 +436,7 @@ U 1 1 5C7BA0C1
 P 1500 2450
 F 0 "J5" H 1605 3717 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 1605 3626 50  0000 C CNN
-F 2 "" H 1650 2450 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 1650 2450 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 2450 50  0001 C CNN
 	1    1500 2450
 	1    0    0    -1  
@@ -447,7 +447,7 @@ U 1 1 5C7BED7B
 P 2950 3150
 F 0 "SW2" H 2950 2825 50  0000 C CNN
 F 1 "SW_SPDT" H 2950 2916 50  0000 C CNN
-F 2 "" H 2950 3150 50  0001 C CNN
+F 2 "Common:TS01CQE" H 2950 3150 50  0001 C CNN
 F 3 "" H 2950 3150 50  0001 C CNN
 	1    2950 3150
 	-1   0    0    1   
