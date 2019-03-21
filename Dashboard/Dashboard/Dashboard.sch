@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -455,16 +455,6 @@ Wire Wire Line
 	1850 950  1850 900 
 Wire Wire Line
 	1650 1050 2050 1050
-$Sheet
-S 3550 6000 1000 600 
-U 5C38C674
-F0 "ArrayContactor1" 50
-F1 "Contactor.sch" 50
-F2 "CONTACTOR_CHECK" O R 4550 6350 50 
-F3 "CONTACTOR_EN" I R 4550 6250 50 
-F4 "GND" I R 4550 6450 50 
-F5 "+5V" I R 4550 6150 50 
-$EndSheet
 $Comp
 L power:+3.3V #PWR012
 U 1 1 5C2FEA6D
@@ -482,21 +472,6 @@ Wire Wire Line
 	3550 4850 3950 4850
 Text Notes 650  1700 0    50   ~ 0
 Isolated +5V and +3.3V.\nUse GND as common gnd for electronic components.\nConnect GNDPWR when using +12V.
-$Comp
-L power:GND #PWR06
-U 1 1 5C32C30F
-P 4750 6500
-F 0 "#PWR06" H 4750 6250 50  0001 C CNN
-F 1 "GND" H 4755 6327 50  0000 C CNN
-F 2 "" H 4750 6500 50  0001 C CNN
-F 3 "" H 4750 6500 50  0001 C CNN
-	1    4750 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 6500 4750 6450
-Wire Wire Line
-	4750 6450 4550 6450
 $Comp
 L Device:C C11
 U 1 1 5C32FFDF
@@ -668,14 +643,6 @@ Wire Wire Line
 	10550 5950 11050 5950
 Text Label 11050 5950 2    50   ~ 0
 CAN1_TX
-Wire Wire Line
-	4550 6250 5050 6250
-Wire Wire Line
-	5050 6350 4550 6350
-Text Label 5050 6250 2    50   ~ 0
-AC1_EN
-Text Label 5050 6350 2    50   ~ 0
-AC1_CHECK
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5C3F3A77
@@ -807,21 +774,6 @@ F 3 "" H 3750 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 6150 4750 6100
-Wire Wire Line
-	4550 6150 4750 6150
-$Comp
-L power:+5V #PWR05
-U 1 1 5C3D9395
-P 4750 6100
-F 0 "#PWR05" H 4750 5950 50  0001 C CNN
-F 1 "+5V" H 4765 6273 50  0000 C CNN
-F 2 "" H 4750 6100 50  0001 C CNN
-F 3 "" H 4750 6100 50  0001 C CNN
-	1    4750 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6100 1000 6100 1050
 Connection ~ 6100 1050
 Wire Wire Line
@@ -890,150 +842,6 @@ Wire Wire Line
 	1750 7450 1950 7450
 Wire Wire Line
 	1950 7450 1950 7500
-$Sheet
-S 3550 7000 1000 600 
-U 5C62C876
-F0 "MotorContactor1" 50
-F1 "Contactor.sch" 50
-F2 "CONTACTOR_CHECK" O R 4550 7350 50 
-F3 "CONTACTOR_EN" I R 4550 7250 50 
-F4 "GND" I R 4550 7450 50 
-F5 "+5V" I R 4550 7150 50 
-$EndSheet
-$Comp
-L power:GND #PWR08
-U 1 1 5C62C87C
-P 4750 7500
-F 0 "#PWR08" H 4750 7250 50  0001 C CNN
-F 1 "GND" H 4755 7327 50  0000 C CNN
-F 2 "" H 4750 7500 50  0001 C CNN
-F 3 "" H 4750 7500 50  0001 C CNN
-	1    4750 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 7500 4750 7450
-Wire Wire Line
-	4750 7450 4550 7450
-Wire Wire Line
-	4550 7250 5050 7250
-Wire Wire Line
-	5050 7350 4550 7350
-Text Label 5050 7250 2    50   ~ 0
-MC1_EN
-Text Label 5050 7350 2    50   ~ 0
-MC1_CHECK
-Wire Wire Line
-	4750 7150 4750 7100
-Wire Wire Line
-	4550 7150 4750 7150
-$Comp
-L power:+5V #PWR07
-U 1 1 5C62C88A
-P 4750 7100
-F 0 "#PWR07" H 4750 6950 50  0001 C CNN
-F 1 "+5V" H 4765 7273 50  0000 C CNN
-F 2 "" H 4750 7100 50  0001 C CNN
-F 3 "" H 4750 7100 50  0001 C CNN
-	1    4750 7100
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 5200 6000 1000 600 
-U 5C63C5B6
-F0 "ArrayContactor2" 50
-F1 "Contactor.sch" 50
-F2 "CONTACTOR_CHECK" O R 6200 6350 50 
-F3 "CONTACTOR_EN" I R 6200 6250 50 
-F4 "GND" I R 6200 6450 50 
-F5 "+5V" I R 6200 6150 50 
-$EndSheet
-$Comp
-L power:GND #PWR014
-U 1 1 5C63C5BC
-P 6400 6500
-F 0 "#PWR014" H 6400 6250 50  0001 C CNN
-F 1 "GND" H 6405 6327 50  0000 C CNN
-F 2 "" H 6400 6500 50  0001 C CNN
-F 3 "" H 6400 6500 50  0001 C CNN
-	1    6400 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 6500 6400 6450
-Wire Wire Line
-	6400 6450 6200 6450
-Wire Wire Line
-	6200 6250 6700 6250
-Wire Wire Line
-	6700 6350 6200 6350
-Text Label 6700 6250 2    50   ~ 0
-AC2_EN
-Text Label 6700 6350 2    50   ~ 0
-AC2_CHECK
-Wire Wire Line
-	6400 6150 6400 6100
-Wire Wire Line
-	6200 6150 6400 6150
-$Comp
-L power:+5V #PWR013
-U 1 1 5C63C5CA
-P 6400 6100
-F 0 "#PWR013" H 6400 5950 50  0001 C CNN
-F 1 "+5V" H 6415 6273 50  0000 C CNN
-F 2 "" H 6400 6100 50  0001 C CNN
-F 3 "" H 6400 6100 50  0001 C CNN
-	1    6400 6100
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 5200 7000 1000 600 
-U 5C641E3A
-F0 "MotorContactor2" 50
-F1 "Contactor.sch" 50
-F2 "CONTACTOR_CHECK" O R 6200 7350 50 
-F3 "CONTACTOR_EN" I R 6200 7250 50 
-F4 "GND" I R 6200 7450 50 
-F5 "+5V" I R 6200 7150 50 
-$EndSheet
-$Comp
-L power:GND #PWR016
-U 1 1 5C641E40
-P 6400 7500
-F 0 "#PWR016" H 6400 7250 50  0001 C CNN
-F 1 "GND" H 6405 7327 50  0000 C CNN
-F 2 "" H 6400 7500 50  0001 C CNN
-F 3 "" H 6400 7500 50  0001 C CNN
-	1    6400 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 7500 6400 7450
-Wire Wire Line
-	6400 7450 6200 7450
-Wire Wire Line
-	6200 7250 6700 7250
-Wire Wire Line
-	6700 7350 6200 7350
-Text Label 6700 7250 2    50   ~ 0
-MC2_EN
-Text Label 6700 7350 2    50   ~ 0
-MC2_CHECK
-Wire Wire Line
-	6400 7150 6400 7100
-Wire Wire Line
-	6200 7150 6400 7150
-$Comp
-L power:+5V #PWR015
-U 1 1 5C641E4E
-P 6400 7100
-F 0 "#PWR015" H 6400 6950 50  0001 C CNN
-F 1 "+5V" H 6415 7273 50  0000 C CNN
-F 2 "" H 6400 7100 50  0001 C CNN
-F 3 "" H 6400 7100 50  0001 C CNN
-	1    6400 7100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1750 5500 2250 5500
 Wire Wire Line
@@ -1457,17 +1265,6 @@ I2C3_SCL
 Text Label 2100 2650 2    50   ~ 0
 I2C3_SDA
 $Comp
-L Connector_Generic:Conn_01x03 J13
-U 1 1 5C885B78
-P 950 4350
-F 0 "J13" V 950 4050 50  0000 L CNN
-F 1 "Vs-SPI3" V 1050 4200 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 950 4350 50  0001 C CNN
-F 3 "~" H 950 4350 50  0001 C CNN
-	1    950  4350
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x05 J14
 U 1 1 5C894F9E
 P 1350 4400
@@ -1477,28 +1274,6 @@ F 2 "Connector_Molex_Microfit:Molex_Micro-Fit_3.0_43650-0515_1x05_P3.00mm_Vertic
 F 3 "~" H 1350 4400 50  0001 C CNN
 	1    1350 4400
 	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 5C8E2665
-P 850 4150
-F 0 "#PWR0108" H 850 4000 50  0001 C CNN
-F 1 "+3.3V" H 750 4300 50  0000 C CNN
-F 2 "" H 850 4150 50  0001 C CNN
-F 3 "" H 850 4150 50  0001 C CNN
-	1    850  4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0109
-U 1 1 5C8E26CA
-P 1050 4150
-F 0 "#PWR0109" H 1050 4000 50  0001 C CNN
-F 1 "+5V" H 1100 4300 50  0000 C CNN
-F 2 "" H 1050 4150 50  0001 C CNN
-F 3 "" H 1050 4150 50  0001 C CNN
-	1    1050 4150
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
@@ -1513,10 +1288,6 @@ F 3 "" H 1750 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 4600 1750 4600
-Wire Wire Line
-	950  4150 950  3900
-Wire Wire Line
-	1550 3900 1550 4200
 Wire Wire Line
 	1550 4300 2100 4300
 Wire Wire Line
@@ -1579,8 +1350,6 @@ F 3 "~" H 7550 1900 50  0001 C CNN
 	1    7550 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  3900 1550 3900
 $Comp
 L Connector_Generic:Conn_01x03 J15
 U 1 1 5C997CF9
@@ -1655,7 +1424,7 @@ SPI1_MOSI
 Text Label 2100 3600 2    50   ~ 0
 SPI1_MISO
 Wire Wire Line
-	950  3000 1550 3000
+	950  3000 1200 3000
 Wire Wire Line
 	10050 6350 9550 6350
 Wire Wire Line
@@ -1774,4 +1543,201 @@ Wire Notes Line
 	550  600  550  1750
 Text Notes 550  4850 0    50   ~ 0
 SPI for screen. SPI for led. I2C incase
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5C92BD79
+P 3900 6400
+F 0 "J5" H 3820 5975 50  0000 C CNN
+F 1 "Array Contactor 1" H 3820 6066 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 3900 6400 50  0001 C CNN
+F 3 "~" H 3900 6400 50  0001 C CNN
+	1    3900 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 5C92BE7D
+P 4350 6100
+F 0 "#PWR0117" H 4350 5950 50  0001 C CNN
+F 1 "+5V" H 4365 6273 50  0000 C CNN
+F 2 "" H 4350 6100 50  0001 C CNN
+F 3 "" H 4350 6100 50  0001 C CNN
+	1    4350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5C92BF01
+P 4350 6500
+F 0 "#PWR0121" H 4350 6250 50  0001 C CNN
+F 1 "GND" H 4355 6327 50  0000 C CNN
+F 2 "" H 4350 6500 50  0001 C CNN
+F 3 "" H 4350 6500 50  0001 C CNN
+	1    4350 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6500 4350 6500
+Wire Wire Line
+	4100 6200 4350 6200
+Wire Wire Line
+	4350 6200 4350 6100
+Wire Wire Line
+	4100 6300 4550 6300
+Wire Wire Line
+	4100 6400 4550 6400
+Text Label 4550 6300 2    50   ~ 0
+AC1_EN
+Text Label 4550 6400 2    50   ~ 0
+AC1_CHECK
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5C98E611
+P 5550 6400
+F 0 "J7" H 5470 5975 50  0000 C CNN
+F 1 "Array Contactor 2" H 5470 6066 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 5550 6400 50  0001 C CNN
+F 3 "~" H 5550 6400 50  0001 C CNN
+	1    5550 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5C98E618
+P 6000 6100
+F 0 "#PWR0122" H 6000 5950 50  0001 C CNN
+F 1 "+5V" H 6015 6273 50  0000 C CNN
+F 2 "" H 6000 6100 50  0001 C CNN
+F 3 "" H 6000 6100 50  0001 C CNN
+	1    6000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5C98E61E
+P 6000 6500
+F 0 "#PWR0123" H 6000 6250 50  0001 C CNN
+F 1 "GND" H 6005 6327 50  0000 C CNN
+F 2 "" H 6000 6500 50  0001 C CNN
+F 3 "" H 6000 6500 50  0001 C CNN
+	1    6000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6500 6000 6500
+Wire Wire Line
+	5750 6200 6000 6200
+Wire Wire Line
+	6000 6200 6000 6100
+Wire Wire Line
+	5750 6300 6200 6300
+Wire Wire Line
+	5750 6400 6200 6400
+Text Label 6200 6300 2    50   ~ 0
+AC2_EN
+Text Label 6200 6400 2    50   ~ 0
+AC2_CHECK
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5CA14BC4
+P 5550 7350
+F 0 "J8" H 5470 6925 50  0000 C CNN
+F 1 "Motor Contactor 2" H 5470 7016 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 5550 7350 50  0001 C CNN
+F 3 "~" H 5550 7350 50  0001 C CNN
+	1    5550 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0124
+U 1 1 5CA14BCB
+P 6000 7050
+F 0 "#PWR0124" H 6000 6900 50  0001 C CNN
+F 1 "+5V" H 6015 7223 50  0000 C CNN
+F 2 "" H 6000 7050 50  0001 C CNN
+F 3 "" H 6000 7050 50  0001 C CNN
+	1    6000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5CA14BD1
+P 6000 7450
+F 0 "#PWR0125" H 6000 7200 50  0001 C CNN
+F 1 "GND" H 6005 7277 50  0000 C CNN
+F 2 "" H 6000 7450 50  0001 C CNN
+F 3 "" H 6000 7450 50  0001 C CNN
+	1    6000 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7450 6000 7450
+Wire Wire Line
+	5750 7150 6000 7150
+Wire Wire Line
+	6000 7150 6000 7050
+Wire Wire Line
+	5750 7250 6200 7250
+Wire Wire Line
+	5750 7350 6200 7350
+Text Label 6200 7250 2    50   ~ 0
+MC2_EN
+Text Label 6200 7350 2    50   ~ 0
+MC2_CHECK
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5CA393D5
+P 3900 7350
+F 0 "J6" H 3820 6925 50  0000 C CNN
+F 1 "Motor Contactor 1" H 3820 7016 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 3900 7350 50  0001 C CNN
+F 3 "~" H 3900 7350 50  0001 C CNN
+	1    3900 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 5CA393DC
+P 4350 7050
+F 0 "#PWR0126" H 4350 6900 50  0001 C CNN
+F 1 "+5V" H 4365 7223 50  0000 C CNN
+F 2 "" H 4350 7050 50  0001 C CNN
+F 3 "" H 4350 7050 50  0001 C CNN
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5CA393E2
+P 4350 7450
+F 0 "#PWR0127" H 4350 7200 50  0001 C CNN
+F 1 "GND" H 4355 7277 50  0000 C CNN
+F 2 "" H 4350 7450 50  0001 C CNN
+F 3 "" H 4350 7450 50  0001 C CNN
+	1    4350 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 7450 4350 7450
+Wire Wire Line
+	4100 7150 4350 7150
+Wire Wire Line
+	4350 7150 4350 7050
+Wire Wire Line
+	4100 7250 4550 7250
+Wire Wire Line
+	4100 7350 4550 7350
+Text Label 4550 7250 2    50   ~ 0
+MC1_EN
+Text Label 4550 7350 2    50   ~ 0
+MC1_CHECK
+Wire Wire Line
+	1550 3900 1550 4200
+Wire Wire Line
+	1200 3000 1200 3900
+Wire Wire Line
+	1200 3900 1550 3900
+Connection ~ 1200 3000
+Wire Wire Line
+	1200 3000 1550 3000
 $EndSCHEMATC
