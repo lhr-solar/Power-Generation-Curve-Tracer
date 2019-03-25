@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -128,21 +128,21 @@ Wire Wire Line
 Wire Wire Line
 	8500 2650 9150 2650
 Text Label 5650 1850 0    50   ~ 0
-cruise
+cruiseA
 Text Label 5650 1950 0    50   ~ 0
-set-cancel
+set-cancelA
 Text Label 5650 2050 0    50   ~ 0
-increase
+increaseA
 Text Label 5650 2150 0    50   ~ 0
-decrease
+decreaseA
 Text Label 5650 2250 0    50   ~ 0
-brakes
+brakesA
 Text Label 5650 2350 0    50   ~ 0
-left
+leftA
 Text Label 5650 2450 0    50   ~ 0
-right
+rightA
 Text Label 5650 2550 0    50   ~ 0
-regen
+regenA
 Text Label 9150 1850 2    50   ~ 0
 cruise-in
 Text Label 9150 1950 2    50   ~ 0
@@ -196,21 +196,21 @@ Wire Wire Line
 Wire Wire Line
 	8500 5000 9150 5000
 Text Label 5650 4200 0    50   ~ 0
-bps
+bpsA
 Text Label 5650 4300 0    50   ~ 0
-motor
+motorA
 Text Label 5650 4400 0    50   ~ 0
-array
+arrayA
 Text Label 5650 4500 0    50   ~ 0
-reverse
+reverseA
 Text Label 5650 4600 0    50   ~ 0
-xtra-switch1
+hazardA
 Text Label 5650 4700 0    50   ~ 0
-xtra-switch2
+xtra-switch1A
 Text Label 5650 4800 0    50   ~ 0
-xtra-switch3
+xtra-switch2A
 Text Label 5650 4900 0    50   ~ 0
-xtra-switch4
+xtra-switch3A
 Text Label 9150 4300 2    50   ~ 0
 motor-in
 Text Label 9150 4400 2    50   ~ 0
