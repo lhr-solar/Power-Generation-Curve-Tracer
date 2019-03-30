@@ -431,7 +431,7 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 5200 5100 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle J5
+L Debugger-rescue:USB_C_Receptacle-Connector J5
 U 1 1 5C7BA0C1
 P 1500 2450
 F 0 "J5" H 1605 3717 50  0000 C CNN
@@ -467,7 +467,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 3150 3150 4300
 Wire Wire Line
-	1500 4050 1500 4950
+	1500 4050 1500 4200
 Wire Wire Line
 	1500 4950 2500 4950
 Wire Wire Line
@@ -497,7 +497,13 @@ NoConn ~ 2100 3350
 NoConn ~ 2100 3450
 NoConn ~ 2100 3650
 NoConn ~ 2100 3750
-NoConn ~ 1200 4050
 Text Notes 3100 3050 0    50   ~ 0
 TS01CQE
+Wire Wire Line
+	1200 4050 1200 4200
+Wire Wire Line
+	1200 4200 1500 4200
+Connection ~ 1500 4200
+Wire Wire Line
+	1500 4200 1500 4950
 $EndSCHEMATC
