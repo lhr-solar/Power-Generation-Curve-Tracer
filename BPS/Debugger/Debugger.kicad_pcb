@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 16)
+    (drawings 20)
     (tracks 442)
     (zones 0)
     (modules 76)
@@ -3718,6 +3718,10 @@
       (xy 0.880927 -0.94624) (xy 1.004364 -0.894964) (xy 1.016 -0.893923) (xy 0.948417 -0.959313)) (layer B.SilkS) (width 0.01))
   )
 
+  (gr_arc (start 49.4792 86.5886) (end 49.4792 83.4898) (angle -73.30075577) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 49.149 123.317) (end 46.482 123.317) (angle -85.60129465) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 123.19 122.809) (end 123.19 125.984) (angle -73.73979529) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 123.317 86.36) (end 126.238 86.36) (angle -77.47119229) (layer Edge.Cuts) (width 0.15))
   (gr_text "Dr. Gary Hallock" (at 83.439 124.6124) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
