@@ -1,0 +1,352 @@
+EESchema Schematic File Version 4
+LIBS:Fuse Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5CA8D936
+P 4300 3100
+F 0 "J4" H 4380 3092 50  0000 L CNN
+F 1 "Conn_01x06" H 4400 3000 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit_01x06_Horizontal" H 4300 3100 50  0001 C CNN
+F 3 "~" H 4300 3100 50  0001 C CNN
+	1    4300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J3
+U 1 1 5CA8D9AF
+P 4200 5050
+F 0 "J3" H 4280 5092 50  0000 L CNN
+F 1 "Conn_01x07" H 4280 5001 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit_01x07_Horizontal" H 4200 5050 50  0001 C CNN
+F 3 "~" H 4200 5050 50  0001 C CNN
+	1    4200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5CA8DA3B
+P 2550 3200
+F 0 "J2" H 2470 2675 50  0000 C CNN
+F 1 "Conn_01x06" H 2470 2766 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit_01x06_Horizontal" H 2550 3200 50  0001 C CNN
+F 3 "~" H 2550 3200 50  0001 C CNN
+	1    2550 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5CA8DA42
+P 2350 5050
+F 0 "J1" H 2270 4525 50  0000 C CNN
+F 1 "Conn_01x07" H 2270 4616 50  0000 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit_01x07_Horizontal" H 2350 5050 50  0001 C CNN
+F 3 "~" H 2350 5050 50  0001 C CNN
+	1    2350 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Fuse_Small F8
+U 1 1 5CA9005A
+P 3450 2550
+F 0 "F8" H 3450 2735 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 2644 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F10
+U 1 1 5CA900EA
+P 3450 3050
+F 0 "F10" H 3450 3235 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 3144 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 3050 50  0001 C CNN
+F 3 "~" H 3450 3050 50  0001 C CNN
+	1    3450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F13
+U 1 1 5CA900F7
+P 3450 3800
+F 0 "F13" H 3450 3985 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 3894 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 3800 50  0001 C CNN
+F 3 "~" H 3450 3800 50  0001 C CNN
+	1    3450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F11
+U 1 1 5CA90117
+P 3450 3300
+F 0 "F11" H 3450 3485 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 3394 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 3300 50  0001 C CNN
+F 3 "~" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F9
+U 1 1 5CA9013D
+P 3450 2800
+F 0 "F9" H 3450 2985 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 2894 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 2800 50  0001 C CNN
+F 3 "~" H 3450 2800 50  0001 C CNN
+	1    3450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F12
+U 1 1 5CA9015F
+P 3450 3550
+F 0 "F12" H 3450 3735 50  0000 C CNN
+F 1 "Fuse_Small" H 3450 3644 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3450 3550 50  0001 C CNN
+F 3 "~" H 3450 3550 50  0001 C CNN
+	1    3450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F1
+U 1 1 5CA9038E
+P 3250 4300
+F 0 "F1" H 3250 4485 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 4394 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 4300 50  0001 C CNN
+F 3 "~" H 3250 4300 50  0001 C CNN
+	1    3250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F3
+U 1 1 5CA90395
+P 3250 4800
+F 0 "F3" H 3250 4985 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 4894 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 4800 50  0001 C CNN
+F 3 "~" H 3250 4800 50  0001 C CNN
+	1    3250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F6
+U 1 1 5CA9039C
+P 3250 5550
+F 0 "F6" H 3250 5735 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 5644 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 5550 50  0001 C CNN
+F 3 "~" H 3250 5550 50  0001 C CNN
+	1    3250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F4
+U 1 1 5CA903A3
+P 3250 5050
+F 0 "F4" H 3250 5235 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 5144 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 5050 50  0001 C CNN
+F 3 "~" H 3250 5050 50  0001 C CNN
+	1    3250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F2
+U 1 1 5CA903AA
+P 3250 4550
+F 0 "F2" H 3250 4735 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 4644 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 4550 50  0001 C CNN
+F 3 "~" H 3250 4550 50  0001 C CNN
+	1    3250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse_Small F5
+U 1 1 5CA903B1
+P 3250 5300
+F 0 "F5" H 3250 5485 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 5394 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 5300 50  0001 C CNN
+F 3 "~" H 3250 5300 50  0001 C CNN
+	1    3250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2900 2900 2900
+Wire Wire Line
+	2900 2900 2900 2550
+Wire Wire Line
+	2900 2550 3350 2550
+Wire Wire Line
+	4100 2900 3950 2900
+Wire Wire Line
+	3950 2900 3950 2550
+Wire Wire Line
+	3950 2550 3550 2550
+Wire Wire Line
+	2750 3400 2900 3400
+Wire Wire Line
+	2900 3400 2900 3800
+Wire Wire Line
+	2900 3800 3350 3800
+Wire Wire Line
+	4100 3400 3950 3400
+Wire Wire Line
+	3950 3400 3950 3800
+Wire Wire Line
+	3950 3800 3550 3800
+Wire Wire Line
+	2750 3300 2950 3300
+Wire Wire Line
+	2950 3300 2950 3550
+Wire Wire Line
+	2950 3550 3350 3550
+Wire Wire Line
+	3900 3550 3900 3300
+Wire Wire Line
+	3900 3300 4100 3300
+Wire Wire Line
+	3550 3550 3900 3550
+Wire Wire Line
+	2750 3000 2950 3000
+Wire Wire Line
+	2950 3000 2950 2800
+Wire Wire Line
+	2950 2800 3350 2800
+Wire Wire Line
+	3550 2800 3900 2800
+Wire Wire Line
+	3900 2800 3900 3000
+Wire Wire Line
+	3900 3000 4100 3000
+Wire Wire Line
+	2750 3100 3000 3100
+Wire Wire Line
+	3000 3100 3000 3050
+Wire Wire Line
+	3000 3050 3350 3050
+Wire Wire Line
+	2750 3200 3000 3200
+Wire Wire Line
+	3000 3200 3000 3300
+Wire Wire Line
+	3000 3300 3350 3300
+Wire Wire Line
+	3550 3300 3850 3300
+Wire Wire Line
+	3850 3300 3850 3200
+Wire Wire Line
+	3850 3200 4100 3200
+Wire Wire Line
+	4100 3100 3850 3100
+Wire Wire Line
+	3850 3100 3850 3050
+Wire Wire Line
+	3850 3050 3550 3050
+$Comp
+L Device:Fuse_Small F7
+U 1 1 5CA95278
+P 3250 5800
+F 0 "F7" H 3250 5985 50  0000 C CNN
+F 1 "Fuse_Small" H 3250 5894 50  0000 C CNN
+F 2 "Fuse:Fuse_0201_0603Metric" H 3250 5800 50  0001 C CNN
+F 3 "~" H 3250 5800 50  0001 C CNN
+	1    3250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4750 2700 4750
+Wire Wire Line
+	2700 4750 2700 4300
+Wire Wire Line
+	2700 4300 3150 4300
+Wire Wire Line
+	3350 4300 3850 4300
+Wire Wire Line
+	3850 4300 3850 4750
+Wire Wire Line
+	3850 4750 4000 4750
+Wire Wire Line
+	2550 4850 2750 4850
+Wire Wire Line
+	2750 4850 2750 4550
+Wire Wire Line
+	2750 4550 3150 4550
+Wire Wire Line
+	2550 4950 2800 4950
+Wire Wire Line
+	2800 4950 2800 4800
+Wire Wire Line
+	2800 4800 3150 4800
+Wire Wire Line
+	2550 5050 3150 5050
+Wire Wire Line
+	2550 5350 2750 5350
+Wire Wire Line
+	2750 5350 2750 5800
+Wire Wire Line
+	2750 5800 3150 5800
+Wire Wire Line
+	2550 5250 2800 5250
+Wire Wire Line
+	2800 5250 2800 5550
+Wire Wire Line
+	2800 5550 3150 5550
+Wire Wire Line
+	2550 5150 2850 5150
+Wire Wire Line
+	2850 5150 2850 5300
+Wire Wire Line
+	2850 5300 3150 5300
+Wire Wire Line
+	4000 5350 3850 5350
+Wire Wire Line
+	3850 5350 3850 5800
+Wire Wire Line
+	3850 5800 3350 5800
+Wire Wire Line
+	4000 4850 3800 4850
+Wire Wire Line
+	3800 4850 3800 4550
+Wire Wire Line
+	3800 4550 3350 4550
+Wire Wire Line
+	4000 4950 3750 4950
+Wire Wire Line
+	3750 4950 3750 4800
+Wire Wire Line
+	3750 4800 3350 4800
+Wire Wire Line
+	4000 5050 3350 5050
+Wire Wire Line
+	4000 5250 3800 5250
+Wire Wire Line
+	3800 5250 3800 5550
+Wire Wire Line
+	3800 5550 3350 5550
+Wire Wire Line
+	4000 5150 3750 5150
+Wire Wire Line
+	3750 5150 3750 5300
+Wire Wire Line
+	3750 5300 3350 5300
+$EndSCHEMATC
