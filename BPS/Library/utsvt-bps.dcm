@@ -1,3 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP NUCLEO144-F412ZG
+D Nucleo 144 Development Board with STM32F413ZG MCU, 256kB RAM, 1Mb FLASH
+K STM32 Nucleo ST
+F http://www.st.com/content/ccc/resource/technical/document/data_brief/group0/7b/df/1d/e9/64/55/43/8d/DM00247910/files/DM00247910.pdf/jcr:content/translations/en.DM00247910.pdf
+$ENDCMP
+#
+$CMP NUCLEO144-F746ZG
+D Nucleo 144 Development Board with STM32F746ZG MCU, 256kB RAM, 1Mb FLASH
+K STM32 Nucleo ST
+F http://www.st.com/content/ccc/resource/technical/document/data_brief/group0/7b/df/1d/e9/64/55/43/8d/DM00247910/files/DM00247910.pdf/jcr:content/translations/en.DM00247910.pdf
+$ENDCMP
+#
 #End Doc Library
