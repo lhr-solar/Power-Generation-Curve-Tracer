@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L utsvt-connectors:CANConnector J3
+L BPSDisplay-rescue:CANConnector-utsvt-connectors J3
 U 1 1 5C2B42F3
 P 9250 3800
 F 0 "J3" H 9250 3550 60  0000 C CNN
 F 1 "CAN_Out" H 9250 4050 60  0000 C CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9400 4100 60  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal" H 9400 4100 60  0001 C CNN
 F 3 "" H 9400 4100 60  0001 C CNN
 	1    9250 3800
 	-1   0    0    -1  
@@ -169,7 +169,7 @@ F 3 "" H 6850 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L utsvt-chips:ADM3055E U3
+L BPSDisplay-rescue:ADM3055E-utsvt-chips U3
 U 1 1 5C2B4359
 P 4350 3600
 F 0 "U3" H 4100 4250 60  0000 C CNN
@@ -254,7 +254,7 @@ F 3 "" H 7300 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L utsvt-chips:CDSOT23-T24CAN U2
+L BPSDisplay-rescue:CDSOT23-T24CAN-utsvt-chips U2
 U 1 1 5C2B43A0
 P 8100 2850
 F 0 "U2" H 8100 2700 60  0000 C CNN

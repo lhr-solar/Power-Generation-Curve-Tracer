@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L utsvt-bps:LTC6820 U4
+L BPSDisplay-rescue:LTC6820-utsvt-bps U4
 U 1 1 5C4C8CC8
 P 4000 3300
 F 0 "U4" H 4000 3465 50  0000 C CNN
@@ -220,9 +220,11 @@ Wire Wire Line
 Text Notes 3800 2900 0    50   ~ 0
 If the wires lengths are short and you want to save more power, change IBIAS\nresistor to be 2.8k. Look in LTC6820 datasheet for more information on\ncalculating these BIAS resistors.
 $Comp
-L utsvt-bps:HX1188FNL U5
+L BPSDisplay-rescue:HX1188FNL-utsvt-bps U5
 U 1 1 5C4CE5A3
 P 8600 3300
+AR Path="/5C4CE5A3" Ref="U5"  Part="1" 
+AR Path="/5D7078DC/5C4CE5A3" Ref="U5"  Part="1" 
 F 0 "U5" H 8600 3465 50  0000 C CNN
 F 1 "HX1188FNL" H 8600 3374 50  0000 C CNN
 F 2 "UTSVT_BPS:HXXXX" H 8600 3300 50  0001 C CNN
