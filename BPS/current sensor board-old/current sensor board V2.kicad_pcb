@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 293)
     (zones 0)
     (modules 51)
@@ -1975,6 +1975,9 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
+  (gr_text "Add ground planes\nRemove the via's from under pads" (at 127.74 93.3) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text "UTSVT BPS\nCurrent Sensor Board\nVersion 2\nCorbin Capo\nFall 2018" (at 146.55 103.39) (layer F.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.15)) (justify left))
   )
