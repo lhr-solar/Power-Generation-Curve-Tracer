@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BPSDisplay-rescue)(type Legacy)(uri ${KIPRJMOD}/BPSDisplay-rescue.lib)(options "")(descr ""))
+)
