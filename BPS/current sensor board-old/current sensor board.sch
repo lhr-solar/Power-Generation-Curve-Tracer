@@ -15,133 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+15V #PWR0101
-U 1 1 5BB0596E
-P 1550 2450
-F 0 "#PWR0101" H 1550 2300 50  0001 C CNN
-F 1 "+15V" H 1565 2623 50  0000 C CNN
-F 2 "" H 1550 2450 50  0001 C CNN
-F 3 "" H 1550 2450 50  0001 C CNN
-	1    1550 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-15V #PWR0102
-U 1 1 5BB059BA
-P 1550 3350
-F 0 "#PWR0102" H 1550 3450 50  0001 C CNN
-F 1 "-15V" H 1565 3523 50  0000 C CNN
-F 2 "" H 1550 3350 50  0001 C CNN
-F 3 "" H 1550 3350 50  0001 C CNN
-	1    1550 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R2
-U 1 1 5BB05A6F
-P 1550 3100
-F 0 "R2" H 1618 3146 50  0000 L CNN
-F 1 "20kOhm" H 1618 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1590 3090 50  0001 C CNN
-F 3 "~" H 1550 3100 50  0001 C CNN
-	1    1550 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R1
-U 1 1 5BB05ACF
-P 1550 2700
-F 0 "R1" H 1618 2746 50  0000 L CNN
-F 1 "15kOhm" H 1618 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1590 2690 50  0001 C CNN
-F 3 "~" H 1550 2700 50  0001 C CNN
-	1    1550 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R3
-U 1 1 5BB05B0D
-P 2200 2650
-F 0 "R3" H 2268 2696 50  0000 L CNN
-F 1 "20kOhm" H 2268 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2240 2640 50  0001 C CNN
-F 3 "~" H 2200 2650 50  0001 C CNN
-	1    2200 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R4
-U 1 1 5BB05B69
-P 2200 3000
-F 0 "R4" H 2268 3046 50  0000 L CNN
-F 1 "4.99kOhm" H 2268 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2240 2990 50  0001 C CNN
-F 3 "~" H 2200 3000 50  0001 C CNN
-	1    2200 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R5
-U 1 1 5BB05BAF
-P 2750 2650
-F 0 "R5" H 2818 2696 50  0000 L CNN
-F 1 "10kOhm" H 2818 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2790 2640 50  0001 C CNN
-F 3 "~" H 2750 2650 50  0001 C CNN
-	1    2750 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5BB05BF5
-P 2750 3000
-F 0 "R6" H 2818 3046 50  0000 L CNN
-F 1 "10kOhm" H 2818 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2790 2990 50  0001 C CNN
-F 3 "~" H 2750 3000 50  0001 C CNN
-	1    2750 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5BB05CD9
-P 2750 3300
-F 0 "#PWR0103" H 2750 3050 50  0001 C CNN
-F 1 "GND" H 2755 3127 50  0000 C CNN
-F 2 "" H 2750 3300 50  0001 C CNN
-F 3 "" H 2750 3300 50  0001 C CNN
-	1    2750 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 2550 1550 2500
-Wire Wire Line
-	1550 3350 1550 3250
-Wire Wire Line
-	2200 2500 1550 2500
-Connection ~ 1550 2500
-Wire Wire Line
-	1550 2500 1550 2450
-Wire Wire Line
-	2200 2800 2200 2850
-Wire Wire Line
-	2750 2850 2750 2800
-Wire Wire Line
-	2200 3150 2750 3150
-Wire Wire Line
-	2750 3150 2750 3300
-Connection ~ 2750 3150
-Text Notes 800  750  0    59   ~ 12
-What are Offsets in the ExpressSCH?
-Text Label 2300 2850 0    50   ~ 0
-+15V_sense
-Wire Wire Line
-	1550 2850 1550 2900
-Text Label 2750 2500 0    50   ~ 0
-offset
-Text Label 1700 2900 0    50   ~ 0
--15V_sense
-$Comp
 L BPS:REF5040 U1
 U 1 1 5BB06E1D
 P 2300 4850
@@ -213,17 +86,6 @@ F 3 "~" H 1450 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C2
-U 1 1 5BB07868
-P 1350 4750
-F 0 "C2" H 1442 4796 50  0000 L CNN
-F 1 "1 uF" H 1442 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 4750 50  0001 C CNN
-F 3 "~" H 1350 4750 50  0001 C CNN
-	1    1350 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5BB07A62
 P 1350 4950
@@ -246,22 +108,9 @@ F 3 "" H 1250 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 4650 1350 4650
-Wire Wire Line
-	1350 4850 1350 4950
-Wire Wire Line
 	1350 4550 1250 4550
 Wire Wire Line
 	1550 4550 1650 4550
-Text Label 1150 4700 2    50   ~ 0
-offset
-Wire Wire Line
-	1350 4650 1150 4650
-Wire Wire Line
-	1150 4650 1150 4700
-Connection ~ 1350 4650
-Text Notes 800  900  0    59   ~ 12
-Check if REF5040 is correctly made
 $Comp
 L BPS:RecomRB-0515D U2
 U 1 1 5BB09257
@@ -488,8 +337,6 @@ Wire Wire Line
 	3600 6250 4000 6250
 Wire Wire Line
 	3600 6500 3950 6500
-Text Notes 800  1050 0    59   ~ 12
-Check what inductor value "FB" is
 $Comp
 L BPS:L08P50 U3
 U 1 1 5BB1978D
@@ -501,8 +348,6 @@ F 3 "" V 5150 1800 59  0001 C CNN
 	1    5250 2000
 	1    0    0    -1  
 $EndComp
-Text Notes 800  1300 0    59   ~ 12
-Look into how to deal with L08P50, L08P100, and the 12 pin!!! LT1014\n(look at ExpressSCH version to see what I mean)
 $Comp
 L BPS:L08P100 U4
 U 1 1 5BB1A857
@@ -606,10 +451,6 @@ Wire Wire Line
 Connection ~ 8050 6050
 Wire Wire Line
 	8050 6050 7750 6050
-Text Notes 800  1450 0    59   ~ 12
-What is the "J" component in ExpressSCH version (at bottom right corner)\n
-Text Notes 2500 2300 0    39   ~ 0
-This resistor does not connect to\nanything on this side (in ExpressSCH version)
 $Comp
 L power:-15V #PWR0116
 U 1 1 5BB16ED8
@@ -1162,34 +1003,10 @@ Wire Wire Line
 	9050 3600 9050 2500
 Connection ~ 6750 3600
 Connection ~ 9050 2500
-$Comp
-L Connector:Conn_01x08_Female J1
-U 1 1 5BC081E1
-P 10250 5800
-F 0 "J1" H 10277 5776 50  0000 L CNN
-F 1 "Conn_01x08_Female" H 10277 5685 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10250 5800 50  0001 C CNN
-F 3 "~" H 10250 5800 50  0001 C CNN
-	1    10250 5800
-	1    0    0    -1  
-$EndComp
-Text Label 2900 2800 0    50   ~ 0
-offset_sense
-Wire Wire Line
-	2900 2800 2750 2800
-Connection ~ 2750 2800
-Text Label 9900 5500 2    50   ~ 0
-+15V_sense
-Text Label 9900 5600 2    50   ~ 0
--15V_sense
-Text Label 9900 5700 2    50   ~ 0
-offset_sense
 Text Label 9900 5800 2    50   ~ 0
 LOW_OUT
 Text Label 9900 5900 2    50   ~ 0
 HIGH_OUT
-Wire Wire Line
-	9900 5700 10050 5700
 Wire Wire Line
 	9900 5800 10050 5800
 Wire Wire Line
@@ -1218,48 +1035,6 @@ F 3 "" H 9900 6100 50  0001 C CNN
 	1    9900 6100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9900 6100 10000 6100
-$Comp
-L power:GND #PWR0132
-U 1 1 5BC31A8B
-P 9800 6200
-F 0 "#PWR0132" H 9800 5950 50  0001 C CNN
-F 1 "GND" V 9805 6072 50  0000 R CNN
-F 2 "" H 9800 6200 50  0001 C CNN
-F 3 "" H 9800 6200 50  0001 C CNN
-	1    9800 6200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C17
-U 1 1 5BC31B4E
-P 9850 6350
-F 0 "C17" H 9942 6396 50  0000 L CNN
-F 1 "1 uF" H 9942 6305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9850 6350 50  0001 C CNN
-F 3 "~" H 9850 6350 50  0001 C CNN
-	1    9850 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 6100 10000 6450
-Wire Wire Line
-	10000 6450 9850 6450
-Connection ~ 10000 6100
-Wire Wire Line
-	10000 6100 10050 6100
-Wire Wire Line
-	9800 6200 9850 6200
-Wire Wire Line
-	9850 6200 9850 6250
-Wire Wire Line
-	10050 6200 9850 6200
-Connection ~ 9850 6200
-Text Label 6550 2900 2    50   ~ 0
-offset
-Wire Wire Line
-	6550 2900 6750 2900
 NoConn ~ 2900 4550
 NoConn ~ 2900 4750
 NoConn ~ 1650 4750
@@ -1280,15 +1055,42 @@ F 3 "" H 8350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 5500 10050 5500
+	6550 2900 6750 2900
+Text Label 6550 2900 2    50   ~ 0
+offset
 Wire Wire Line
-	9900 5600 10050 5600
+	1350 4850 1350 4950
 Wire Wire Line
-	1700 2900 1550 2900
-Connection ~ 1550 2900
+	1150 4650 1150 4700
+Text Label 1150 4700 2    50   ~ 0
+offset
 Wire Wire Line
-	1550 2900 1550 2950
+	1350 4650 1150 4650
 Wire Wire Line
-	2300 2850 2200 2850
-Connection ~ 2200 2850
+	1650 4650 1350 4650
+Connection ~ 1350 4650
+$Comp
+L Device:C_Small C2
+U 1 1 5BB07868
+P 1350 4750
+F 0 "C2" H 1442 4796 50  0000 L CNN
+F 1 "1 uF" H 1442 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 4750 50  0001 C CNN
+F 3 "~" H 1350 4750 50  0001 C CNN
+	1    1350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 6100 10050 6100
+$Comp
+L BPSMaster-cache:Connector_Generic:Conn_01x04 J1
+U 1 1 5D787103
+P 10250 5900
+F 0 "J1" H 10330 5892 50  0000 L CNN
+F 1 "Connector_Generic:Conn_01x04" H 10330 5801 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 10250 5900 50  0001 C CNN
+F 3 "" H 10250 5900 50  0001 C CNN
+	1    10250 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
