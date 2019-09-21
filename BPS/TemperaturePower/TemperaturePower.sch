@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:TemperaturePower-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -314,4 +315,26 @@ Wire Wire Line
 Wire Wire Line
 	2000 5100 2600 5100
 Connection ~ 2600 5100
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5D869188
+P 3650 3500
+F 0 "MH2" H 3750 3546 50  0000 L CNN
+F 1 "MountingHole" H 3750 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 3650 3500 50  0001 C CNN
+F 3 "~" H 3650 3500 50  0001 C CNN
+	1    3650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5D86921A
+P 2100 3500
+F 0 "MH1" H 2200 3546 50  0000 L CNN
+F 1 "MountingHole" H 2200 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 2100 3500 50  0001 C CNN
+F 3 "~" H 2100 3500 50  0001 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
