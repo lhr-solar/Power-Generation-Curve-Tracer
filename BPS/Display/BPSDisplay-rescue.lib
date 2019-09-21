@@ -65,6 +65,20 @@ X GND 3 350 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# CarPowerConnector-utsvt-connectors
+#
+DEF CarPowerConnector-utsvt-connectors J 0 40 Y Y 1 F N
+F0 "J" 0 -200 60 H V C CNN
+F1 "CarPowerConnector-utsvt-connectors" 0 200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 100 150 -150 -150 0 1 0 f
+X +12V 1 300 100 200 L 50 50 1 1 w
+X GND 2 300 -100 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 # HX1188FNL-utsvt-bps
 #
 DEF HX1188FNL-utsvt-bps U 0 40 Y Y 1 F N
@@ -130,6 +144,22 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# PDS1-Sx-Sx-utsvt-power-regulators
+#
+DEF PDS1-Sx-Sx-utsvt-power-regulators U 0 40 Y Y 1 F N
+F0 "U" 0 -200 60 H V C CNN
+F1 "PDS1-Sx-Sx-utsvt-power-regulators" 0 200 60 H V C CNN
+F2 "" 0 -50 60 H I C CNN
+F3 "" 0 -50 60 H I C CNN
+DRAW
+S -250 -150 250 150 0 1 0 N
+X GNDi 1 -450 -50 200 R 50 50 1 1 W
+X Vin 2 -450 50 200 R 50 50 1 1 W
+X GNDo 3 450 -50 200 L 50 50 1 1 w
+X Vo 4 450 50 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

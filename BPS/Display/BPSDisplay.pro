@@ -1,4 +1,4 @@
-update=9/7/2019 1:07:45 PM
+update=Sat 21 Sep 2019 11:16:26 AM CDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -16,6 +16,16 @@ version=1
 [eeschema]
 version=1
 LibDir=
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -33,6 +43,10 @@ MinMicroViaDiameter=0.5
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.2
+TrackWidth2=0.254
+TrackWidth3=0.3048
+TrackWidth4=0.381
+TrackWidth5=0.508
 ViaDiameter1=0.9
 ViaDrill1=0.6
 dPairWidth1=0.2
@@ -47,7 +61,7 @@ SilkTextUpright=1
 CopperLineWidth=0.09999999999999999
 CopperTextSizeV=1
 CopperTextSizeH=1
-CopperTextThickness=0.3
+CopperTextThickness=0.2492
 CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.09999999999999999
@@ -61,7 +75,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -217,11 +231,11 @@ Enabled=1
 [pcbnew/Layer.Edge.Cuts]
 Enabled=1
 [pcbnew/Layer.Margin]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.CrtYd]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.CrtYd]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.Fab]
 Enabled=0
 [pcbnew/Layer.F.Fab]
@@ -251,13 +265,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
