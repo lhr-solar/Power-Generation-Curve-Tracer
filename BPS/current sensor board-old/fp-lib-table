@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name SIP7-P-2.54)(type Legacy)(uri "C:/Users/corbi/Documents/UT Stuff/Solar Vehicle Team/BPS/SIP7-P-2.54.mod")(options "")(descr ""))
-  (lib (name BPS)(type KiCad)(uri ${KIPRJMOD}/BPS.pretty)(options "")(descr ""))
-)
