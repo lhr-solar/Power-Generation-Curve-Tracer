@@ -1,5 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LTC1380
+F https://www.analog.com/media/en/technical-documentation/data-sheets/138093f.pdf
+$ENDCMP
+#
+$CMP LTC6255
+F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6255-6256-6257.pdf
+$ENDCMP
+#
 $CMP NUCLEO144-F412ZG
 D Nucleo 144 Development Board with STM32F413ZG MCU, 256kB RAM, 1Mb FLASH
 K STM32 Nucleo ST
