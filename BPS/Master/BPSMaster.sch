@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -665,18 +665,6 @@ Entry Wire Line
 	4500 3900 4600 4000
 Text Label 4500 3800 0    50   ~ 0
 PC[0..5]
-Entry Wire Line
-	2700 5400 2600 5300
-Entry Wire Line
-	2700 5300 2600 5200
-Entry Wire Line
-	2700 5200 2600 5100
-Entry Wire Line
-	2700 5100 2600 5000
-Entry Wire Line
-	2700 5000 2600 4900
-Entry Wire Line
-	2700 4900 2600 4800
 Text Label 2500 7000 2    50   ~ 0
 PC[0..5]
 Wire Wire Line
@@ -769,30 +757,6 @@ $EndComp
 Wire Wire Line
 	4800 2800 4850 2800
 Connection ~ 4850 2800
-Wire Wire Line
-	6500 5300 7000 5300
-Wire Wire Line
-	6500 5400 7000 5400
-Wire Wire Line
-	6500 5500 7000 5500
-Text Label 7000 5300 2    50   ~ 0
-TEMP_CS1
-Text Label 7000 5400 2    50   ~ 0
-TEMP_CS2
-Text Label 7000 5500 2    50   ~ 0
-TEMP_CS3
-Wire Wire Line
-	4600 4600 5100 4600
-Text Label 4600 4600 0    50   ~ 0
-TEMP_CS4
-Wire Wire Line
-	4600 4700 5100 4700
-Wire Wire Line
-	5100 4800 4600 4800
-Text Label 4600 4700 0    50   ~ 0
-TEMP_CS5
-Text Label 4600 4800 0    50   ~ 0
-TEMP_CS6
 NoConn ~ 6500 3500
 NoConn ~ 6500 3600
 Wire Wire Line
@@ -873,16 +837,6 @@ NoConn ~ 6500 3300
 NoConn ~ 6500 3400
 Wire Wire Line
 	6500 5100 7000 5100
-$Sheet
-S 1000 4300 1000 500 
-U 5D7654E1
-F0 "Temperature Board Interface" 50
-F1 "TempBrdInterface.sch" 50
-F2 "TEMPCS[1..6]" I R 2000 4700 50 
-F3 "SCK" I R 2000 4400 50 
-F4 "MOSI" I R 2000 4500 50 
-F5 "MISO" O R 2000 4600 50 
-$EndSheet
 Wire Wire Line
 	2000 3600 2500 3600
 Wire Wire Line
@@ -925,46 +879,6 @@ F1 "CAN.sch" 50
 F2 "CAN_TX" I R 2000 1800 50 
 F3 "CAN_RX" O R 2000 1900 50 
 $EndSheet
-Text Label 2500 4500 2    50   ~ 0
-SPI3_MOSI
-Text Label 2500 4600 2    50   ~ 0
-SPI3_MISO
-Text Label 2500 4400 2    50   ~ 0
-SPI3_CLK
-Wire Wire Line
-	2000 4600 2500 4600
-Wire Wire Line
-	2500 4500 2000 4500
-Wire Wire Line
-	2000 4400 2500 4400
-Text Label 2600 4700 2    50   ~ 0
-TEMP_CS[1..6]
-Wire Bus Line
-	2000 4700 2600 4700
-Text Label 3200 5400 2    50   ~ 0
-TEMP_CS6
-Text Label 3200 5300 2    50   ~ 0
-TEMP_CS5
-Text Label 3200 5200 2    50   ~ 0
-TEMP_CS4
-Text Label 3200 5100 2    50   ~ 0
-TEMP_CS3
-Text Label 3200 5000 2    50   ~ 0
-TEMP_CS2
-Wire Wire Line
-	2700 5400 3200 5400
-Text Label 3200 4900 2    50   ~ 0
-TEMP_CS1
-Wire Wire Line
-	3200 5300 2700 5300
-Wire Wire Line
-	3200 5200 2700 5200
-Wire Wire Line
-	3200 5100 2700 5100
-Wire Wire Line
-	3200 5000 2700 5000
-Wire Wire Line
-	3200 4900 2700 4900
 $Sheet
 S 1000 5700 1000 400 
 U 5D923D59
@@ -1097,10 +1011,14 @@ Wire Wire Line
 	8300 5850 7800 5850
 Text Label 7800 5850 0    50   ~ 0
 CAN1_TX
+NoConn ~ 5100 4600
+NoConn ~ 5100 4700
+NoConn ~ 5100 4800
+NoConn ~ 6500 5300
+NoConn ~ 6500 5400
+NoConn ~ 6500 5500
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
 	4500 3800 4500 4300
-Wire Bus Line
-	2600 4700 2600 5300
 $EndSCHEMATC
