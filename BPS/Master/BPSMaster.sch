@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:BPSMaster-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -645,13 +644,13 @@ Wire Wire Line
 Wire Wire Line
 	10550 2900 10650 2900
 $Sheet
-S 1000 6900 1000 400 
+S 1000 6100 1000 400 
 U 5C392C6A
 F0 "Misc" 50
 F1 "Misc.sch" 50
-F2 "PC[0..5]" I R 2000 7000 50 
-F3 "PA[5..7]" I R 2000 7100 50 
-F4 "RUN" I R 2000 7200 50 
+F2 "PC[0..5]" I R 2000 6200 50 
+F3 "PA[5..7]" I R 2000 6300 50 
+F4 "RUN" I R 2000 6400 50 
 $EndSheet
 Text Notes 8650 1150 0    100  ~ 20
 Bypass Capacitors
@@ -665,7 +664,7 @@ Entry Wire Line
 	4500 3900 4600 4000
 Text Label 4500 3800 0    50   ~ 0
 PC[0..5]
-Text Label 2500 7000 2    50   ~ 0
+Text Label 2500 6200 2    50   ~ 0
 PC[0..5]
 Wire Wire Line
 	6500 2900 7000 2900
@@ -682,10 +681,10 @@ Entry Wire Line
 Text Label 7100 2700 0    50   ~ 0
 PA[5..7]
 Wire Bus Line
-	2000 7000 2500 7000
+	2000 6200 2500 6200
 Wire Bus Line
-	2000 7100 2500 7100
-Text Label 2500 7100 2    50   ~ 0
+	2000 6300 2500 6300
+Text Label 2500 6300 2    50   ~ 0
 PA[5..7]
 $Comp
 L Mechanical:MountingHole MH1
@@ -770,16 +769,16 @@ Wire Wire Line
 Text Label 7000 5200 2    50   ~ 0
 FAULT
 Wire Wire Line
-	2000 5800 2500 5800
-Text Label 2500 5800 2    50   ~ 0
+	2000 5000 2500 5000
+Text Label 2500 5000 2    50   ~ 0
 FAULT
 Wire Wire Line
 	6500 2400 7000 2400
 Text Label 7000 2400 2    50   ~ 0
 RUN
 Wire Wire Line
-	2000 7200 2500 7200
-Text Label 2500 7200 2    50   ~ 0
+	2000 6400 2500 6400
+Text Label 2500 6400 2    50   ~ 0
 RUN
 Wire Wire Line
 	4250 3350 4250 3400
@@ -818,18 +817,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 2600 10650 2600
 NoConn ~ 6500 4800
-Wire Wire Line
-	5100 5000 4600 5000
-Wire Wire Line
-	4600 5100 5100 5100
-Wire Wire Line
-	5100 5200 4600 5200
-Text Label 4600 5000 0    50   ~ 0
-SPI3_CLK
-Text Label 4600 5100 0    50   ~ 0
-SPI3_MISO
-Text Label 4600 5200 0    50   ~ 0
-SPI3_MOSI
 NoConn ~ 5100 4400
 Wire Wire Line
 	5100 4500 4600 4500
@@ -880,68 +867,44 @@ F2 "CAN_TX" I R 2000 1800 50
 F3 "CAN_RX" O R 2000 1900 50 
 $EndSheet
 $Sheet
-S 1000 5700 1000 400 
+S 1000 4900 1000 400 
 U 5D923D59
 F0 "Error Light" 50
 F1 "ErrorLight.sch" 50
-F2 "FAULT" I R 2000 5800 50 
+F2 "FAULT" I R 2000 5000 50 
 $EndSheet
 $Sheet
-S 1000 5100 1000 300 
+S 1000 4300 1000 300 
 U 5D969F1C
 F0 "Current Board Interface" 50
 F1 "CurrentBrdInterface.sch" 50
-F2 "HighPrec" O R 2000 5200 50 
-F3 "LowPrec" O R 2000 5300 50 
+F2 "HighPrec" O R 2000 4400 50 
+F3 "LowPrec" O R 2000 4500 50 
 $EndSheet
 Wire Wire Line
-	2000 5200 2500 5200
+	2000 4400 2500 4400
 Wire Wire Line
-	2000 5300 2500 5300
-Text Label 2500 5200 2    50   ~ 0
+	2000 4500 2500 4500
+Text Label 2500 4400 2    50   ~ 0
 ADC1_CH2
-Text Label 2500 5300 2    50   ~ 0
+Text Label 2500 4500 2    50   ~ 0
 ADC1_CH3
 $Sheet
-S 1000 6350 1000 300 
+S 1000 5550 1000 300 
 U 5D99F192
 F0 "USB" 50
 F1 "USB.sch" 50
-F2 "UART_RX" I R 2000 6450 50 
-F3 "UART_TX" O R 2000 6550 50 
+F2 "UART_RX" I R 2000 5650 50 
+F3 "UART_TX" O R 2000 5750 50 
 $EndSheet
-Text Label 2500 6450 2    50   ~ 0
+Text Label 2500 5650 2    50   ~ 0
 USART3_TX
 Wire Wire Line
-	2000 6450 2500 6450
-Text Label 2500 6550 2    50   ~ 0
+	2000 5650 2500 5650
+Text Label 2500 5750 2    50   ~ 0
 USART3_RX
 Wire Wire Line
-	2000 6550 2500 6550
-Wire Wire Line
-	8800 5200 9300 5200
-Wire Wire Line
-	8800 5300 9300 5300
-Wire Wire Line
-	8800 5400 9300 5400
-Text Label 9300 5200 2    50   ~ 0
-SPI1_CLK
-Text Label 9300 5300 2    50   ~ 0
-SPI1_MISO
-Text Label 9300 5400 2    50   ~ 0
-SPI1_MOSI
-Wire Wire Line
-	8300 5200 7800 5200
-Wire Wire Line
-	7800 5300 8300 5300
-Wire Wire Line
-	8300 5400 7800 5400
-Text Label 7800 5200 0    50   ~ 0
-SPI3_CLK
-Text Label 7800 5300 0    50   ~ 0
-SPI3_MISO
-Text Label 7800 5400 0    50   ~ 0
-SPI3_MOSI
+	2000 5750 2500 5750
 $Comp
 L power:GND #PWR0101
 U 1 1 5D8E306E
@@ -955,30 +918,6 @@ F 3 "" H 7800 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 5100 8300 5100
-$Comp
-L power:GND #PWR0102
-U 1 1 5D8EC587
-P 9300 5100
-F 0 "#PWR0102" H 9300 4850 50  0001 C CNN
-F 1 "GND" H 9305 4927 50  0000 C CNN
-F 2 "" H 9300 5100 50  0001 C CNN
-F 3 "" H 9300 5100 50  0001 C CNN
-	1    9300 5100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9300 5100 8800 5100
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J12
-U 1 1 5D8D153A
-P 8500 5200
-F 0 "J12" H 8550 5517 50  0000 C CNN
-F 1 "Logic Analyzer" H 8550 5426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8500 5200 50  0001 C CNN
-F 3 "~" H 8500 5200 50  0001 C CNN
-	1    8500 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J13
 U 1 1 5D9A509E
@@ -1017,6 +956,32 @@ NoConn ~ 5100 4800
 NoConn ~ 6500 5300
 NoConn ~ 6500 5400
 NoConn ~ 6500 5500
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5E2EFB22
+P 8500 5200
+F 0 "J5" H 8580 5192 50  0000 L CNN
+F 1 "SPI Analyzer" H 8580 5101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8500 5200 50  0001 C CNN
+F 3 "~" H 8500 5200 50  0001 C CNN
+	1    8500 5200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 5000
+NoConn ~ 5100 5100
+NoConn ~ 5100 5200
+Wire Wire Line
+	8300 5200 7800 5200
+Wire Wire Line
+	8300 5300 7800 5300
+Wire Wire Line
+	8300 5400 7800 5400
+Text Label 7800 5200 0    50   ~ 0
+SPI1_CLK
+Text Label 7800 5300 0    50   ~ 0
+SPI1_MISO
+Text Label 7800 5400 0    50   ~ 0
+SPI1_MOSI
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
