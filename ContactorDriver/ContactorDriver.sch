@@ -713,53 +713,53 @@ Board Mounts
 $Comp
 L Device:R_Small R1
 U 1 1 5E3A03D5
-P 3050 1600
-F 0 "R1" H 3150 1700 50  0000 C CNN
-F 1 "10k" H 3155 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 1600 50  0001 C CNN
-F 3 "~" H 3050 1600 50  0001 C CNN
-	1    3050 1600
+P 2600 1450
+F 0 "R1" H 2700 1550 50  0000 C CNN
+F 1 "10k" H 2705 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 1450 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+	1    2600 1450
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 5E3A03DC
-P 3050 1900
-F 0 "D1" V 3096 1832 50  0000 R CNN
-F 1 "Green" V 3005 1832 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3050 1900 50  0001 C CNN
-F 3 "~" V 3050 1900 50  0001 C CNN
-	1    3050 1900
+P 2600 1750
+F 0 "D1" V 2646 1682 50  0000 R CNN
+F 1 "Green" V 2555 1682 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2600 1750 50  0001 C CNN
+F 3 "~" V 2600 1750 50  0001 C CNN
+	1    2600 1750
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3050 1800 3050 1700
+	2600 1650 2600 1550
 $Comp
 L power:GND #PWR04
 U 1 1 5E3A4D78
-P 3050 2100
-F 0 "#PWR04" H 3050 1850 50  0001 C CNN
-F 1 "GND" H 3055 1927 50  0000 C CNN
-F 2 "" H 3050 2100 50  0001 C CNN
-F 3 "" H 3050 2100 50  0001 C CNN
-	1    3050 2100
+P 2600 1950
+F 0 "#PWR04" H 2600 1700 50  0001 C CNN
+F 1 "GND" H 2605 1777 50  0000 C CNN
+F 2 "" H 2600 1950 50  0001 C CNN
+F 3 "" H 2600 1950 50  0001 C CNN
+	1    2600 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 2100 3050 2000
+	2600 1950 2600 1850
 $Comp
 L power:+12V #PWR03
 U 1 1 5E3AC7F0
-P 3050 1400
-F 0 "#PWR03" H 3050 1250 50  0001 C CNN
-F 1 "+12V" H 3065 1573 50  0000 C CNN
-F 2 "" H 3050 1400 50  0001 C CNN
-F 3 "" H 3050 1400 50  0001 C CNN
-	1    3050 1400
+P 2600 1250
+F 0 "#PWR03" H 2600 1100 50  0001 C CNN
+F 1 "+12V" H 2615 1423 50  0000 C CNN
+F 2 "" H 2600 1250 50  0001 C CNN
+F 3 "" H 2600 1250 50  0001 C CNN
+	1    2600 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 1400 3050 1500
+	2600 1250 2600 1350
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5E3B703A
@@ -772,7 +772,7 @@ F 3 "~" H 7500 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5950 4450 0    50   ~ 0
-Holes should be 39.7mm x 21.4mm where the 39.7mm edge is the direction the lead is facing
+Holes should be 39.7mm x 21.4mm where the 39.7mm edge is the direction the lead is facing\nHS50
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 5E3B83E4
@@ -785,14 +785,48 @@ F 3 "~" H 9600 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H8
-U 1 1 5E3B88B2
-P 9600 6100
-F 0 "H8" H 9700 6146 50  0000 L CNN
-F 1 "M3" H 9700 6055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9600 6100 50  0001 C CNN
-F 3 "~" H 9600 6100 50  0001 C CNN
-	1    9600 6100
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5E337FFC
+P 9450 3100
+F 0 "J7" H 9530 3142 50  0000 L CNN
+F 1 "PrechargeResistor" H 9530 3051 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2mm" H 9450 3100 50  0001 C CNN
+F 3 "~" H 9450 3100 50  0001 C CNN
+	1    9450 3100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5E338344
+P 9450 3400
+F 0 "J8" H 9530 3442 50  0000 L CNN
+F 1 "PrechargeResistor" H 9530 3351 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2mm" H 9450 3400 50  0001 C CNN
+F 3 "~" H 9450 3400 50  0001 C CNN
+	1    9450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5E33980C
+P 8600 3200
+F 0 "J6" H 8518 3417 50  0000 C CNN
+F 1 "PrechargeResistorConn" H 8518 3326 50  0000 C CNN
+F 2 "UTSVT_Connectors:PhoenixContact_PowerCombicon5_GF_2x7.62mm" H 8600 3200 50  0001 C CNN
+F 3 "~" H 8600 3200 50  0001 C CNN
+	1    8600 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3200 9150 3200
+Wire Wire Line
+	9150 3200 9150 3100
+Wire Wire Line
+	9150 3100 9250 3100
+Wire Wire Line
+	9250 3400 9150 3400
+Wire Wire Line
+	9150 3400 9150 3300
+Wire Wire Line
+	9150 3300 8800 3300
 $EndSCHEMATC
