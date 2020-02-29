@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MPPT-rescue)(type Legacy)(uri ${KIPRJMOD}/MPPT-rescue.lib)(options "")(descr ""))
+  (lib (name RTDTemp-rescue)(type Legacy)(uri ${KIPRJMOD}/RTDTemp-rescue.lib)(options "")(descr ""))
 )
