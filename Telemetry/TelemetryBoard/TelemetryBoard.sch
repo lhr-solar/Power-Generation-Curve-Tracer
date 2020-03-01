@@ -237,14 +237,11 @@ Wire Wire Line
 	8950 2100 9400 2100
 Connection ~ 8950 1800
 Wire Wire Line
-	7500 2100 7500 2350
-Wire Wire Line
 	7500 3000 7500 2350
-Connection ~ 7000 2200
 Wire Wire Line
 	8500 2200 8500 2500
 Wire Wire Line
-	7000 2200 8500 2200
+	7000 2200 7300 2200
 Wire Wire Line
 	7500 2350 8000 2350
 Connection ~ 7500 2350
@@ -294,13 +291,10 @@ Wire Wire Line
 Connection ~ 7500 2100
 Wire Wire Line
 	7500 2100 7750 2100
-Connection ~ 7000 2100
 Wire Wire Line
-	7000 2100 7500 2100
+	7000 2100 7300 2100
 Wire Wire Line
 	7000 2300 7000 2350
-Wire Wire Line
-	7000 2100 7000 2200
 Wire Wire Line
 	7000 3000 7200 3000
 $Comp
@@ -1174,4 +1168,12 @@ $EndComp
 Connection ~ 3850 5350
 Wire Wire Line
 	3850 5350 3850 5300
+Wire Wire Line
+	7300 2100 7300 2200
+Connection ~ 7300 2100
+Wire Wire Line
+	7300 2100 7500 2100
+Connection ~ 7300 2200
+Wire Wire Line
+	7300 2200 8500 2200
 $EndSCHEMATC
