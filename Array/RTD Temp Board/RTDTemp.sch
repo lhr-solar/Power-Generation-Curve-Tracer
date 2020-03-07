@@ -27,7 +27,7 @@ NoConn ~ 6200 5950
 NoConn ~ 7200 6250
 NoConn ~ 7200 6050
 $Comp
-L MPPT-rescue:CANConnector J4
+L RTDTemp-rescue:CANConnector-MPPT-rescue J4
 U 1 1 5BBF08D9
 P 10200 3350
 F 0 "J4" H 10200 3100 60  0000 C CNN
@@ -38,7 +38,7 @@ F 3 "" H 10350 3650 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CANConnector J5
+L RTDTemp-rescue:CANConnector-MPPT-rescue J5
 U 1 1 5BBF0A39
 P 10200 3950
 F 0 "J5" H 10200 3700 60  0000 C CNN
@@ -49,7 +49,7 @@ F 3 "" H 10350 4250 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R9
+L RTDTemp-rescue:R-MPPT-rescue R9
 U 1 1 5BBF11F6
 P 9200 3700
 F 0 "R9" V 9280 3700 50  0000 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 9200 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R10
+L RTDTemp-rescue:R-MPPT-rescue R10
 U 1 1 5BBF1303
 P 9000 3700
 F 0 "R10" V 9080 3700 50  0000 C CNN
@@ -71,7 +71,7 @@ F 3 "" H 9000 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Jumper_NO_Small JP1
+L RTDTemp-rescue:Jumper_NO_Small-MPPT-rescue JP1
 U 1 1 5BBF13F6
 P 9100 3400
 F 0 "JP1" H 9100 3480 50  0000 C CNN
@@ -84,7 +84,7 @@ $EndComp
 Text Notes 3950 2950 0    120  ~ 24
 CAN
 $Comp
-L MPPT-rescue:C_Small C13
+L RTDTemp-rescue:C_Small-MPPT-rescue C13
 U 1 1 5BBF56B4
 P 3950 3500
 F 0 "C13" H 3960 3570 50  0000 L CNN
@@ -95,7 +95,7 @@ F 3 "" H 3950 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C14
+L RTDTemp-rescue:C_Small-MPPT-rescue C14
 U 1 1 5BBF57F7
 P 4150 3500
 F 0 "C14" H 4160 3570 50  0000 L CNN
@@ -106,7 +106,7 @@ F 3 "" H 4150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C15
+L RTDTemp-rescue:C_Small-MPPT-rescue C15
 U 1 1 5BBF5AB0
 P 4400 3500
 F 0 "C15" H 4410 3570 50  0000 L CNN
@@ -117,7 +117,7 @@ F 3 "" H 4400 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C16
+L RTDTemp-rescue:C_Small-MPPT-rescue C16
 U 1 1 5BBF5B67
 P 4600 3500
 F 0 "C16" H 4610 3570 50  0000 L CNN
@@ -132,7 +132,7 @@ CAN_Rx
 Text Label 4250 3850 2    60   ~ 12
 CAN_Tx
 $Comp
-L MPPT-rescue:C_Small C10
+L RTDTemp-rescue:C_Small-MPPT-rescue C10
 U 1 1 5BBF707C
 P 7200 3350
 F 0 "C10" H 7210 3420 50  0000 L CNN
@@ -143,7 +143,7 @@ F 3 "" H 7200 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C9
+L RTDTemp-rescue:C_Small-MPPT-rescue C9
 U 1 1 5BBF71BA
 P 6750 3350
 F 0 "C9" H 6760 3420 50  0000 L CNN
@@ -154,7 +154,7 @@ F 3 "" H 6750 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:Ferrite_Bead_Small L2
+L RTDTemp-rescue:Ferrite_Bead_Small-MPPT-rescue L2
 U 1 1 5BBF75A9
 P 7000 3200
 F 0 "L2" H 7075 3250 50  0000 L CNN
@@ -165,7 +165,7 @@ F 3 "" H 7000 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:Ferrite_Bead_Small L3
+L RTDTemp-rescue:Ferrite_Bead_Small-MPPT-rescue L3
 U 1 1 5BBF78B3
 P 7000 3500
 F 0 "L3" H 7075 3550 50  0000 L CNN
@@ -176,7 +176,7 @@ F 3 "" H 7000 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C11
+L RTDTemp-rescue:C_Small-MPPT-rescue C11
 U 1 1 5BBF7ED3
 P 7600 3350
 F 0 "C11" H 7610 3420 50  0000 L CNN
@@ -187,7 +187,7 @@ F 3 "" H 7600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:C_Small C12
+L RTDTemp-rescue:C_Small-MPPT-rescue C12
 U 1 1 5BBF7FA8
 P 7850 3350
 F 0 "C12" H 7860 3420 50  0000 L CNN
@@ -200,7 +200,7 @@ $EndComp
 Text Notes 4400 3000 0    60   ~ 0
 This is really complicated.\nI blame Analog Devices.
 $Comp
-L MPPT-rescue:ADM3055E U5
+L RTDTemp-rescue:ADM3055E-MPPT-rescue U5
 U 1 1 5BBFC115
 P 5650 3750
 F 0 "U5" H 5400 4400 60  0000 C CNN
@@ -218,7 +218,7 @@ Must be close\nto V_ISO_Out
 Text Notes 7550 3100 0    40   ~ 0
 Must be close\nto V_ISO_In
 $Comp
-L MPPT-rescue:+3.3V #PWR015
+L RTDTemp-rescue:+3.3V-MPPT-rescue #PWR015
 U 1 1 5BC0D519
 P 7950 6050
 F 0 "#PWR015" H 7950 5900 50  0001 C CNN
@@ -229,7 +229,7 @@ F 3 "" H 7950 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+5V #PWR016
+L RTDTemp-rescue:+5V-MPPT-rescue #PWR016
 U 1 1 5BC0D66D
 P 7550 4800
 F 0 "#PWR016" H 7550 4650 50  0001 C CNN
@@ -240,7 +240,7 @@ F 3 "" H 7550 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+3.3V #PWR017
+L RTDTemp-rescue:+3.3V-MPPT-rescue #PWR017
 U 1 1 5BC0F1EA
 P 4600 3200
 F 0 "#PWR017" H 4600 3050 50  0001 C CNN
@@ -251,7 +251,7 @@ F 3 "" H 4600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+5V #PWR018
+L RTDTemp-rescue:+5V-MPPT-rescue #PWR018
 U 1 1 5BC0F4B8
 P 3950 3200
 F 0 "#PWR018" H 3950 3050 50  0001 C CNN
@@ -262,7 +262,7 @@ F 3 "" H 3950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP14
+L RTDTemp-rescue:TEST-MPPT-rescue TP14
 U 1 1 5BC226FB
 P 6400 3050
 F 0 "TP14" V 6500 3250 50  0000 L BNN
@@ -273,7 +273,7 @@ F 3 "" H 6400 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP16
+L RTDTemp-rescue:TEST-MPPT-rescue TP16
 U 1 1 5BC2391E
 P 7300 3850
 F 0 "TP16" V 7400 4050 50  0000 L BNN
@@ -284,7 +284,7 @@ F 3 "" H 7300 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP15
+L RTDTemp-rescue:TEST-MPPT-rescue TP15
 U 1 1 5BC242A0
 P 7300 3700
 F 0 "TP15" V 7400 3900 50  0000 L BNN
@@ -295,7 +295,7 @@ F 3 "" H 7300 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP13
+L RTDTemp-rescue:TEST-MPPT-rescue TP13
 U 1 1 5BC269CB
 P 6400 2900
 F 0 "TP13" V 6500 3100 50  0000 L BNN
@@ -306,7 +306,7 @@ F 3 "" H 6400 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR024
+L RTDTemp-rescue:+9VA-MPPT-rescue #PWR024
 U 1 1 5BC2A2F3
 P 7250 4850
 F 0 "#PWR024" H 7250 4725 50  0001 C CNN
@@ -318,7 +318,7 @@ F 3 "" H 7250 4850 50  0001 C CNN
 $EndComp
 NoConn ~ 4950 4250
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG027
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG027
 U 1 1 5BC3017A
 P 8250 3150
 F 0 "#FLG027" H 8250 3225 50  0001 C CNN
@@ -329,7 +329,7 @@ F 3 "" H 8250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG028
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG028
 U 1 1 5BC3065C
 P 8250 3350
 F 0 "#FLG028" H 8250 3425 50  0001 C CNN
@@ -340,7 +340,7 @@ F 3 "" H 8250 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:CDSOT23-T24CAN U7
+L RTDTemp-rescue:CDSOT23-T24CAN-MPPT-rescue U7
 U 1 1 5BC2BF90
 P 9050 3000
 F 0 "U7" H 9050 2850 60  0000 C CNN
@@ -351,7 +351,7 @@ F 3 "" H 9050 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:GNDPWR #PWR029
+L RTDTemp-rescue:GNDPWR-MPPT-rescue #PWR029
 U 1 1 5BC2E9F9
 P 8650 6050
 F 0 "#PWR029" H 8650 5850 50  0001 C CNN
@@ -366,7 +366,7 @@ LEDs
 Text Notes 3550 6750 0    60   ~ 0
 Status LEDs for\nat-a-glance\ninformation
 $Comp
-L MPPT-rescue:LED_ALT LED3
+L RTDTemp-rescue:LED_ALT-MPPT-rescue LED3
 U 1 1 5BC3DA9B
 P 3800 7500
 F 0 "LED3" H 3800 7600 50  0000 C CNN
@@ -377,7 +377,7 @@ F 3 "" H 3800 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R14
+L RTDTemp-rescue:R_Small-MPPT-rescue R14
 U 1 1 5BC3DAA7
 P 3800 7150
 F 0 "R14" H 3830 7170 50  0000 L CNN
@@ -388,7 +388,7 @@ F 3 "" H 3800 7150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED7
+L RTDTemp-rescue:LED_ALT-MPPT-rescue LED7
 U 1 1 5BC584BD
 P 4150 7500
 F 0 "LED7" H 4150 7600 50  0000 C CNN
@@ -399,7 +399,7 @@ F 3 "" H 4150 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R20
+L RTDTemp-rescue:R_Small-MPPT-rescue R20
 U 1 1 5BC584C3
 P 4150 7150
 F 0 "R20" H 4180 7170 50  0000 L CNN
@@ -410,7 +410,7 @@ F 3 "" H 4150 7150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR038
+L RTDTemp-rescue:+9VA-MPPT-rescue #PWR038
 U 1 1 5BC58980
 P 4150 7000
 F 0 "#PWR038" H 4150 6875 50  0001 C CNN
@@ -423,7 +423,7 @@ $EndComp
 Text Notes 9500 2950 0    40   ~ 0
 CAN Bus\nProtection
 $Comp
-L MPPT-rescue:GNDREF #PWR041
+L RTDTemp-rescue:GNDREF-MPPT-rescue #PWR041
 U 1 1 5BC77E73
 P 3800 7750
 F 0 "#PWR041" H 3800 7500 50  0001 C CNN
@@ -434,7 +434,7 @@ F 3 "" H 3800 7750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+12V #PWR042
+L RTDTemp-rescue:+12V-MPPT-rescue #PWR042
 U 1 1 5BC781A9
 P 3800 7000
 F 0 "#PWR042" H 3800 6850 50  0001 C CNN
@@ -445,7 +445,7 @@ F 3 "" H 3800 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:LED_ALT LED8
+L RTDTemp-rescue:LED_ALT-MPPT-rescue LED8
 U 1 1 5BC7B329
 P 4600 7500
 F 0 "LED8" H 4600 7600 50  0000 C CNN
@@ -456,7 +456,7 @@ F 3 "" H 4600 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R21
+L RTDTemp-rescue:R_Small-MPPT-rescue R21
 U 1 1 5BC7B335
 P 4600 7150
 F 0 "R21" H 4630 7170 50  0000 L CNN
@@ -469,7 +469,7 @@ $EndComp
 Text Label 4600 6950 0    60   ~ 12
 CAN_Tx
 $Comp
-L MPPT-rescue:LED_ALT LED9
+L RTDTemp-rescue:LED_ALT-MPPT-rescue LED9
 U 1 1 5BC7B6F5
 P 5000 7500
 F 0 "LED9" H 5000 7600 50  0000 C CNN
@@ -480,7 +480,7 @@ F 3 "" H 5000 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MPPT-rescue:R_Small R22
+L RTDTemp-rescue:R_Small-MPPT-rescue R22
 U 1 1 5BC7B701
 P 5000 7150
 F 0 "R22" H 5030 7170 50  0000 L CNN
@@ -493,7 +493,7 @@ $EndComp
 Text Label 5000 6950 0    60   ~ 12
 CAN_Rx
 $Comp
-L MPPT-rescue:TEST TP20
+L RTDTemp-rescue:TEST-MPPT-rescue TP20
 U 1 1 5BC87942
 P 4700 4000
 F 0 "TP20" H 4700 4300 50  0000 C BNN
@@ -504,7 +504,7 @@ F 3 "" H 4700 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP19
+L RTDTemp-rescue:TEST-MPPT-rescue TP19
 U 1 1 5BC87E62
 P 4400 4000
 F 0 "TP19" H 4400 4300 50  0000 C BNN
@@ -515,7 +515,7 @@ F 3 "" H 4400 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP21
+L RTDTemp-rescue:TEST-MPPT-rescue TP21
 U 1 1 5BC9CC23
 P 8300 3950
 F 0 "TP21" H 8300 4250 50  0000 C BNN
@@ -526,7 +526,7 @@ F 3 "" H 8300 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP22
+L RTDTemp-rescue:TEST-MPPT-rescue TP22
 U 1 1 5BC9CD87
 P 8400 4200
 F 0 "TP22" V 8500 4400 50  0000 L BNN
@@ -537,7 +537,7 @@ F 3 "" H 8400 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:R R25
+L RTDTemp-rescue:R-MPPT-rescue R25
 U 1 1 5BCB4671
 P 6550 4300
 F 0 "R25" V 6630 4300 50  0000 C CNN
@@ -862,7 +862,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 3700 7200 3700
 $Comp
-L MPPT-rescue:INA21x U6
+L RTDTemp-rescue:INA21x-MPPT-rescue U6
 U 1 1 5E3FE717
 P 1950 3100
 F 0 "U6" H 2394 3153 60  0000 L CNN
@@ -1032,7 +1032,7 @@ Wire Wire Line
 	1450 3550 1400 3550
 Connection ~ 1400 3550
 $Comp
-L MPPT-rescue:INA21x U9
+L RTDTemp-rescue:INA21x-MPPT-rescue U9
 U 1 1 5E95418B
 P 3700 2000
 F 0 "U9" H 4144 2053 60  0000 L CNN
@@ -1213,7 +1213,7 @@ Wire Wire Line
 	3200 2450 3150 2450
 Connection ~ 3150 2450
 $Comp
-L MPPT-rescue:INA21x U10
+L RTDTemp-rescue:INA21x-MPPT-rescue U10
 U 1 1 5E9773CC
 P 5700 2000
 F 0 "U10" H 6144 2053 60  0000 L CNN
@@ -1394,7 +1394,7 @@ Wire Wire Line
 	5200 2450 5150 2450
 Connection ~ 5150 2450
 $Comp
-L MPPT-rescue:INA21x U11
+L RTDTemp-rescue:INA21x-MPPT-rescue U11
 U 1 1 5E99D0D5
 P 7700 2000
 F 0 "U11" H 8144 2053 60  0000 L CNN
@@ -1575,7 +1575,7 @@ Wire Wire Line
 	7200 2450 7150 2450
 Connection ~ 7150 2450
 $Comp
-L MPPT-rescue:INA21x U12
+L RTDTemp-rescue:INA21x-MPPT-rescue U12
 U 1 1 5EABA3F3
 P 9700 2000
 F 0 "U12" H 10144 2053 60  0000 L CNN
@@ -1751,7 +1751,7 @@ Wire Wire Line
 	9200 2450 9150 2450
 Connection ~ 9150 2450
 $Comp
-L MPPT-rescue:INA21x U8
+L RTDTemp-rescue:INA21x-MPPT-rescue U8
 U 1 1 5EAE3F5B
 P 1950 4500
 F 0 "U8" H 2394 4553 60  0000 L CNN
@@ -1930,7 +1930,7 @@ Wire Wire Line
 	1450 4950 1400 4950
 Connection ~ 1400 4950
 $Comp
-L MPPT-rescue:INA21x U1
+L RTDTemp-rescue:INA21x-MPPT-rescue U1
 U 1 1 5EB08684
 P 1900 5900
 F 0 "U1" H 2344 5953 60  0000 L CNN
@@ -2109,7 +2109,7 @@ Wire Wire Line
 	1400 6350 1350 6350
 Connection ~ 1350 6350
 $Comp
-L MPPT-rescue:INA21x U4
+L RTDTemp-rescue:INA21x-MPPT-rescue U4
 U 1 1 5EB2EB4F
 P 1900 7300
 F 0 "U4" H 2344 7353 60  0000 L CNN
@@ -2292,7 +2292,7 @@ Wire Notes Line
 Wire Notes Line
 	3050 6150 3050 7900
 $Comp
-L MPPT-rescue:Nucleo_L432KC U2
+L RTDTemp-rescue:Nucleo_L432KC-MPPT-rescue U2
 U 1 1 5BBBD3B0
 P 6700 5550
 F 0 "U2" H 6700 4700 60  0000 C CNN
@@ -2303,7 +2303,7 @@ F 3 "" H 6700 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:TEST TP26
+L RTDTemp-rescue:TEST-MPPT-rescue TP26
 U 1 1 5BCE457C
 P 7400 6250
 F 0 "TP26" V 7500 6450 50  0000 L BNN
@@ -2402,7 +2402,7 @@ Connection ~ 9750 2300
 Wire Wire Line
 	9750 2300 9800 2300
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0101
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0101
 U 1 1 5F349016
 P 1950 2600
 F 0 "#FLG0101" H 1950 2675 50  0001 C CNN
@@ -2420,7 +2420,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 4000 1950 4100
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0102
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0102
 U 1 1 5F371151
 P 2050 3400
 F 0 "#FLG0102" H 2050 3475 50  0001 C CNN
@@ -2432,7 +2432,7 @@ F 3 "" H 2050 3400 50  0001 C CNN
 $EndComp
 Connection ~ 2050 3400
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0103
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0103
 U 1 1 5F3714EF
 P 3800 7000
 F 0 "#FLG0103" H 3800 7075 50  0001 C CNN
@@ -2444,7 +2444,7 @@ F 3 "" H 3800 7000 50  0001 C CNN
 $EndComp
 Connection ~ 3800 7000
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0104
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0104
 U 1 1 5F3725DE
 P 4150 7000
 F 0 "#FLG0104" H 4150 7075 50  0001 C CNN
@@ -2456,7 +2456,7 @@ F 3 "" H 4150 7000 50  0001 C CNN
 $EndComp
 Connection ~ 4150 7000
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0105
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0105
 U 1 1 5F3734A8
 P 3800 7700
 F 0 "#FLG0105" H 3800 7775 50  0001 C CNN
@@ -2470,7 +2470,7 @@ Connection ~ 3800 7700
 Wire Wire Line
 	3800 7700 3800 7650
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0106
+L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0106
 U 1 1 5F3746F3
 P 5000 7700
 F 0 "#FLG0106" H 5000 7775 50  0001 C CNN
@@ -2738,12 +2738,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5E5C95E9
-P 8500 5550
-F 0 "#PWR0103" H 8500 5300 50  0001 C CNN
-F 1 "GND" H 8505 5377 50  0000 C CNN
-F 2 "" H 8500 5550 50  0001 C CNN
-F 3 "" H 8500 5550 50  0001 C CNN
-	1    8500 5550
+P 8600 5350
+F 0 "#PWR0103" H 8600 5100 50  0001 C CNN
+F 1 "GND" H 8605 5177 50  0000 C CNN
+F 2 "" H 8600 5350 50  0001 C CNN
+F 3 "" H 8600 5350 50  0001 C CNN
+	1    8600 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2760,4 +2760,96 @@ NoConn ~ 6200 5350
 NoConn ~ 6200 5450
 NoConn ~ 6200 5550
 NoConn ~ 6200 5650
+Wire Wire Line
+	8500 5550 8500 5350
+Wire Wire Line
+	8500 5350 8600 5350
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E5CC617
+P 2550 3100
+F 0 "TP3" H 2608 3218 50  0000 L CNN
+F 1 "TestPoint" H 2608 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2750 3100 50  0001 C CNN
+F 3 "~" H 2750 3100 50  0001 C CNN
+	1    2550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E5CEA6D
+P 2550 4500
+F 0 "TP4" H 2608 4618 50  0000 L CNN
+F 1 "TestPoint" H 2608 4527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2750 4500 50  0001 C CNN
+F 3 "~" H 2750 4500 50  0001 C CNN
+	1    2550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E5CEF82
+P 2500 5900
+F 0 "TP1" H 2558 6018 50  0000 L CNN
+F 1 "TestPoint" H 2558 5927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2700 5900 50  0001 C CNN
+F 3 "~" H 2700 5900 50  0001 C CNN
+	1    2500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E5CFFB6
+P 2500 7300
+F 0 "TP2" H 2558 7418 50  0000 L CNN
+F 1 "TestPoint" H 2558 7327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2700 7300 50  0001 C CNN
+F 3 "~" H 2700 7300 50  0001 C CNN
+	1    2500 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5E5D0C27
+P 4300 2000
+F 0 "TP5" H 4358 2118 50  0000 L CNN
+F 1 "TestPoint" H 4358 2027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4500 2000 50  0001 C CNN
+F 3 "~" H 4500 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5E5D18A6
+P 6350 2000
+F 0 "TP6" H 6408 2118 50  0000 L CNN
+F 1 "TestPoint" H 6408 2027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 6550 2000 50  0001 C CNN
+F 3 "~" H 6550 2000 50  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5E5D2848
+P 8350 2000
+F 0 "TP7" H 8408 2118 50  0000 L CNN
+F 1 "TestPoint" H 8408 2027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 8550 2000 50  0001 C CNN
+F 3 "~" H 8550 2000 50  0001 C CNN
+	1    8350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5E5D34E3
+P 10350 2000
+F 0 "TP8" H 10408 2118 50  0000 L CNN
+F 1 "TestPoint" H 10408 2027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10550 2000 50  0001 C CNN
+F 3 "~" H 10550 2000 50  0001 C CNN
+	1    10350 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
