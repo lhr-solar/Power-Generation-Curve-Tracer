@@ -76,17 +76,6 @@ F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catal
 	1    4850 5950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x07 J1
-U 1 1 5E5CE1F3
-P 3150 5950
-F 0 "J1" H 3068 6467 50  0000 C CNN
-F 1 "Conn_01x07" H 3068 6376 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0715_1x07_P3.00mm_Vertical" H 3150 5950 50  0001 C CNN
-F 3 "~" H 3150 5950 50  0001 C CNN
-	1    3150 5950
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 4150 9700 4150
 $Comp
@@ -149,21 +138,15 @@ Wire Wire Line
 	10000 2500 10400 2500
 Wire Wire Line
 	10000 2100 10000 2500
-Connection ~ 9600 1800
 Wire Wire Line
 	10000 2100 10400 2100
 Wire Wire Line
 	10000 1800 10000 2100
-Wire Wire Line
-	9600 1800 10000 1800
 Connection ~ 10100 2200
-Connection ~ 9600 2100
 Wire Wire Line
 	9850 2200 10100 2200
 Wire Wire Line
 	9850 2100 9850 2200
-Wire Wire Line
-	9600 2100 9850 2100
 Wire Wire Line
 	10300 2800 10400 2800
 Connection ~ 10300 2800
@@ -318,28 +301,6 @@ F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 8200 2500 50  0001 C CNN
 F 3 "~" H 8200 2500 50  0001 C CNN
 	1    8000 2500
 	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5E5CBEE7
-P 9600 2100
-F 0 "TP12" H 9658 2218 50  0000 L CNN
-F 1 "TestPoint" H 9658 2127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 9800 2100 50  0001 C CNN
-F 3 "~" H 9800 2100 50  0001 C CNN
-	1    9600 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP11
-U 1 1 5E5CB0C5
-P 9600 1800
-F 0 "TP11" H 9658 1918 50  0000 L CNN
-F 1 "TestPoint" H 9658 1827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 9800 1800 50  0001 C CNN
-F 3 "~" H 9800 1800 50  0001 C CNN
-	1    9600 1800
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP10
@@ -719,8 +680,9 @@ U 1 1 5E5A2A4D
 P 7150 3850
 F 0 "L1" V 7340 3850 50  0000 C CNN
 F 1 "5u" V 7249 3850 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 7150 3850 50  0001 C CNN
+F 2 "Inductor_SMD:L_TDK_NLV32_3.2x2.5mm" H 7150 3850 50  0001 C CNN
 F 3 "~" H 7150 3850 50  0001 C CNN
+F 4 "DFE322520FD-4R7M-P2" V 7150 3850 50  0001 C CNN "P/N"
 	1    7150 3850
 	0    -1   -1   0   
 $EndComp
@@ -838,12 +800,12 @@ $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5EA61F48
-P 10350 4150
-F 0 "#PWR013" H 10350 3900 50  0001 C CNN
-F 1 "GND" H 10355 3977 50  0000 C CNN
-F 2 "" H 10350 4150 50  0001 C CNN
-F 3 "" H 10350 4150 50  0001 C CNN
-	1    10350 4150
+P 10850 4800
+F 0 "#PWR013" H 10850 4550 50  0001 C CNN
+F 1 "GND" H 10855 4627 50  0000 C CNN
+F 2 "" H 10850 4800 50  0001 C CNN
+F 3 "" H 10850 4800 50  0001 C CNN
+	1    10850 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -883,9 +845,6 @@ Wire Wire Line
 	9700 4150 9850 4150
 Wire Wire Line
 	10100 4150 10100 4450
-Connection ~ 10100 4150
-Wire Wire Line
-	10100 4150 10350 4150
 $Comp
 L Connector:TestPoint TP14
 U 1 1 5EA96B43
@@ -928,8 +887,6 @@ F 3 "~" H 9400 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9400 1800
-Wire Wire Line
-	9400 1800 9600 1800
 $Comp
 L power:PWR_FLAG #FLG0105
 U 1 1 5EAC3C19
@@ -942,8 +899,6 @@ F 3 "~" H 9400 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9400 2100
-Wire Wire Line
-	9400 2100 9600 2100
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J8
 U 1 1 5EAD705C
@@ -1094,20 +1049,11 @@ NoConn ~ 2450 1500
 NoConn ~ 2450 1600
 NoConn ~ 2450 1700
 NoConn ~ 2450 1800
-NoConn ~ 2450 1900
-NoConn ~ 2450 2000
 NoConn ~ 2450 2100
-NoConn ~ 2450 2200
 NoConn ~ 2950 1300
 NoConn ~ 2950 1400
 NoConn ~ 2950 1500
-NoConn ~ 2950 1600
-NoConn ~ 2950 1700
-NoConn ~ 2950 1800
-NoConn ~ 2950 1900
-NoConn ~ 2950 2000
 NoConn ~ 2950 2100
-NoConn ~ 2950 2200
 NoConn ~ 2450 2700
 NoConn ~ 2450 2800
 NoConn ~ 2450 2900
@@ -1176,4 +1122,101 @@ Wire Wire Line
 Connection ~ 7300 2200
 Wire Wire Line
 	7300 2200 8500 2200
+Text Label 3350 5650 0    50   ~ 0
+CS
+Text Label 3350 5750 0    50   ~ 0
+MOSI
+Text Label 3350 5850 0    50   ~ 0
+VDD
+Text Label 3350 5950 0    50   ~ 0
+CLOCK
+Text Label 3350 6050 0    50   ~ 0
+GND
+Text Label 3350 6150 0    50   ~ 0
+MISO
+NoConn ~ 2450 2200
+NoConn ~ 2450 2000
+NoConn ~ 2450 1900
+Wire Wire Line
+	2950 1700 3050 1700
+Wire Wire Line
+	2950 1800 3050 1800
+Wire Wire Line
+	2950 1900 3050 1900
+Wire Wire Line
+	2950 2000 3050 2000
+Text Label 3050 1600 0    50   ~ 0
+GND
+Text Label 3050 1700 0    50   ~ 0
+CLOCK
+Text Label 3050 1800 0    50   ~ 0
+MISO
+Text Label 3050 1900 0    50   ~ 0
+MOSI
+Text Label 3050 2000 0    50   ~ 0
+CS
+$Comp
+L power:GND #PWR0105
+U 1 1 5E6413A6
+P 3350 1600
+F 0 "#PWR0105" H 3350 1350 50  0001 C CNN
+F 1 "GND" H 3355 1427 50  0000 C CNN
+F 2 "" H 3350 1600 50  0001 C CNN
+F 3 "" H 3350 1600 50  0001 C CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1600 3350 1600
+Text Label 3050 2200 0    50   ~ 0
+DET
+Wire Wire Line
+	2950 2200 3050 2200
+Text Label 3350 6250 0    50   ~ 0
+DET
+Wire Wire Line
+	9400 1800 10000 1800
+Wire Wire Line
+	9400 2100 9850 2100
+$Comp
+L Device:LED D1
+U 1 1 5E678CC6
+P 10850 4450
+F 0 "D1" V 10889 4333 50  0000 R CNN
+F 1 "LED" V 10798 4333 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 10850 4450 50  0001 C CNN
+F 3 "~" H 10850 4450 50  0001 C CNN
+	1    10850 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10850 4250 10850 4300
+Connection ~ 10350 3850
+Wire Wire Line
+	10850 4800 10850 4700
+$Comp
+L Device:R R3
+U 1 1 5E6AA86F
+P 10850 4100
+F 0 "R3" H 10920 4146 50  0000 L CNN
+F 1 "3k" H 10920 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10780 4100 50  0001 C CNN
+F 3 "~" H 10850 4100 50  0001 C CNN
+	1    10850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 3850 10850 3950
+Wire Wire Line
+	10350 3850 10850 3850
+Wire Wire Line
+	10100 4150 10550 4150
+Wire Wire Line
+	10550 4150 10550 4700
+Wire Wire Line
+	10550 4700 10850 4700
+Connection ~ 10100 4150
+Connection ~ 10850 4700
+Wire Wire Line
+	10850 4700 10850 4600
 $EndSCHEMATC
