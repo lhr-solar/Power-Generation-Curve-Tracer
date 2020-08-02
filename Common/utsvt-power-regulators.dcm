@@ -12,4 +12,9 @@ $CMP PQMC3-Dx-Sx-S
 D 3W Isolating Power Regulator (example: 12V->9V)
 $ENDCMP
 #
+$CMP RO-123.3S_HP
+D Isolated DC/DC Converters 1W DC/DC 2kV UNREG 12Vin 3.3Vout
+F https://www.mouser.com/datasheet/2/468/RO-1711124.pdf
+$ENDCMP
+#
 #End Doc Library
