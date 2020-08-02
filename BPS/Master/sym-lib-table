@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name BPSMaster-rescue)(type Legacy)(uri ${KIPRJMOD}/BPSMaster-rescue.lib)(options "")(descr ""))
-)

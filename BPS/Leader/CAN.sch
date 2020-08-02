@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BPSMaster-rescue:CANConnector-utsvt-connectors J8
+L utsvt-connectors:CANConnector J10
 U 1 1 5C2B42F3
 P 9250 3800
-F 0 "J8" H 9250 3550 60  0000 C CNN
+F 0 "J10" H 9250 3550 60  0000 C CNN
 F 1 "CAN_Out" H 9250 4050 60  0000 C CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9400 4100 60  0001 C CNN
 F 3 "" H 9400 4100 60  0001 C CNN
@@ -25,153 +25,131 @@ F 3 "" H 9400 4100 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R42
-U 1 1 5C2B42FA
-P 8200 3550
-F 0 "R42" V 8280 3550 50  0000 C CNN
-F 1 "60" V 8200 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8130 3550 50  0001 C CNN
-F 3 "" H 8200 3550 50  0001 C CNN
-	1    8200 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R41
+L Device:R R28
 U 1 1 5C2B4301
-P 8000 3550
-F 0 "R41" V 8080 3550 50  0000 C CNN
-F 1 "60" V 8000 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7930 3550 50  0001 C CNN
-F 3 "" H 8000 3550 50  0001 C CNN
-	1    8000 3550
-	1    0    0    -1  
+P 8100 3550
+F 0 "R28" V 8180 3550 50  0000 C CNN
+F 1 "120" V 8100 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 3550 50  0001 C CNN
+F 3 "" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5C2B4308
-P 8100 3250
-F 0 "JP1" H 8100 3330 50  0000 C CNN
-F 1 "Termination Resistors" H 8100 3200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3250 50  0001 C CNN
-F 3 "" H 8100 3250 50  0001 C CNN
-	1    8100 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C33
+L Device:C_Small C24
 U 1 1 5C2B4310
 P 2150 3350
-F 0 "C33" H 2160 3420 50  0000 L CNN
-F 1 "10uF" H 2160 3270 50  0000 L CNN
+F 0 "C24" H 2160 3420 50  0000 L CNN
+F 1 "10u" H 2160 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 3350 50  0001 C CNN
 F 3 "" H 2150 3350 50  0001 C CNN
 	1    2150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C34
+L Device:C_Small C25
 U 1 1 5C2B4317
 P 2500 3350
-F 0 "C34" H 2510 3420 50  0000 L CNN
-F 1 "0.1uF" H 2510 3270 50  0000 L CNN
+F 0 "C25" H 2510 3420 50  0000 L CNN
+F 1 "0.1u" H 2510 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 3350 50  0001 C CNN
 F 3 "" H 2500 3350 50  0001 C CNN
 	1    2500 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C35
+L Device:C_Small C26
 U 1 1 5C2B431E
 P 2950 3350
-F 0 "C35" H 2960 3420 50  0000 L CNN
-F 1 "0.1uF" H 2960 3270 50  0000 L CNN
+F 0 "C26" H 2960 3420 50  0000 L CNN
+F 1 "0.1u" H 2960 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2950 3350 50  0001 C CNN
 F 3 "" H 2950 3350 50  0001 C CNN
 	1    2950 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C36
+L Device:C_Small C27
 U 1 1 5C2B4325
 P 3300 3350
-F 0 "C36" H 3310 3420 50  0000 L CNN
-F 1 "0.01uF" H 3310 3270 50  0000 L CNN
+F 0 "C27" H 3310 3420 50  0000 L CNN
+F 1 "0.01u" H 3310 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3350 50  0001 C CNN
 F 3 "" H 3300 3350 50  0001 C CNN
 	1    3300 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C30
+L Device:C_Small C29
 U 1 1 5C2B432E
 P 6150 3200
-F 0 "C30" H 6160 3270 50  0000 L CNN
-F 1 "10uF" H 6160 3120 50  0000 L CNN
+F 0 "C29" H 6160 3270 50  0000 L CNN
+F 1 "10u" H 6160 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6150 3200 50  0001 C CNN
 F 3 "" H 6150 3200 50  0001 C CNN
 	1    6150 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C29
+L Device:C_Small C28
 U 1 1 5C2B4335
 P 5750 3200
-F 0 "C29" H 5760 3270 50  0000 L CNN
-F 1 "0.22uF" H 5760 3120 50  0000 L CNN
+F 0 "C28" H 5760 3270 50  0000 L CNN
+F 1 "0.22u" H 5760 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5750 3200 50  0001 C CNN
 F 3 "" H 5750 3200 50  0001 C CNN
 	1    5750 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small L3
+L Device:Ferrite_Bead_Small L1
 U 1 1 5C2B433C
 P 5950 3050
-F 0 "L3" V 5850 3100 50  0000 L CNN
-F 1 "2kH" V 5850 2900 50  0000 L CNN
+F 0 "L1" V 5850 3100 50  0000 L CNN
+F 1 "2k" V 5850 2900 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" V 5880 3050 50  0001 C CNN
 F 3 "" H 5950 3050 50  0001 C CNN
 	1    5950 3050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small L4
+L Device:Ferrite_Bead_Small L2
 U 1 1 5C2B4343
 P 5950 3350
-F 0 "L4" V 6050 3400 50  0000 L CNN
-F 1 "2kH" V 6050 3200 50  0000 L CNN
+F 0 "L2" V 6050 3400 50  0000 L CNN
+F 1 "2k" V 6050 3200 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" V 5880 3350 50  0001 C CNN
 F 3 "" H 5950 3350 50  0001 C CNN
 	1    5950 3350
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C31
+L Device:C_Small C30
 U 1 1 5C2B434A
 P 6550 3200
-F 0 "C31" H 6560 3270 50  0000 L CNN
-F 1 "0.1uF" H 6560 3120 50  0000 L CNN
+F 0 "C30" H 6560 3270 50  0000 L CNN
+F 1 "0.1u" H 6560 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 3200 50  0001 C CNN
 F 3 "" H 6550 3200 50  0001 C CNN
 	1    6550 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C32
+L Device:C_Small C31
 U 1 1 5C2B4351
 P 6850 3200
-F 0 "C32" H 6860 3270 50  0000 L CNN
-F 1 "0.01uF" H 6860 3120 50  0000 L CNN
+F 0 "C31" H 6860 3270 50  0000 L CNN
+F 1 "0.01u" H 6860 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6850 3200 50  0001 C CNN
 F 3 "" H 6850 3200 50  0001 C CNN
 	1    6850 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPSMaster-rescue:ADM3055E-utsvt-chips U13
+L utsvt-chips:ADM3055E U10
 U 1 1 5C2B4359
 P 4350 3600
-F 0 "U13" H 4100 4250 60  0000 C CNN
+F 0 "U10" H 4100 4250 60  0000 C CNN
 F 1 "ADM3055E" H 4550 3500 60  0000 C CNN
 F 2 "UTSVT_ICs:SOIC-20W_7.5x15.4mm_Pitch1.27mm" H 4350 3700 60  0001 C CNN
 F 3 "" H 4350 3700 60  0001 C CNN
@@ -187,10 +165,10 @@ Text Notes 6550 2900 0    40   ~ 0
 Must be close\nto V_ISO_In
 NoConn ~ 3650 4100
 $Comp
-L power:PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG06
 U 1 1 5C2B4394
 P 7300 3000
-F 0 "#FLG04" H 7300 3075 50  0001 C CNN
+F 0 "#FLG06" H 7300 3075 50  0001 C CNN
 F 1 "PWR_FLAG" H 7300 2900 30  0000 C CNN
 F 2 "" H 7300 3000 50  0001 C CNN
 F 3 "" H 7300 3000 50  0001 C CNN
@@ -198,10 +176,10 @@ F 3 "" H 7300 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG05
+L power:PWR_FLAG #FLG07
 U 1 1 5C2B439A
 P 7300 3200
-F 0 "#FLG05" H 7300 3275 50  0001 C CNN
+F 0 "#FLG07" H 7300 3275 50  0001 C CNN
 F 1 "PWR_FLAG" H 7200 3150 50  0001 L CNN
 F 2 "" H 7300 3200 50  0001 C CNN
 F 3 "" H 7300 3200 50  0001 C CNN
@@ -209,10 +187,10 @@ F 3 "" H 7300 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L BPSMaster-rescue:CDSOT23-T24CAN-utsvt-chips U12
+L utsvt-chips:CDSOT23-T24CAN U11
 U 1 1 5C2B43A0
 P 8100 2850
-F 0 "U12" H 8100 2700 60  0000 C CNN
+F 0 "U11" H 8100 2700 60  0000 C CNN
 F 1 "CDSOT23-T24CAN" H 8100 3000 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23W" H 8100 2850 60  0001 C CNN
 F 3 "" H 8100 2850 60  0001 C CNN
@@ -244,10 +222,10 @@ F 3 "" H 7300 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R43
+L Device:R R27
 U 1 1 5C2B43C4
 P 5550 4150
-F 0 "R43" V 5630 4150 50  0000 C CNN
+F 0 "R27" V 5630 4150 50  0000 C CNN
 F 1 "0" V 5550 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5480 4150 50  0001 C CNN
 F 3 "" H 5550 4150 50  0001 C CNN
@@ -311,20 +289,12 @@ Wire Notes Line
 	5400 2650 6000 2650
 Wire Notes Line
 	6500 2950 6950 2950
-Wire Wire Line
-	8000 3250 8000 3400
-Wire Wire Line
-	8200 3250 8200 3400
 Connection ~ 5250 3350
 Connection ~ 6150 3550
 Wire Wire Line
 	7300 3200 7300 3150
 Wire Wire Line
 	7300 3050 7300 3000
-Wire Wire Line
-	8000 3850 8000 3700
-Wire Wire Line
-	8200 3950 8200 3700
 Wire Wire Line
 	7750 2900 7550 2900
 Wire Wire Line
@@ -364,10 +334,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 3050 5250 3150
 $Comp
-L power:GND #PWR071
+L power:GND #PWR062
 U 1 1 5C28BDDE
 P 2150 3550
-F 0 "#PWR071" H 2150 3300 50  0001 C CNN
+F 0 "#PWR062" H 2150 3300 50  0001 C CNN
 F 1 "GND" H 2300 3500 50  0000 C CNN
 F 2 "" H 2150 3550 50  0001 C CNN
 F 3 "" H 2150 3550 50  0001 C CNN
@@ -409,16 +379,6 @@ Wire Wire Line
 	2950 3450 2950 3500
 Wire Wire Line
 	2950 3500 3300 3500
-Connection ~ 8000 3850
-Wire Wire Line
-	8000 3850 8900 3850
-Connection ~ 8200 3950
-Wire Wire Line
-	8200 3950 8900 3950
-Wire Wire Line
-	7450 3850 8000 3850
-Wire Wire Line
-	7550 3950 8200 3950
 Wire Wire Line
 	7150 3150 7300 3150
 Connection ~ 7300 3150
@@ -460,10 +420,6 @@ Text Label 5050 3850 0    50   ~ 0
 CAN_H
 Text Label 5050 3950 0    50   ~ 0
 CAN_L
-Text Label 8000 3350 2    50   ~ 0
-TERM_H
-Text Label 8200 3350 0    50   ~ 0
-TERM_L
 Connection ~ 5750 3050
 Wire Wire Line
 	5750 3050 5850 3050
@@ -489,10 +445,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 3000 2500 3100
 $Comp
-L power:+3.3V #PWR070
+L power:+3.3V #PWR064
 U 1 1 5C4ABE05
 P 2950 3000
-F 0 "#PWR070" H 2950 2850 50  0001 C CNN
+F 0 "#PWR064" H 2950 2850 50  0001 C CNN
 F 1 "+3.3V" H 2965 3173 50  0000 C CNN
 F 2 "" H 2950 3000 50  0001 C CNN
 F 3 "" H 2950 3000 50  0001 C CNN
@@ -502,10 +458,10 @@ $EndComp
 Wire Wire Line
 	2950 3000 2950 3200
 $Comp
-L power:+5V #PWR069
+L power:+5V #PWR063
 U 1 1 5C4C2AB0
 P 2500 3000
-F 0 "#PWR069" H 2500 2850 50  0001 C CNN
+F 0 "#PWR063" H 2500 2850 50  0001 C CNN
 F 1 "+5V" H 2515 3173 50  0000 C CNN
 F 2 "" H 2500 3000 50  0001 C CNN
 F 3 "" H 2500 3000 50  0001 C CNN
@@ -525,4 +481,32 @@ Wire Wire Line
 	5250 3350 5750 3350
 Text Notes 7600 4250 0    50   ~ 0
 As long as total equals to 120 Ohms,\nthe two termination resistors can be any value
+Wire Wire Line
+	7450 3850 7900 3850
+Wire Wire Line
+	7550 3950 8300 3950
+Wire Wire Line
+	7950 3550 7900 3550
+Wire Wire Line
+	7900 3550 7900 3850
+Connection ~ 7900 3850
+Wire Wire Line
+	7900 3850 8900 3850
+Wire Wire Line
+	8250 3550 8300 3550
+Wire Wire Line
+	8300 3550 8300 3950
+Connection ~ 8300 3950
+Wire Wire Line
+	8300 3950 8900 3950
+Wire Notes Line
+	4250 2500 4250 4750
+Text Notes 3900 2300 0    100  ~ 20
+ISOLATED
+Text Notes 3100 4500 0    50   ~ 0
+Local (Leader Board) GND
+Text Notes 4400 4500 0    50   ~ 0
+CAN GND (Different from Power GND)
+Text Notes 3500 5150 0    50   ~ 0
+Isolated CAN transceiver. This connects\nto the main electrical system's CAN bus.\nLook in datasheet for more information\nabout this page.
 $EndSCHEMATC
