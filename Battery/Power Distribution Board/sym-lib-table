@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name New-Power-Distribution-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/New Power Distribution Board-rescue.lib")(options "")(descr ""))
-)

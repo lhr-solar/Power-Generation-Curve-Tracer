@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name LinearRegulator15to5-cache)(type Legacy)(uri ${KIPRJMOD}/LinearRegulator15to5-cache.lib)(options "")(descr ""))
-  (lib (name LinearRegulator15to5)(type Legacy)(uri ${KIPRJMOD}/LinearRegulator15to5.lib)(options "")(descr ""))
-)

@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name LinearRegulator15to5)(type KiCad)(uri ${KIPRJMOD}/LinearRegulator15to5.pretty)(options "")(descr ""))
-  (lib (name UTSVT_Special)(type KiCad)(uri ${KIPRJMOD}/UTSVT_Special.pretty)(options "")(descr ""))
-)

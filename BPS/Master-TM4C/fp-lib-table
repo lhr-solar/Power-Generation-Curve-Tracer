@@ -1,8 +1,0 @@
-(fp_lib_table
-  (lib (name UTSVT_Connectors)(type KiCad)(uri ${KIPRJMOD}/../../Common/UTSVT_Connectors.pretty)(options "")(descr ""))
-  (lib (name UTSVT_ICs)(type KiCad)(uri ${KIPRJMOD}/../../Common/UTSVT_ICs.pretty)(options "")(descr ""))
-  (lib (name UTSVT_Mechanical)(type KiCad)(uri ${KIPRJMOD}/../../Common/UTSVT_Mechanical.pretty)(options "")(descr ""))
-  (lib (name UTSVT_Passive)(type KiCad)(uri ${KIPRJMOD}/../../Common/UTSVT_Passive.pretty)(options "")(descr ""))
-  (lib (name UTSVT_Special)(type KiCad)(uri ${KIPRJMOD}/../../Common/UTSVT_Special.pretty)(options "")(descr ""))
-  (lib (name UTSVT_BPS)(type KiCad)(uri ${KIPRJMOD}/../Library/UTSVT_BPS.pretty)(options "")(descr ""))
-)
