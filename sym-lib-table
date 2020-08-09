@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name INA211)(type Legacy)(uri ${KIPRJMOD}/INA211.lib)(options "")(descr ""))
+  (lib (name Array_Curve_Tracer)(type Legacy)(uri ${KIPRJMOD}/Array_Curve_Tracer.lib)(options "")(descr ""))
+  (lib (name IV-Curve-Tracer-rescue)(type Legacy)(uri "${KIPRJMOD}/IV Curve Tracer-rescue.lib")(options "")(descr ""))
+)
