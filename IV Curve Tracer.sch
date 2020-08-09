@@ -230,7 +230,7 @@ $EndComp
 Wire Wire Line
 	7150 1400 6950 1400
 $Comp
-L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts C16
+L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue C16
 U 1 1 5EFE7FF3
 P 7150 1400
 F 0 "C16" H 7400 1550 50  0000 C CNN
@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 1400 8000 1400
 $Comp
-L IV-Curve-Tracer-rescue:MAX680ESA+-SamacSys_Parts IC1
+L IV-Curve-Tracer-rescue:MAX680ESA+-SamacSys_Parts-IV-Curve-Tracer-rescue IC1
 U 1 1 5EF602F8
 P 6950 1950
 F 0 "IC1" H 7450 2215 50  0000 C CNN
@@ -314,7 +314,7 @@ Wire Notes Line
 	8900 550  8900 3050
 Connection ~ 9800 950 
 $Comp
-L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts C2
+L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C2
 U 1 1 5EF8E859
 P 10300 950
 F 0 "C2" H 10500 800 50  0000 L CNN
@@ -451,12 +451,8 @@ F 3 "" H 10650 3600 50  0001 C CNN
 	1    10650 3600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10650 3900 2    50   Input ~ 0
+Text GLabel 10900 3900 2    50   Input ~ 0
 ADC_V
-Wire Wire Line
-	10650 3900 10500 3900
-Wire Wire Line
-	10500 4000 10650 4000
 Wire Wire Line
 	10650 4200 10500 4200
 $Comp
@@ -488,16 +484,14 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0111
 U 1 1 5F069262
-P 10700 3800
-F 0 "#PWR0111" H 10700 3650 50  0001 C CNN
-F 1 "+5V" V 10715 3928 50  0000 L CNN
-F 2 "" H 10700 3800 50  0001 C CNN
-F 3 "" H 10700 3800 50  0001 C CNN
-	1    10700 3800
+P 11100 3800
+F 0 "#PWR0111" H 11100 3650 50  0001 C CNN
+F 1 "+5V" V 11000 3750 50  0000 L CNN
+F 2 "" H 11100 3800 50  0001 C CNN
+F 3 "" H 11100 3800 50  0001 C CNN
+	1    11100 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10500 3800 10700 3800
 NoConn ~ 9450 3700
 NoConn ~ 9450 4000
 NoConn ~ 9450 4200
@@ -635,7 +629,7 @@ $EndComp
 Wire Wire Line
 	1350 1800 1350 2200
 $Comp
-L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts LED2
+L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue LED2
 U 1 1 5F470E7A
 P 7950 3800
 F 0 "LED2" H 8250 4167 50  0000 C CNN
@@ -676,15 +670,11 @@ $EndComp
 Wire Wire Line
 	8850 3300 9100 3300
 Wire Wire Line
-	9450 3500 9100 3500
-Wire Wire Line
 	9100 3500 9100 3300
-Wire Wire Line
-	9450 3600 9100 3600
 Wire Wire Line
 	9100 3600 9100 3800
 $Comp
-L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts LED1
+L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue LED1
 U 1 1 5F4A6408
 P 7950 3300
 F 0 "LED1" H 8250 3667 50  0000 C CNN
@@ -725,7 +715,7 @@ $EndComp
 Wire Wire Line
 	8850 4300 9100 4300
 $Comp
-L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts LED3
+L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue LED3
 U 1 1 5F4AF233
 P 7950 4300
 F 0 "LED3" H 8250 4667 50  0000 C CNN
@@ -757,7 +747,7 @@ F 3 "" H 7500 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts LED4
+L IV-Curve-Tracer-rescue:TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue LED4
 U 1 1 5F4C1230
 P 7500 1000
 F 0 "LED4" H 7800 1367 50  0000 C CNN
@@ -892,12 +882,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 5F13AACD
-P 10500 4800
-F 0 "#PWR0110" H 10500 4650 50  0001 C CNN
-F 1 "+3.3V" V 10515 4928 50  0000 L CNN
-F 2 "" H 10500 4800 50  0001 C CNN
-F 3 "" H 10500 4800 50  0001 C CNN
-	1    10500 4800
+P 10650 4800
+F 0 "#PWR0110" H 10650 4650 50  0001 C CNN
+F 1 "+3.3V" V 10600 4700 50  0000 L CNN
+F 2 "" H 10650 4800 50  0001 C CNN
+F 3 "" H 10650 4800 50  0001 C CNN
+	1    10650 4800
 	0    1    1    0   
 $EndComp
 Wire Notes Line
@@ -975,12 +965,10 @@ Wire Wire Line
 	1050 1100 1050 2700
 Connection ~ 4050 1300
 Wire Wire Line
-	7000 6050 7700 6050
+	7000 6050 7400 6050
 Connection ~ 7000 6050
 Wire Wire Line
 	7000 5900 7000 6050
-Wire Wire Line
-	6800 5950 7700 5950
 Connection ~ 6800 5950
 Wire Wire Line
 	6800 5900 6800 5950
@@ -1054,11 +1042,8 @@ Wire Wire Line
 	3950 5450 3950 5150
 Wire Wire Line
 	3900 5450 3950 5450
-Connection ~ 4200 5450
 Wire Wire Line
 	3900 5550 4200 5550
-Wire Wire Line
-	4200 5550 4200 5450
 Wire Wire Line
 	3900 5750 4000 5750
 Wire Wire Line
@@ -1070,7 +1055,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 6150 4350 6150
 Wire Wire Line
-	4000 5000 5100 5000
+	4000 5000 4200 5000
 Connection ~ 5100 5850
 Wire Wire Line
 	3900 5850 5100 5850
@@ -1085,51 +1070,40 @@ Text Label 4000 6150 0    50   ~ 0
 RSlope
 NoConn ~ 3900 5650
 Wire Wire Line
-	1800 5650 1800 6000
+	1550 5650 1550 6000
 Wire Wire Line
-	1450 5650 1450 6000
-Connection ~ 1450 5650
+	1300 5650 1300 6000
+Connection ~ 1300 5650
 Wire Wire Line
-	1450 5650 1800 5650
+	1300 5650 1550 5650
 $Comp
 L power:+5V #PWR0128
 U 1 1 5F2A3585
-P 1150 5450
-F 0 "#PWR0128" H 1150 5300 50  0001 C CNN
-F 1 "+5V" H 1165 5623 50  0000 C CNN
-F 2 "" H 1150 5450 50  0001 C CNN
-F 3 "" H 1150 5450 50  0001 C CNN
-	1    1150 5450
+P 1050 5450
+F 0 "#PWR0128" H 1050 5300 50  0001 C CNN
+F 1 "+5V" H 1065 5623 50  0000 C CNN
+F 2 "" H 1050 5450 50  0001 C CNN
+F 3 "" H 1050 5450 50  0001 C CNN
+	1    1050 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 5450 1450 5650
+	1300 5450 1300 5650
 $Comp
 L power:+3.3V #PWR0129
 U 1 1 5F2A357E
-P 1450 5450
-F 0 "#PWR0129" H 1450 5300 50  0001 C CNN
-F 1 "+3.3V" H 1465 5623 50  0000 C CNN
-F 2 "" H 1450 5450 50  0001 C CNN
-F 3 "" H 1450 5450 50  0001 C CNN
-	1    1450 5450
+P 1300 5450
+F 0 "#PWR0129" H 1300 5300 50  0001 C CNN
+F 1 "+3.3V" H 1315 5623 50  0000 C CNN
+F 2 "" H 1300 5450 50  0001 C CNN
+F 3 "" H 1300 5450 50  0001 C CNN
+	1    1300 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 5450 2100 6250
-Connection ~ 2100 5450
+	1300 6200 1300 6250
 Wire Wire Line
-	2500 5450 2100 5450
-Wire Wire Line
-	2100 5350 2100 5450
-Wire Wire Line
-	2500 5350 2100 5350
-Wire Wire Line
-	2100 6250 2500 6250
-Wire Wire Line
-	1450 6200 1450 6250
-Wire Wire Line
-	1150 6200 1150 6250
+	1050 6200 1050 6250
 $Comp
 L power:GND #PWR0130
 U 1 1 5F2A3536
@@ -1142,38 +1116,38 @@ F 3 "" H 850 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 6250 1800 6200
+	1550 6250 1550 6200
 $Comp
 L Device:C_Small C9
 U 1 1 5F2A349F
-P 1800 6100
-F 0 "C9" H 1810 6170 50  0000 L CNN
-F 1 "0.01uF" H 1810 6020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1800 6100 50  0001 C CNN
-F 3 "" H 1800 6100 50  0001 C CNN
-	1    1800 6100
+P 1550 6100
+F 0 "C9" H 1560 6170 50  0000 L CNN
+F 1 "0.01uF" H 1560 6020 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1550 6100 50  0001 C CNN
+F 3 "" H 1550 6100 50  0001 C CNN
+	1    1550 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 5F2A3499
-P 1450 6100
-F 0 "C8" H 1460 6170 50  0000 L CNN
-F 1 "0.1uF" H 1460 6020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1450 6100 50  0001 C CNN
-F 3 "" H 1450 6100 50  0001 C CNN
-	1    1450 6100
+P 1300 6100
+F 0 "C8" H 1310 6170 50  0000 L CNN
+F 1 "0.1uF" H 1310 6020 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1300 6100 50  0001 C CNN
+F 3 "" H 1300 6100 50  0001 C CNN
+	1    1300 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C7
 U 1 1 5F2A3493
-P 1150 6100
-F 0 "C7" H 1160 6170 50  0000 L CNN
-F 1 "0.1uF" H 1160 6020 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1150 6100 50  0001 C CNN
-F 3 "" H 1150 6100 50  0001 C CNN
-	1    1150 6100
+P 1050 6100
+F 0 "C7" H 1060 6170 50  0000 L CNN
+F 1 "0.1uF" H 1060 6020 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1050 6100 50  0001 C CNN
+F 3 "" H 1050 6100 50  0001 C CNN
+	1    1050 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1292,12 +1266,12 @@ F 3 "" H 6100 5300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L IV-Curve-Tracer-rescue:CDSOT23-T24CAN-SamacSys_Parts U5
+L IV-Curve-Tracer-rescue:CDSOT23-T24CAN-SamacSys_Parts-IV-Curve-Tracer-rescue U5
 U 1 1 5F2A34E1
 P 6550 4900
 F 0 "U5" H 7300 4800 60  0000 C CNN
 F 1 "CDSOT23-T24CAN" H 6950 5050 60  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P230X117-3N" H 6550 4900 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23W_Handsoldering" H 6550 4900 60  0001 C CNN
 F 3 "" H 6550 4900 60  0001 C CNN
 	1    6550 4900
 	1    0    0    -1  
@@ -1333,8 +1307,6 @@ Wire Wire Line
 	5000 5450 5100 5450
 Connection ~ 5100 5150
 Connection ~ 5100 5450
-Wire Wire Line
-	4200 5350 4200 5450
 Wire Wire Line
 	5950 5450 5950 5250
 Connection ~ 7500 5250
@@ -1388,7 +1360,6 @@ Wire Wire Line
 	5350 5450 5650 5450
 Wire Wire Line
 	5650 6100 5650 6050
-Connection ~ 4700 5450
 Text Label 4000 5950 0    50   ~ 0
 CAN_H
 Text Label 4000 6050 0    50   ~ 0
@@ -1399,7 +1370,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 5450 4800 5450
 Wire Wire Line
-	4200 5450 4700 5450
+	4200 5550 4400 5550
 Text Notes 5950 6250 0    50   ~ 0
 As long as total equals to 120 Ohms,\nthe two termination resistors can be any value
 Wire Wire Line
@@ -1409,37 +1380,18 @@ Wire Wire Line
 Wire Wire Line
 	850  6200 850  6250
 Wire Wire Line
-	850  6250 1150 6250
+	850  6250 1050 6250
 Connection ~ 850  6250
 Wire Wire Line
 	850  6250 850  6300
-Connection ~ 2100 6250
-Connection ~ 1150 6250
 Wire Wire Line
-	1150 6250 1450 6250
-Connection ~ 1450 6250
+	1050 5450 1050 5550
 Wire Wire Line
-	1450 6250 1800 6250
-Connection ~ 1800 6250
-Wire Wire Line
-	1800 6250 2100 6250
-Wire Wire Line
-	1150 5450 1150 5550
-Wire Wire Line
-	2500 5550 1150 5550
-Connection ~ 1150 5550
-Wire Wire Line
-	1150 5550 1150 5650
-Wire Wire Line
-	2500 5650 1800 5650
-Connection ~ 1800 5650
-Wire Wire Line
-	850  5650 1150 5650
+	850  5650 1050 5650
 Wire Wire Line
 	850  5650 850  6000
-Connection ~ 1150 5650
 Wire Wire Line
-	1150 5650 1150 6000
+	1050 5650 1050 6000
 Wire Wire Line
 	3900 6050 5650 6050
 Connection ~ 5650 6050
@@ -1476,7 +1428,7 @@ F 3 "" H 4500 6150 50  0001 C CNN
 	1    4500 6150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10650 4000 2    50   Input ~ 0
+Text GLabel 10900 4000 2    50   Input ~ 0
 ADC_C
 Text GLabel 10650 4200 2    50   Input ~ 0
 DAC_Control
@@ -1484,10 +1436,10 @@ Text GLabel 9450 3900 0    50   Input ~ 0
 CAN_TX
 Text GLabel 9450 4700 0    50   Input ~ 0
 CAN_RX
-Text GLabel 2500 5750 0    50   Input ~ 0
+Text GLabel 2000 5750 0    50   Input ~ 0
 CAN_RX
 $Comp
-L IV-Curve-Tracer-rescue:ADM3055EBRIZ-SamacSys_Parts U4
+L IV-Curve-Tracer-rescue:ADM3055EBRIZ-SamacSys_Parts-IV-Curve-Tracer-rescue U4
 U 1 1 5F351120
 P 2500 5350
 F 0 "U4" H 3200 5600 60  0000 C CNN
@@ -1497,7 +1449,7 @@ F 3 "https://www.analog.com/en/products/adm3055e.html#product-overview" H 2500 5
 	1    2500 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 5950 0    50   Input ~ 0
+Text GLabel 2350 5950 0    50   Input ~ 0
 CAN_TX
 Text Notes 9800 3650 0    50   ~ 0
 Powered\nBy USB\n
@@ -1592,7 +1544,7 @@ $EndComp
 Text Notes 8950 2500 0    50   ~ 0
 * Might be 3.9k, or 3.9k \nchained to 100 ohm
 $Comp
-L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts C4
+L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C4
 U 1 1 5F3525C2
 P 5500 650
 F 0 "C4" H 5700 500 50  0000 L CNN
@@ -1609,7 +1561,7 @@ F 9 "SMDTC04100TA00JS00" H 5850 0   50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts C5
+L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C5
 U 1 1 5F37C73B
 P 5600 1950
 F 0 "C5" H 5800 1800 50  0000 L CNN
@@ -1626,7 +1578,7 @@ F 9 "SMDTC04100TA00JS00" H 5950 1300 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts C15
+L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue C15
 U 1 1 5F3E3741
 P 6450 2050
 F 0 "C15" H 6700 2200 50  0000 C CNN
@@ -1645,7 +1597,7 @@ $EndComp
 Wire Wire Line
 	6950 1400 6950 1950
 $Comp
-L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts C14
+L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue C14
 U 1 1 5F3E8BA7
 P 7350 2600
 F 0 "C14" H 7600 2750 50  0000 C CNN
@@ -1662,7 +1614,7 @@ F 9 "HMK325C7475KM-PE" H 7700 1950 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts C17
+L IV-Curve-Tracer-rescue:HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue C17
 U 1 1 5F3F25F7
 P 8350 2150
 F 0 "C17" H 8600 2300 50  0000 C CNN
@@ -1745,7 +1697,7 @@ Connection ~ 3850 1000
 Wire Wire Line
 	3000 2400 3700 2400
 $Comp
-L IV-Curve-Tracer-rescue:SW_Rotary2x3-Switch SW0
+L IV-Curve-Tracer-rescue:SW_Rotary2x3-Switch-IV-Curve-Tracer-rescue SW0
 U 1 1 5F1647B0
 P 2600 2000
 F 0 "SW0" H 2650 2781 50  0000 C CNN
@@ -1755,4 +1707,242 @@ F 3 "https://www.mouser.com/datasheet/2/242/CK-681.pdf" H 2500 2600 50  0001 C C
 	1    2600 2000
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J7
+U 1 1 5F33C851
+P 7900 5250
+F 0 "J7" H 8000 5200 60  0000 C CNN
+F 1 "CAN_In" H 7900 5500 60  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 8050 5550 60  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/3/ItemDetail_1718605-916253.pdf" H 8050 5550 60  0001 C CNN
+	1    7900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5150 7700 5150
+Connection ~ 7600 5150
+Wire Wire Line
+	7700 5250 7500 5250
+Wire Wire Line
+	6800 5950 7300 5950
+Wire Wire Line
+	7700 5350 7300 5350
+Wire Wire Line
+	7300 5350 7300 5950
+Connection ~ 7300 5950
+Wire Wire Line
+	7300 5950 7700 5950
+Wire Wire Line
+	7700 5450 7400 5450
+Wire Wire Line
+	7400 5450 7400 6050
+Connection ~ 7400 6050
+Wire Wire Line
+	7400 6050 7700 6050
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F3918D7
+P 3950 5150
+F 0 "TP6" H 3950 5450 50  0000 C BNN
+F 1 "ISO_Vout" H 3950 5400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 3950 5150 50  0001 C CNN
+F 3 "" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5F3A9087
+P 4400 5550
+F 0 "TP8" H 4400 5850 50  0000 C BNN
+F 1 "ISO_GNDout" H 4400 5800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4400 5550 50  0001 C CNN
+F 3 "" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5F3B4C9B
+P 5100 5850
+F 0 "TP9" V 4950 6000 50  0000 C BNN
+F 1 "ISO_GNDin" V 5000 6050 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 5100 5850 50  0001 C CNN
+F 3 "" H 5100 5850 50  0001 C CNN
+	1    5100 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F39D590
+P 4200 5000
+F 0 "TP7" H 4200 5300 50  0000 C BNN
+F 1 "ISO_Vin" H 4200 5250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4200 5000 50  0001 C CNN
+F 3 "" H 4200 5000 50  0001 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 5150
+Connection ~ 4200 5000
+Wire Wire Line
+	4200 5000 5100 5000
+Connection ~ 4200 5550
+Wire Wire Line
+	4200 5350 4200 5550
+Wire Wire Line
+	4700 5550 4700 5450
+Connection ~ 4700 5450
+Connection ~ 4400 5550
+Wire Wire Line
+	4400 5550 4700 5550
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5F55A68F
+P 2400 5950
+F 0 "TP11" H 2500 6100 50  0000 C BNN
+F 1 "CAN_Tx" H 2550 6050 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2400 5950 50  0001 C CNN
+F 3 "" H 2400 5950 50  0001 C CNN
+	1    2400 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5F5665B2
+P 2400 5750
+F 0 "TP10" H 2500 5850 50  0000 C BNN
+F 1 "CAN_Rx" H 2550 5800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 2400 5750 50  0001 C CNN
+F 3 "" H 2400 5750 50  0001 C CNN
+	1    2400 5750
+	-1   0    0    1   
+$EndComp
+Connection ~ 1050 6250
+Wire Wire Line
+	1050 6250 1300 6250
+Wire Wire Line
+	1050 5550 2500 5550
+Wire Wire Line
+	1050 5650 1050 5550
+Connection ~ 1050 5650
+Connection ~ 1050 5550
+Connection ~ 1550 5650
+Connection ~ 1300 6250
+Connection ~ 1550 6250
+Wire Wire Line
+	1300 6250 1550 6250
+Wire Wire Line
+	1550 6250 2050 6250
+Wire Wire Line
+	1550 5650 2500 5650
+Wire Wire Line
+	2500 5950 2400 5950
+Connection ~ 2400 5750
+Wire Wire Line
+	2400 5750 2500 5750
+Wire Wire Line
+	2000 5750 2400 5750
+Connection ~ 2400 5950
+Wire Wire Line
+	2400 5950 2350 5950
+Connection ~ 2050 6250
+Wire Wire Line
+	2050 6250 2500 6250
+Wire Wire Line
+	2050 5350 2050 5450
+Wire Wire Line
+	2050 5450 2500 5450
+Connection ~ 2050 5450
+Wire Wire Line
+	2050 5450 2050 6250
+Wire Wire Line
+	2050 5350 2500 5350
+$Comp
+L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C18
+U 1 1 5F3336ED
+P 10600 4800
+F 0 "C18" H 10800 4650 50  0000 L CNN
+F 1 ".1uF" H 10800 4950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10950 4850 50  0001 L CNN
+F 3 "" H 10950 4750 50  0001 L CNN
+F 4 "CGA2B1X7R1C104K050BC - Multilayer Ceramic Capacitors MLCC - SMD/SMT CGA 0402 16V 0.1uF X7R 10% AEC-Q200" H 10950 4650 50  0001 L CNN "Description"
+F 5 "5" H 10950 4550 50  0001 L CNN "Height"
+F 6 "505-SMDTC04100TA00JS" H 10950 4450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/WIMA/SMDTC04100TA00JS00?qs=WKNSk2eAW0qqe4OQTbUxSQ%3D%3D" H 10950 4350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "WIMA" H 10950 4250 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMDTC04100TA00JS00" H 10950 4150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10600 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L IV-Curve-Tracer-rescue:SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C3
+U 1 1 5F34176D
+P 10850 4300
+F 0 "C3" H 11050 4150 50  0000 L CNN
+F 1 ".1uF" H 11050 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11200 4350 50  0001 L CNN
+F 3 "" H 11200 4250 50  0001 L CNN
+F 4 "CGA2B1X7R1C104K050BC - Multilayer Ceramic Capacitors MLCC - SMD/SMT CGA 0402 16V 0.1uF X7R 10% AEC-Q200" H 11200 4150 50  0001 L CNN "Description"
+F 5 "5" H 11200 4050 50  0001 L CNN "Height"
+F 6 "505-SMDTC04100TA00JS" H 11200 3950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/WIMA/SMDTC04100TA00JS00?qs=WKNSk2eAW0qqe4OQTbUxSQ%3D%3D" H 11200 3850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "WIMA" H 11200 3750 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMDTC04100TA00JS00" H 11200 3650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10850 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 3600 9100 3600
+Wire Wire Line
+	9450 3500 9100 3500
+$Comp
+L power:GND #PWR01
+U 1 1 5F35F77D
+P 10600 5300
+F 0 "#PWR01" H 10600 5050 50  0001 C CNN
+F 1 "GND" V 10605 5172 50  0000 R CNN
+F 2 "" H 10600 5300 50  0001 C CNN
+F 3 "" H 10600 5300 50  0001 C CNN
+	1    10600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F36C407
+P 10850 4800
+F 0 "#PWR02" H 10850 4550 50  0001 C CNN
+F 1 "GND" V 10855 4672 50  0000 R CNN
+F 2 "" H 10850 4800 50  0001 C CNN
+F 3 "" H 10850 4800 50  0001 C CNN
+	1    10850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 4800 10600 4800
+Connection ~ 10600 4800
+Wire Wire Line
+	10500 3800 10850 3800
+Wire Wire Line
+	10850 4300 10850 3800
+Connection ~ 10850 3800
+Wire Wire Line
+	10850 3800 11100 3800
+Wire Wire Line
+	10500 3900 10900 3900
+Wire Wire Line
+	10500 4000 10900 4000
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5F48089C
+P 1050 2700
+F 0 "TP12" V 1100 2850 50  0000 L BNN
+F 1 "GroundTP" V 1150 2700 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 1050 2700 50  0001 C CNN
+F 3 "" H 1050 2700 50  0001 C CNN
+	1    1050 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 4800 10600 4800
 $EndSCHEMATC

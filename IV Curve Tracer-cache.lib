@@ -318,11 +318,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts
+# IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts IC 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts-IV-Curve-Tracer-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1250 300 50 H V L CNN
-F1 "IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts" 1250 200 50 H V L CNN
+F1 "IV-Curve-Tracer-rescue_ADM3055EBRIZ-SamacSys_Parts-IV-Curve-Tracer-rescue" 1250 200 50 H V L CNN
 F2 "SOIC127P1030X264-20N" 1250 100 50 H I L CNN
 F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM3055E.pdf" 1250 0 50 H I L CNN
 F4 "CAN Interface IC 5kV isoPower Isoltd CAN-FD Transceiver" 1250 -100 50 H I L CNN "Description"
@@ -356,11 +356,11 @@ X AUXIN 9 0 -800 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts
+# IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts D 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts-IV-Curve-Tracer-rescue D 0 30 Y Y 1 F N
 F0 "D" 750 300 50 H V L CNN
-F1 "IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts" 750 200 50 H V L CNN
+F1 "IV-Curve-Tracer-rescue_CDSOT23-T24CAN-SamacSys_Parts-IV-Curve-Tracer-rescue" 750 200 50 H V L CNN
 F2 "SOT95P230X117-3N" 750 100 50 H I L CNN
 F3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-T24CAN.pdf" 750 0 50 H I L CNN
 F4 "Bourns CDSOT23-T24CAN, Dual Bi-Directional ESD Protection Diode, 3-Pin SOT-23" 750 -100 50 H I L CNN "Description"
@@ -377,11 +377,11 @@ X K3 3 900 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts
+# IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts C 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue C 0 30 Y Y 1 F N
 F0 "C" 350 250 50 H V L CNN
-F1 "IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts" 350 150 50 H V L CNN
+F1 "IV-Curve-Tracer-rescue_HMK325C7475KM-PE-SamacSys_Parts-IV-Curve-Tracer-rescue" 350 150 50 H V L CNN
 F2 "CAPC3225X270N" 350 50 50 H I L CNN
 F3 "https://ds.yuden.co.jp/TYCOMPAS/ut/download?pn=TMK212BBJ226MG-TT+&fileType=CS" 350 -50 50 H I L CNN
 F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1210 100V 4.7uF 10% X7S" 350 -150 50 H I L CNN "Description"
@@ -400,11 +400,11 @@ X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts
+# IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts IC 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts-IV-Curve-Tracer-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 850 300 50 H V L CNN
-F1 "IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts" 850 200 50 H V L CNN
+F1 "IV-Curve-Tracer-rescue_MAX680ESA+-SamacSys_Parts-IV-Curve-Tracer-rescue" 850 200 50 H V L CNN
 F2 "SOIC127P600X175-8N" 850 100 50 H I L CNN
 F3 "https://componentsearchengine.com/Datasheets/1/MAX680ESA+.pdf" 850 0 50 H I L CNN
 F4 "MAX680ESA+, Charge Pump Inverting, Step Up 10mA 8 kHz, +/-10 V, 8-Pin, SO N" 850 -100 50 H I L CNN "Description"
@@ -426,11 +426,11 @@ X V+ 8 1000 0 200 L 50 50 0 0 W
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts
+# IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts C 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue C 0 30 Y Y 1 F N
 F0 "C" 350 250 50 H V L CNN
-F1 "IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts" 350 150 50 H V L CNN
+F1 "IV-Curve-Tracer-rescue_SMDTC04100TA00JS00-SamacSys_Parts-IV-Curve-Tracer-rescue" 350 150 50 H V L CNN
 F2 "SMDTC04100TA00JS00" 350 50 50 H I L CNN
 F3 "https://componentsearchengine.com/Datasheets/1/SMDTC04100TA00JS00.pdf" 350 -50 50 H I L CNN
 F4 "Film Capacitors 1uF 63 Volts 5%" 350 -150 50 H I L CNN "Description"
@@ -449,11 +449,11 @@ X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch
+# IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch SW 0 40 Y N 1 F N
+DEF IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch-IV-Curve-Tracer-rescue SW 0 40 Y N 1 F N
 F0 "SW" 0 700 50 H V C CNN
-F1 "IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch" 150 -550 50 H V C CNN
+F1 "IV-Curve-Tracer-rescue_SW_Rotary2x3-Switch-IV-Curve-Tracer-rescue" 150 -550 50 H V C CNN
 F2 "" -100 600 50 H I C CNN
 F3 "" -100 600 50 H I C CNN
 DRAW
@@ -493,11 +493,11 @@ X 6 6 500 -300 200 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts
+# IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue
 #
-DEF IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts LED 0 30 Y Y 1 F N
+DEF IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue LED 0 30 Y Y 1 F N
 F0 "LED" 500 350 50 H V L BNN
-F1 "IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts" 500 250 50 H V L BNN
+F1 "IV-Curve-Tracer-rescue_TLHR5400-AS12Z-SamacSys_Parts-IV-Curve-Tracer-rescue" 500 250 50 H V L BNN
 F2 "TLHR5400AS12Z" 500 150 50 H I L BNN
 F3 "http://www.vishay.com/docs/83012/tlhg540.pdf" 500 50 50 H I L BNN
 F4 "Standard LEDs - Through Hole Red 10mcd; 5mm 612-625nm; 2V Typ" 500 -50 50 H I L BNN "Description"
