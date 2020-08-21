@@ -717,18 +717,6 @@ F 3 "~" H 1350 2350 50  0001 C CNN
 	1    1350 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R8
-U 1 1 5EF5A814
-P 1700 2450
-F 0 "R8" H 1770 2496 50  0000 L CNN
-F 1 "2k" H 1770 2405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1630 2450 50  0001 C CNN
-F 3 "~" H 1700 2450 50  0001 C CNN
-	1    1700 2450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 2300
 Connection ~ 1350 2200
 Wire Wire Line
 	1700 2700 1700 2600
@@ -2047,4 +2035,16 @@ $EndComp
 Connection ~ 4900 2200
 Text Notes 850  4700 0    50   ~ 0
 CAN Circuit
+Connection ~ 1700 2300
+$Comp
+L Device:R R8
+U 1 1 5EF5A814
+P 1700 2450
+F 0 "R8" H 1770 2496 50  0000 L CNN
+F 1 "2k" H 1770 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1630 2450 50  0001 C CNN
+F 3 "~" H 1700 2450 50  0001 C CNN
+	1    1700 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
