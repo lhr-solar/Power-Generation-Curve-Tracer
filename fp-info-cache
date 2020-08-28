@@ -1,4 +1,4 @@
-18366770961602295
+18373158748220644
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51582,6 +51582,34 @@ heatsink
 0
 2
 1
+IV Curve Tracer
+C_Rect_L26.5mm_W17.0mm_P22.50mm_MKS4
+C, Rect series, Radial, pin pitch=22.50mm, , length*width=26.5*11.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf
+C Rect series Radial pin pitch 22.50mm  length 26.5mm width 11.5mm Capacitor
+0
+2
+2
+IV Curve Tracer
+ExpandedBlockTerminal-2H_P7.62mm
+simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2
+terminal block bornier2
+0
+2
+2
+IV Curve Tracer
+IV
+
+
+0
+2
+2
+IV Curve Tracer
+R-WSLF2512L5000FEB
+
+
+0
+2
+2
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height

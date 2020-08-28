@@ -383,7 +383,7 @@ F 3 "https://www.mouser.com/ProductDetail/Gravitech/15Fx1-254mm?qs=Vxac6xGyzPnMG
 	1    10300 4200
 	-1   0    0    -1  
 $EndComp
-Text GLabel 10900 3900 2    50   Input ~ 0
+Text GLabel 10900 4100 2    50   Input ~ 0
 ADC_V
 Wire Wire Line
 	10650 4200 10500 4200
@@ -417,7 +417,7 @@ NoConn ~ 10500 4600
 NoConn ~ 10500 4500
 NoConn ~ 10500 4400
 NoConn ~ 10500 4300
-NoConn ~ 10500 4100
+NoConn ~ 10500 3900
 NoConn ~ 10500 3700
 Text Notes 7000 6800 0    50   ~ 0
 Youssef Elsherif\nGary Hallock\nMatthew Yu
@@ -717,6 +717,18 @@ F 3 "~" H 1350 2350 50  0001 C CNN
 	1    1350 2350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R8
+U 1 1 5EF5A814
+P 1700 2450
+F 0 "R8" H 1770 2496 50  0000 L CNN
+F 1 "2k" H 1770 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1630 2450 50  0001 C CNN
+F 3 "~" H 1700 2450 50  0001 C CNN
+	1    1700 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 2300
 Connection ~ 1350 2200
 Wire Wire Line
 	1700 2700 1700 2600
@@ -903,7 +915,7 @@ U 1 1 5F2A3475
 P 7900 5850
 F 0 "J1" H 8000 5800 60  0000 C CNN
 F 1 "CAN_Out" H 7900 6100 60  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 8050 6150 60  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 8050 6150 60  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/324/3/ItemDetail_1718605-916253.pdf" H 8050 6150 60  0001 C CNN
 	1    7900 5850
 	1    0    0    -1  
@@ -1439,7 +1451,7 @@ U 1 1 5F33C851
 P 7900 5250
 F 0 "J7" H 8000 5200 60  0000 C CNN
 F 1 "CAN_In" H 7900 5500 60  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 8050 5550 60  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 8050 5550 60  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/324/3/ItemDetail_1718605-916253.pdf" H 8050 5550 60  0001 C CNN
 	1    7900 5250
 	1    0    0    -1  
@@ -1611,7 +1623,7 @@ Wire Wire Line
 Wire Wire Line
 	10850 4300 10850 3800
 Wire Wire Line
-	10500 3900 10900 3900
+	10500 4100 10900 4100
 Wire Wire Line
 	10500 4000 10900 4000
 $Comp
@@ -2035,16 +2047,4 @@ $EndComp
 Connection ~ 4900 2200
 Text Notes 850  4700 0    50   ~ 0
 CAN Circuit
-Connection ~ 1700 2300
-$Comp
-L Device:R R8
-U 1 1 5EF5A814
-P 1700 2450
-F 0 "R8" H 1770 2496 50  0000 L CNN
-F 1 "2k" H 1770 2405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 1630 2450 50  0001 C CNN
-F 3 "~" H 1700 2450 50  0001 C CNN
-	1    1700 2450
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
