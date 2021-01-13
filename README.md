@@ -25,14 +25,17 @@ below.
 
 ---
 
-## Maintainers
+## Maintainers and Contribution
 
 The last maintainer of this project was Matthew Yu (Array Lead 2020) as of
-12/16/2020. His email is matthewjkyu@gmail.com.
+12/21/2020. His email is matthewjkyu@gmail.com.
 
 Also a useful point of contact is Professor Gary Hallock, who advised Matthew
 and worked with the several former senior design teams and solar car class
 groups who developed this board.
+
+Thanks to Youssef Elsherif for collaborating with Matthew on the design of V1.0
+of the board schematic and layout.
 
 ---
 
@@ -62,6 +65,8 @@ The parts list is currently on **Version 1.1.0**.
   - Re-annotated all component labels and removed rescued symbols. We now just
     have a single .pretty folder and an Array.lib.
   - Updated indicator LEDs and added a Reset button.
+  - Standardized current sensor to that on the MPPT board.
+  - Merged the op amp used by the voltage sensor and the gate amplifier.
   - Added a pre-emptive fuse to array input and swapped to a Phoenix connector.
   - Added a pre-emptive 9V power supply.
 
@@ -206,13 +211,13 @@ layout, please file a PR or issue so it can be fixed!
 
 2. Assembling LEDs
 
-   1. Solder the smallest components first: R2 - R5 and LED1 - LED5.
+   1. Solder the smallest components first: R1 - R5 and LED1 - LED5.
    2. Check for shorts across each resistor-LED pair.
    3. Further testing on these will occur in the next step.
 
 3. Nucleo Connections
 
-   1. Solder the smallest components first: SW1, C0, J0.
+   1. Solder the smallest components first: SW1, C1, J1.
    2. Solder test points: TP1.
    3. Solder the headers for the Nucleo (U1) and make sure they are upright
       and the Nucleo fits.
@@ -228,28 +233,28 @@ layout, please file a PR or issue so it can be fixed!
    6. Load up the Nucleo with a test program to cycle LED pins and outputs a PWM
       signal with a non-trivial duty cycle and see if they light up/are correct
       on an O-scope. Unplug the Nucleo from USB, and connect 9V to the 9V
-      Connector J0. Make sure the Nucleo powers on again and the test program
+      Connector J1. Make sure the Nucleo powers on again and the test program
       works as expected.
    7. Remove the Nucleo and all sources of power before further assembly.
 
 4. DC-DC Converter
 
    1. Solder the chip U4 on first. Check for shorts across any of the pins.
-   2. Then solder on the capacitors C4 - C7.
-   3. Solder test points: TP4.
+   2. Then solder on the capacitors C8 - C11.
+   3. Solder test points: TP5.
    4. Plug in the Nucleo and plug in USB power. Make sure you have 5V at VCC,
-      and 10V at TP4. Unplug power then the Nucleo when done.
+      and 10V at TP5. Unplug power then the Nucleo when done.
 
 5. Gate Amplifier
 
-   1. Solder the chip U5 on first. Check for shorts across any of the pins.
-   2. Solder on components R9, R10, and C8.
-   3. Solder test points: TP5.
+   1. Solder the chip U3 on first. Check for shorts across any of the pins.
+   2. Solder on components R11 and R12.
+   3. Solder test points: TP6.
    4. Plug in the Nucleo and plug in USB power. Make sure you have 10V at pin 8,
       and DAC_Control is shorted to the correct pin on the Nucleo (see
       schematic).
    5. Load a test program that outputs a specific voltage out from the Nucleo
-      ADC pin connected to DAC_Control. Make sure at the output, TP5 has 5x the
+      ADC pin connected to DAC_Control. Make sure at the output, TP6 has 5x the
       voltage. Do this with a set of voltages and see if the amplifier
       relationship is linear. Check the transition time if possible (what is the
       maximum speed we can shift voltages at the output?).
@@ -257,33 +262,31 @@ layout, please file a PR or issue so it can be fixed!
 6. Current Sensor
 
    1. Solder in the chip U2 first. Check for shorts across any of the pins.
-   2. Then solder on component C1.
-   3. Solder test points: TP2.
-   4. Test that TP2 is shorted to the pin associated with Array_Current (see
-      schematic). Test that 3.3V is not shorted to GND across the capacitor C1.
-   5. Test that +Current_Sense and -Current_Sense are shorted to the respective
-      pads for R15. We'll go back to this later.
+   2. Then solder on component R6, R7, C2, C3, D1, D2.
+   3. Solder test points: TP3.
+   4. Test that TP3 is shorted to the pin associated with Array_Current (see
+      schematic). Test that 9V is not shorted to GND across the capacitor C2.
+   5. Plug in a 9V power source into connector J1 and check that there is 9V
+      across pin 3 and 6 of U2. Unplug the power.
 
 7. Voltage Sensor
 
-   1. Solder in the chip U3 first. Check for shorts across any of the pins.
-   2. Then solder on components D1, R6 - R8, C3.
-   3. Solder test points: TP3.
-   4. Test that TP3 is shorted to the pin associated with Array_Voltage (see
-      schematic). Test that 3.3V is not shorted to GND across the capacitor C3.
-   5. Soldering CA_2, CB_2, and CC_2 are optional. These signal filter
-      capacitors are experimental and can be soldered on when testing with a
-      full cell and seeing how the signal noise profiles look like on an
-      O-scope.
+   1. Solder on components R8, C7, R9, R10, D3, D4.
+   2. Solder test points: TP4.
+   3. Test that TP4 is shorted to the pin associated with Array_Voltage (see
+      schematic). Test that 10V is not shorted to GND across the capacitor C7.
+   4. Soldering C4 - C6 are optional. These signal filter capacitors are
+      experimental and can be soldered on when testing with a full cell and
+      seeing how the signal noise profiles look like on an O-scope.
 
 8. PV Controller
 
-   1. Solder in the small components R11 - R15 first.
+   1. Solder in the small components R13 - R16 first.
    2. Solder the heatsink HS1.
    3. Solder the MOSFETs Q1, Q2 to HS1 and make sure they are aligned (exposed
       metal plate to the heatsink). If they aren't according to the schematic,
       we might need a bodge.
-   4. Then solder the fuse F1 and connector J1.
+   4. Then solder the fuse F1 and connector J2.
    5. Solder the rotary switch SW2.
    6. Finally, solder test points: TP6.
    7. Test that the fuse contacts are open unless a fuse is inserted. Test that
@@ -295,20 +298,20 @@ layout, please file a PR or issue so it can be fixed!
 
 9. CAN Circuit
 
-   1. Solder chip U6 **first** and test for shorts across adjacent pins.
-   2. Solder the smallest components: C9 - C16, L1, L2, R17, R18.
-   3. Solder bridge R16.
-   4. Solder test points TP7 - TP14.
-   5. Solder the chip U7.
+   1. Solder chip U5 **first** and test for shorts across adjacent pins.
+   2. Solder the smallest components: C12 - C19, L1, L2, R18, R19.
+   3. Solder bridge across R17.
+   4. Solder test points TP8 - TP15.
+   5. Solder the chip U6.
    6. Solder the termination header JP1.
-   7. Solder the CAN Connectors J2, J3.
+   7. Solder the CAN Connectors J3, J4.
    8. Test for the following shorts:
       - Between CAN_H and CAN_L.
       - Between CAN_Tx, CAN_Rx.
       - +5V and GNDPWR (Power side).
       - 5V and GND (CAN side).
-      - Across adjacent pins in U6, U7.
-   9. Plug in the Nucleo, connect J2/J3 to a CAN bus, and run a CAN
+      - Across adjacent pins in U5, U6.
+   9. Plug in the Nucleo, connect J3/J4 to a CAN bus, and run a CAN
       communication test to ensure that the installed CAN circuitry is
       functional.
    10. Remove any power, the Nucleo, and then CAN connections before further
@@ -342,4 +345,4 @@ layout, please file a PR or issue so it can be fixed!
 You now have a completed MPPT (I hope) and I wish you luck in your future solar
 car endeavors!
 
-This assembly guide was last modified *12/16/2020* by **Matthew Yu**.
+This assembly guide was last modified *12/21/2020* by **Matthew Yu**.
