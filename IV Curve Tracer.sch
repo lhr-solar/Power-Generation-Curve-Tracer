@@ -2119,4 +2119,16 @@ F 3 "~" H 3110 1320 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2910 1320
+Text Notes 2975 4375 0    30   ~ 0
+BODGE\n4.66k resistor between Pin 7 and TP6 (series) \nto generate an RC filter to smooth out oscillation.
+Text Notes 3500 4950 0    30   ~ 0
+BODGE\n200 resistor for R11
+Text Notes 4075 4950 0    30   ~ 0
+BODGE\n100 resistor for R12
+Text Notes 9400 2725 0    30   ~ 0
+BODGE\n510 resistor on R9
+Text Notes 9400 2800 0    30   ~ 0
+Now 3x Gain
+Text Notes 3500 5025 0    30   ~ 0
+Now 3x Gain
 $EndSCHEMATC
