@@ -5565,7 +5565,7 @@
     (property "Purchase Page" "https://www.mouser.com/ProductDetail/XP-Power/IES0105S09?qs=Cb2nCFKsA8olKT2yq0l%2FZg%3D%3D" (id 10) (at 182.245 45.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Alternative" "https://www.mouser.com/ProductDetail/CUI-Inc/PDS1-S5-S9-M-TR?qs=WyjlAZoYn52QMcZg5rCl5g%3D%3D" (id 11) (at 182.245 45.72 0)
+    (property "Alternative Part" "https://www.mouser.com/ProductDetail/CUI-Inc/PDS1-S5-S9-M-TR?qs=WyjlAZoYn52QMcZg5rCl5g%3D%3D" (id 11) (at 182.245 45.72 0)
       (effects (font (size 1 1)) hide)
     )
     (pin "1" (uuid a9381241-ef53-4dc4-a034-d19fb6d885af))
