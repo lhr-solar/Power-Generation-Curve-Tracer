@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name INA211)(type Legacy)(uri ${KIPRJMOD}/INA211.lib)(options "")(descr "")(disabled))
-  (lib (name Array_Curve_Tracer)(type Legacy)(uri ${KIPRJMOD}/Array_Curve_Tracer.lib)(options "")(descr "")(disabled))
-  (lib (name IV-Curve-Tracer-rescue)(type Legacy)(uri "${KIPRJMOD}/IV Curve Tracer-rescue.lib")(options "")(descr "")(disabled))
-  (lib (name Array)(type Legacy)(uri ${KIPRJMOD}/Array.lib)(options "")(descr ""))
+  (lib (name "1720819")(type "KiCad")(uri "${KIPRJMOD}/Symbols/1720819.kicad_sym")(options "")(descr ""))
+  (lib (name "Array")(type "KiCad")(uri "${KIPRJMOD}/Symbols/Array.kicad_sym")(options "")(descr ""))
 )
