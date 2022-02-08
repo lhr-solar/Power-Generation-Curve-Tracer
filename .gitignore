@@ -16,6 +16,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+IV Curve Tracer-backups/
 
 # Netlist files (exported from Eeschema)
 *.net
