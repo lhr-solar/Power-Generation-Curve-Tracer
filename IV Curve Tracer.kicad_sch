@@ -5,8 +5,8 @@
   (paper "A4")
 
   (title_block
-    (title "Array - IV Curve Tracer")
-    (date "2022-02-02")
+    (title "IV Curve Tracer")
+    (date "2022-02-11")
     (rev "1.2.0")
     (company "UT Solar Vehicles Team")
     (comment 1 "Matthew Yu")
@@ -2181,7 +2181,6 @@
       )
     )
   )
-
 
   (junction (at 36.195 152.4) (diameter 0) (color 0 0 0 0)
     (uuid 0ec47037-a7de-4375-9cbc-3332b32ce8c2)

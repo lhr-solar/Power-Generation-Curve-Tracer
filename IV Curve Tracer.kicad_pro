@@ -166,10 +166,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "power_pin_not_driven|1568450|1149350|72f41ef1-4222-4d47-9898-21f8bf7cc84d|00000000-0000-0000-0000-000000000000",
-      "power_pin_not_driven|1568450|996950|328facdd-25b8-40a7-8786-b42d46d8274c|00000000-0000-0000-0000-000000000000"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -374,9 +371,7 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [
-      "IV Curve Tracer"
-    ],
+    "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
       "Array"
     ]
