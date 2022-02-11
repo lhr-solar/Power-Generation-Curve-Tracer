@@ -5,13 +5,7 @@ This repository contains the following files for the Curve Tracer HW:
 - Schematic
 - Layout
 - Datasheets
-
-Also a good resource is the
-[Curve Tracer Parts list](https://docs.google.com/spreadsheets/d/1SAz3R_ByU2mKZGAhGRQ28pVgDGCm5jWskoDbiYdgKEw/edit?usp=sharing);
-this is the source of truth for the schematic and layout and should be consulted
-and updated by anyone doing revisions on the board. As good practice, make sure
-your updates to the parts list, when finalized, gets a new named version in the
-version history.
+- BoM (embedded into the KiCAD project)
 
 A couple other important sections for engineers who are improving this board are
 below.
@@ -27,8 +21,8 @@ below.
 
 ## Maintainers and Contribution
 
-The last maintainer of this project was Matthew Yu (Array Lead 2020) as of
-12/21/2020. His email is matthewjkyu@gmail.com.
+The last maintainer of this project was Matthew Yu as of 02/11/2022. His email
+is matthewjkyu@gmail.com. 
 
 Also a useful point of contact is Professor Gary Hallock, who advised Matthew
 and worked with the several former senior design teams and solar car class
@@ -49,13 +43,14 @@ We also follow the mutually inclusive versioning procedure agreed upon in this
 
 ### Versioning
 
-The board schematic is currently on **Version 1.1.0**.
+The board schematic is currently on **Version 1.2.0**.
 
-The board layout is currently on **Version 1.1.0**.
+The board layout is currently on **Version 1.2.0**.
 
-The parts list is currently on **Version 1.1.0**.
+The parts list is currently on **Version 1.2.0**.
 
-### Schematic
+### Changes and Errata
+#### Schematic 
 
 - **Rev 1.0.0**:
   - First schematic design completed.
@@ -69,8 +64,10 @@ The parts list is currently on **Version 1.1.0**.
   - Merged the op amp used by the voltage sensor and the gate amplifier.
   - Added a pre-emptive fuse to array input and swapped to a Phoenix connector.
   - Added a pre-emptive 9V power supply.
+- **Rev 1.2.0**:
+  - TODO: this
 
-### Layout
+#### Layout
 
 - **Rev 1.0.0**:
   - First layout design completed.
@@ -80,8 +77,10 @@ The parts list is currently on **Version 1.1.0**.
     each other.
   - Ensured minimum current rating is 8A.
   - Added extra capacitor pads for voltage sensor filtering. Optional to use.
+- **Rev 1.2.0**:
+  - TODO: this
 
-### Parts List
+#### Parts List
 
 - **Rev 1.0.0**:
   - Initial parts list.
@@ -91,6 +90,9 @@ The parts list is currently on **Version 1.1.0**.
   - Added extra filter capacitor selections for the voltage sensor. Optional to
     use.
   - Corrected any parts discrepancies from Rev 1.0.0 parts list.
+- **Rev 1.2.0**:
+  - Moved parts list into the KiCAD project.
+  - TODO: this
 
 ---
 
@@ -99,7 +101,10 @@ The parts list is currently on **Version 1.1.0**.
 This is a list of changes we can make to the board in future versions to improve
 it in various ways. Some of these are functional, others are purely aesthetic.
 
-1. None for now.
+1. Built in RTD sensor.
+2. Secondary UART communication line.
+3. Shrink board to sub 100x100mm.
+4. Use TM4C for more peripherals?
 
 ---
 
@@ -167,6 +172,8 @@ settings are correct before you order.
 ---
 
 ## Assembly and Testing
+
+> These instructions may be outdated for layout revision 1.2.0.
 
 The board should be assembled and tested in sections to ensure proper
 functioning. Assembly should go through the following sections in order:
