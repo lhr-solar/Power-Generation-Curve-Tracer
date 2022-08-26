@@ -448,7 +448,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "v1_3_0/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -458,6 +458,26 @@
     [
       "4c8027f3-915c-4853-a53c-bc426a9ca6f1",
       ""
+    ],
+    [
+      "7b7e70bc-e41a-4e9e-8b32-a442cc327b63",
+      "power_regulation"
+    ],
+    [
+      "5ca185b8-f8fe-4e7b-94e5-bda5d53ea910",
+      "pv_controller"
+    ],
+    [
+      "8596502d-8bf2-43cf-9746-64b6796d4706",
+      "sensors"
+    ],
+    [
+      "f812b26b-6156-4eb6-adbe-e3741cb8bdd4",
+      "can_driver"
+    ],
+    [
+      "459b036d-0fde-43a8-9bcf-7e2c885957e8",
+      "leds"
     ]
   ],
   "text_variables": {}
