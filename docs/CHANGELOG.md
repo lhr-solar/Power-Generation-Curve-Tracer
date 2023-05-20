@@ -7,6 +7,7 @@
   - [1.3.0](#130)
   - [1.4.0rc (proposed)](#140rc-proposed)
 
+---
 
 ## 1.0.0
 
@@ -21,6 +22,8 @@
 **Firmware**
 
 - First FW tests and main program added.
+
+---
 
 ## 1.1.0
 
@@ -50,9 +53,13 @@
 - Ensured minimum current rating is 8A.
 - Added extra capacitor pads for voltage sensor filtering. Optional to use.
 
+---
+
 ## 1.2.0
 
 - Moved parts list into the KiCAD project.
+
+---
 
 ## 1.3.0
 
@@ -76,6 +83,8 @@
 **Firmware**
 
 - Firmware is rebuilt and optimized for hardware. Added more calibration tests.
+
+---
 
 ## 1.4.0rc (proposed)
 

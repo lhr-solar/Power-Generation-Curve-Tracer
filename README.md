@@ -32,9 +32,9 @@ is [matthewjkyu@gmail.com](matthewjkyu@gmail.com).
 
 Contributors to the HW and FW encompass many dedicated students, including:
 
-- Youssef Elsherif
-- Afnan Mir
 - Roy Moore
+- Afnan Mir
+- Youssef Elsherif
 
 Special thanks to Professor Gary Hallock, who supervised the development and
 design of this project.
@@ -46,7 +46,7 @@ design of this project.
 This PCB is on unified version `1.3.0`. Every time the schematic and/or layout
 is updated, this version number should go up. We use [semantic
 versioning](https://semver.org/) to denote between versions. See the
-[changelog](CHANGELOG.md) for more details.
+[changelog](./docs/CHANGELOG.md) for more details.
 
 ---
 
@@ -54,7 +54,6 @@ versioning](https://semver.org/) to denote between versions. See the
 
 Documentation
 
-- Update this README, particularly repository structure
 - Update assembly and testing document, ordering document, and improvement document.
 - Add datasheets for key components of the device.
 
