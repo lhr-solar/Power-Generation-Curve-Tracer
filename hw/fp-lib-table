@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Footprints")(type "KiCad")(uri "/home/matthew/Documents/Github/Power-Generation/Curve_Tracer/pcb/Design/Footprints")(options "")(descr ""))
+)

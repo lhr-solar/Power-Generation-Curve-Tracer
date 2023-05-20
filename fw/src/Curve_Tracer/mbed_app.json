@@ -1,0 +1,12 @@
+{    
+    "target_overrides": {
+        "*": {
+            "target.printf_lib": "minimal-printf",
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-buffered-serial": 1,
+            "platform.minimal-printf-enable-floating-point": true,
+            "platform.minimal-printf-set-floating-point-max-decimals": 3,
+            "platform.minimal-printf-enable-64-bit": false
+        }
+    }
+}
