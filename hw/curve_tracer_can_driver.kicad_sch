@@ -1263,7 +1263,7 @@
     )
     (pin "1" (uuid 5515d692-d7c1-4287-928a-d4a7e65fadb8))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "#FLG0502") (unit 1)
         )
@@ -1305,7 +1305,7 @@
     (pin "2" (uuid e4196c5f-78c6-453e-8ce3-bea35ae8ae20))
     (pin "3" (uuid 4e46fe07-7fdc-4fc5-834d-f0f03e3773e7))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "U502") (unit 1)
         )
@@ -1346,7 +1346,7 @@
     (pin "1" (uuid 9e0057a6-9a3a-4624-992c-f0e4b3845d28))
     (pin "2" (uuid 78111368-3f45-4aa4-a399-797ae7540336))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "R503") (unit 1)
         )
@@ -1380,7 +1380,7 @@
     )
     (pin "1" (uuid 562a70d3-cf5f-40a2-9d37-708e87eb9525))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP502") (unit 1)
         )
@@ -1421,7 +1421,7 @@
     (pin "1" (uuid c2881f42-0070-4cf1-a28a-6bfc13d3e861))
     (pin "2" (uuid 9b087da9-9433-4ed2-9ee5-96bf5c07fbd9))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C506") (unit 1)
         )
@@ -1462,7 +1462,7 @@
     (pin "1" (uuid 90f5de72-00f8-40e1-954e-a52243a65d1e))
     (pin "2" (uuid 903f4d5b-658c-40d0-b979-ffca9bec8c65))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C507") (unit 1)
         )
@@ -1503,7 +1503,7 @@
     (pin "1" (uuid de433612-3d71-4e23-b80f-537b2ccc6c89))
     (pin "2" (uuid 38e5f67c-ffc4-4e3e-b473-50260a86155c))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C505") (unit 1)
         )
@@ -1544,7 +1544,7 @@
     (pin "1" (uuid 36889d3b-e9a5-4708-bc10-00af8d914e74))
     (pin "2" (uuid 86818c60-a354-4549-a308-4f75723bfafb))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "L501") (unit 1)
         )
@@ -1603,7 +1603,7 @@
     (pin "8" (uuid d924324a-266b-4134-8518-183eaa8979d0))
     (pin "9" (uuid b852f397-da86-4c76-93a3-0b3ee2a7923d))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "U501") (unit 1)
         )
@@ -1637,7 +1637,7 @@
     )
     (pin "1" (uuid 3ed9bf54-0534-47af-88de-3e6608c3fb8d))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP505") (unit 1)
         )
@@ -1680,7 +1680,7 @@
     (pin "3" (uuid a477a391-3f96-454f-a1f2-6adf46b2a585))
     (pin "4" (uuid 3641a540-71e8-4d20-b879-bbbfa884ce01))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "J502") (unit 1)
         )
@@ -1721,7 +1721,7 @@
     (pin "1" (uuid 3552bada-8531-4944-aaab-9b45d40f130d))
     (pin "2" (uuid 86aedfdd-a0cf-4377-a6b7-8b3b92c561c1))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "JP501") (unit 1)
         )
@@ -1746,7 +1746,7 @@
     )
     (pin "1" (uuid 41a67981-344e-46d2-83d6-4c2eb39c13f9))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "#PWR0505") (unit 1)
         )
@@ -1789,7 +1789,7 @@
     (pin "3" (uuid d5b23037-1b35-48e9-aaf4-33706b0efee3))
     (pin "4" (uuid 54db090a-a0ce-4394-8bcc-2f4407504afe))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "J501") (unit 1)
         )
@@ -1823,7 +1823,7 @@
     )
     (pin "1" (uuid f7d3a59d-ec17-4cde-ab04-855f68ef52e4))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP501") (unit 1)
         )
@@ -1857,7 +1857,7 @@
     )
     (pin "1" (uuid 13e9ff3e-1e1f-4bbb-8125-1f496b8aa282))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP504") (unit 1)
         )
@@ -1891,7 +1891,7 @@
     )
     (pin "1" (uuid a64f75a9-68c1-4dc9-8e5e-8d32c80f8b8f))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP508") (unit 1)
         )
@@ -1925,7 +1925,7 @@
     )
     (pin "1" (uuid d0f61293-32f9-4502-b5b5-7be6c5cb0da6))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP507") (unit 1)
         )
@@ -1959,7 +1959,7 @@
     )
     (pin "1" (uuid fa211e2e-893f-49dc-9572-762eb6d39695))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP503") (unit 1)
         )
@@ -2000,7 +2000,7 @@
     (pin "1" (uuid 65464475-5d96-427d-9ff8-15d16437c870))
     (pin "2" (uuid f37e6c60-1b00-4e58-aefc-1223c85f8f98))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C501") (unit 1)
         )
@@ -2025,7 +2025,7 @@
     )
     (pin "1" (uuid bf17cdce-d144-49ca-9c3a-7d6e34f6e294))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "#PWR0504") (unit 1)
         )
@@ -2050,7 +2050,7 @@
     )
     (pin "1" (uuid af6e3bb1-2d6b-4a36-996e-bc89af0ce65d))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "#FLG0501") (unit 1)
         )
@@ -2091,7 +2091,7 @@
     (pin "1" (uuid 6a951d75-44cf-4e5c-b78e-460d7c21b271))
     (pin "2" (uuid d457e9ab-874f-4908-8eb5-0cf3c3b390bb))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "L502") (unit 1)
         )
@@ -2125,7 +2125,7 @@
     )
     (pin "1" (uuid 14a84ad4-eb1b-4436-9d7c-82d9bc1f0e71))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "TP506") (unit 1)
         )
@@ -2150,7 +2150,7 @@
     )
     (pin "1" (uuid 20ff28f5-46e5-439a-aa90-da3baa948d51))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "#PWR0506") (unit 1)
         )
@@ -2191,7 +2191,7 @@
     (pin "1" (uuid 8ba24b5b-ba10-4a2f-9c90-1ac7caada895))
     (pin "2" (uuid 7f85f5a8-4f69-4ce0-a1c4-0ee600222c21))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C508") (unit 1)
         )
@@ -2232,7 +2232,7 @@
     (pin "1" (uuid f3b3bb9d-c774-43cb-af37-f6ec20ca16b1))
     (pin "2" (uuid e12e6bf1-90bf-4c10-a41c-a0d2c4d615d7))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C504") (unit 1)
         )
@@ -2273,7 +2273,7 @@
     (pin "1" (uuid 820f9c20-fd91-4ebf-b1c9-eab2b279f470))
     (pin "2" (uuid dc334147-102a-44b4-8619-8a71702920b7))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C503") (unit 1)
         )
@@ -2314,7 +2314,7 @@
     (pin "1" (uuid 0de898a1-f26d-4b7e-93b4-3b1c51f1fa4b))
     (pin "2" (uuid d31cb027-57e3-4abd-968c-4b88cd340c19))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "R501") (unit 1)
         )
@@ -2355,7 +2355,7 @@
     (pin "1" (uuid 364bc9be-e355-495b-8f6a-7e89758d800f))
     (pin "2" (uuid 40566596-cb25-4c0d-a145-dac9fb604ca7))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "C502") (unit 1)
         )
@@ -2396,7 +2396,7 @@
     (pin "1" (uuid 1b4cc2f1-126a-4b55-9346-a76cf57682dc))
     (pin "2" (uuid 86348c53-c80a-42eb-9394-c9a88f0fd724))
     (instances
-      (project "IV Curve Tracer"
+      (project "curve_tracer"
         (path "/4c8027f3-915c-4853-a53c-bc426a9ca6f1/f812b26b-6156-4eb6-adbe-e3741cb8bdd4"
           (reference "R502") (unit 1)
         )
