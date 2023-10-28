@@ -32,7 +32,7 @@ is [matthewjkyu@gmail.com](matthewjkyu@gmail.com).
 
 Contributors to the HW and FW encompass many dedicated students, including:
 
-- Roy Moore
+- Roy Mor
 - Afnan Mir
 - Youssef Elsherif
 
