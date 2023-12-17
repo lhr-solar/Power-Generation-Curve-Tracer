@@ -61,7 +61,7 @@ enum EncodingScheme {
 
 float cal_dac_control(float in) {
     // TODO: 10/25/22 recheck dac control calibration.
-    const float slope = 9.9539;
+    const float slope = 9.9539; // const makes it so that slope value is always 9.9539 throughout the program and can't be changed
     const float intercept = 0.0583;
     return in;// * slope + intercept;
 }
@@ -89,7 +89,7 @@ float cal_sen_curr(float in, int num_iterations) {
 }
 
 bool modeValid(enum Mode mode) {
-    return mode==0||mode==1||mode==2;
+    return mode==0||mode==1||mode==2; //checks if the "mode" is in either the set 0, 1, or 2
 }
 
 bool gatesValid(float lowGate, float highGate, float gateStep){
