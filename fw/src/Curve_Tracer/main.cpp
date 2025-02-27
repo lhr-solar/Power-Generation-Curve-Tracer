@@ -53,7 +53,8 @@ enum Operations
     DEBUG,
     MEASUREMENT
 } operation;
-bool system_reset = false
+
+bool system_reset = false;
 
 /** Tickers. */
 static LowPowerTicker tick_heartbeat;
@@ -189,9 +190,17 @@ void systemReset()
     printf("BEGIN_TRANSMISSION\r\n");
 }
 
+void updateBaudRate(char *buffer) {
+    int new_baud = atoi(buffer);
+    if (new_baud > 0) {
+        serial_port.set_baud(new_baud);
+        printf("Baud Rate Updated: %d\r\n", new_baud)
+    }
+}
+
 void monitorReset()
 {
-    char buffer[10];
+    char buffer[256];
     while (true)
     {
         if (readBuffer(buffer, sizeof(buffer), 1000))
@@ -201,8 +210,30 @@ void monitorReset()
                 system_reset_requested = true;
                 break;
             }
+            else if (isdigit(buffer[0])) {
+                updateBaudRate(buffer)
+            }
+            else if (strncmp(buffer, "GET_CAPTURE_CONFIG", 18) == 0) {
+                sendCaptureConfig();
+            }
         }
     }
+}
+
+void sendCaptureConfig()
+{
+    StaticJsonDocument<256> json;
+    json["sample_range_low"] = GATE_OFF;
+    json["sample_range_high"] = GATE_ON;
+    json["step_size"] = GATE_STEP;
+    json["num_iters"] = ITERATIONS;
+    json["settling_time"] = SETTLING_TIME_US;
+    json["pv_type"] = mode;
+    json["pv_id"] = "DEFAULT_PV";  // Needs to be dynamically set
+
+    char json_output[256];
+    serializeJson(json, json_output);
+    printf("%s\r\n", json_output);
 }
 
 void sendMeasurementResults(float gate, float voltage, float current)
@@ -300,7 +331,7 @@ int main()
                 meas_curr = cal_sen_curr(meas_curr, ITERATIONS);
                 sendMeasurementResults(cal_dac_control(currentGate), meas_volt, meas_curr);
 
-                if (readBuffer(debugBuffer, sizeof(debugBuffer), 500))
+                if (readBuffer(debugBuffer, sizeof(debugBuffer), 500) && strlen(debugBuffer) > 0)
                 {
                     if (strncmp(debugBuffer, "SET", 3) == 0)
                     {
@@ -309,11 +340,11 @@ int main()
                         {
                             currentGate = new_voltage;
                             dac_control = currentGate;
-                            printf("Voltage Updated: %3.fV\r\n", currentGate);
+                            printf("Voltage Updated: %.3fV\r\n", currentGate);
                         }
                         else
                         {
-                            printf("ERROR: Voltage %3.fV out of range (%.3fV - %.3fV)\r\n", new_voltage, GATE_OFF, GATE_ON);
+                            printf("ERROR: Voltage %.3fV out of range (%.3fV - %.3fV)\r\n", new_voltage, GATE_OFF, GATE_ON);
                         }
                     }
                     else if (strncmp(debugBuffer, "EXIT", 4) == 0)
